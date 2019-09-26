@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AQUA</title>
+  <link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body id="about">
+  
+<!--header始まり-->
+  <header>
+  <!-- ロゴの画像の表示、Homeへのリンク化-->
+  <!--クラス：ロゴ-->
+      <div class="logo">
+      <a href="home.html"><img src="images/logo.png" alt="AQUA logo"></a>
+        <p class="langbtn"><a href="research.html">日本語</a></p>
+        <p class="langbtn_en"><a href="research_en.html">English</a></p>
+      </div> 
+        <nav>
+        <!--クラス；グローバルナビ-->
+        <ul class="global-nav">
+            <!--メニュー内要素(ページ名)-->
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about_us.html">About us</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publication.html">Publications</a></li>
+            <!--論文、ポスターなど-->
+            <li><a href="members.html">Members</a></li>
+            <!--メンバー-->
+            <li><a href="for_students.html">For students</a></li>
+            <!--履修の仕方、入門書や簡単な分野の説明-->
+            <li><a href="links.html">Links</a></li>
+            <li><a href="access.html">Access</a></li>
+          </ul>
+    </nav>
+  </header>
+  <!--header終わり-->
+    
+<!--wrap始まり-->
+<div id="wrap">
+  <!--クラス：コンテンツ-->
+  <div class="content">
+    <div class="main-center">
+    <h1>Research</h1>
+    <p>AQUAの主な目標は、古典的なコンピュータアーキテクチャ、ネットワーキング、分散システムから量子システムのスケーラビリティの問題に既知の技術を適用することによって、現実世界における量子技術の展開を進めることです。 この研究は、より高い計算能力をもたらし、トランジスタのサイズをもう小さくすることができなくなったときに情報技術の進歩の停滞が起こさないようにします。</p>
+    <section class="about clearfix">
+    <div class="about-txt">
+    <h2 class="icon">Work Areas</h2>
+    <h3>Devices</h3>
+     <p> スタンフォード大学の<a href="http://www.stanford.edu/group/yamamotogroup/">山本グループ</a>と共同で、量子ドットを用いた半導体ベースのチップを設計しています。</p>
+           <li>光制御スピン（QuDOS）アーキテクチャによる量子ドット</li>
+           <li><a href="https://web.stanford.edu/group/yamamotogroup/QCA_files/architecture_webpage.htm">Topologically Fault-Tolerant Distributed Quantum Computer Architecture</a></li>
+    <h3>Principles</h3>
+      <p>我々は、量子アーキテクチャとネットワーキングの新しい原則と、既知の原則の応用を模索しています。</p>
+           <li>layered architectures, quantum multicomputer paradigm, graph
+ embedding, quantum picturalism, beyond DiVincenzo criteria, surface
+ code error correction</li>
+           <li><a href="research/qmc/qmc.html">Quantum Multicomputer Architectures</a></li>
+           <li><a href="research/graph-embedding/graph-embedding.html">Graph Embedding</a></li>
+           <li><a href="research/planar-code/planar-code.html">Surface Code and Planar Code Error Correction</a></li>
+           <li><a href="research/picturalism/quantum-picturalism.html">Quantum Picturalism</a></li>
+   <h3>Tools</h3>
+      <p>アーキテクチャとネットワークにおける新しいアイデアの適切な分析には、プログラムをコンパイルし特定のシステムへのマッピングを最適化するためのソフトウェアツールと、量子デバイスとエフェクトの物理シミュレーションが必要です。</p>
+           <li><a href="research/aqua-tools/aqua-tools.html">Compilers & optimizers, Quantomatic, Aqua Tools</a></li>
+  <h3>Workloads</h3>
+      <p>AQUAは新しい量子アルゴリズムの作成に重点を置いていませんが、実現可能なアーキテクチャで既知の量子アルゴリズムを効率的に実装する方法を研究しています。 また、逆解析も行います。与えられたアルゴリズムを実装するには、量子システムがどれだけ大きく、正確に必要なのでしょうか。</p>
+      <li><a href="research/arithmetic/arithmetic.html">Efficient,
+    architecture-aware implementation of arithmetic</a></li>
+      <li><a href="research/ipsecwithqkd.html">IKE for IPsec with QKD</a></li>
+  <h3>Networks</h3>
+      <p>大規模なシステムでは、複数のデバイスを1つのシステムに統合して、共同で計算したり、情報を共有したりする必要があります。
+我々はシステム領域と広域量子ネットワークの両方を研究しています。</p>
+      <li>quantum recursive network architecture (QRNA), path selection,
+      multiplexing, protocol design, low-level repeater optimization
+      </li>
+      <li><a href="research/repeater-networks/QRNA.html">Recursive Quantum Network Architecture</a></li>
+      <li><a href="research/repeater-networks/qDijkstra.html">Path Selection for Repeater Networks</a></li>
+      <li><a href="research/repeater-networks/muxing.html">Multiplexing for Repeater Networks</a></li>
+      <li><a href="research/repeater-networks/protocols.html">Repeater Protocol Design and Visualization</a></li>
+      <li><a href="research/repeater-networks/banded-purification.html">Low-Level Repeater Optimization</a></li>
+
+    </div>
+
+      </section>
+      <section class="FandE">
+      <h2 class="icon">Fun and Educational projects</h2> 
+        <ul>
+  <li><a href="lego/index.shtml">Lego Difference Engine</a></li>
+</ul>
+        
+      </section>  
+  </div>
+    <p class="btn"><a href="publication.html">Publications</a></p><!--ボタンにする class btn-->
+    
+  </div>
+</div>
+<!--wrap終わり-->
+    
+<!--footer始まり-->
+  <footer>
+    <small>&copy;2007-2017 Tokuda/Murai/Kusumoto/Nakamura/Takashio/Van Meter/Uehara/Mitsugi/Nakazawa Laboratories.
+All Rights Reserved.</small><br>
+    <small><a href="mailto:rdv@sfc.wide.ad.jp">お問い合わせ</a></small>
+  </footer>
+<!--hooter終わり-->
+</body>
+</html>
