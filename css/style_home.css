@@ -152,6 +152,7 @@ footer small a{
 }
 
 #index p{
+  text-align: center;
   font-size: 16px;/*本文文字サイズ*/
   color: #ffffff;/*本文文字色*/
 }
