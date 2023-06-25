@@ -1,5 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Navigator from '@/components/navigator'
+import { cn } from '@/components/utils'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +17,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body 
+        data-theme="dark"
+        className={
+        cn(
+          inter.className,
+          // 'min-h-screen'
+        )
+      }>
+        <Navigator />
+        {children}
+      </body>
     </html>
   )
 }
