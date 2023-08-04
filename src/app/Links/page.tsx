@@ -1,10 +1,10 @@
-import About from './page.mdx'
+import Links from './page.mdx'
 
 export default function Page() {
     return (
         <div className="flex flex-col items-center justify-center py-10">
             <div className="prose">
-                <About />
+                <Links />
             </div>
         </div>
 
