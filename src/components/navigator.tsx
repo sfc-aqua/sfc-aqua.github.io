@@ -127,7 +127,7 @@ const Links: TLink[] = [
     label: "For students",
   },
   {
-    href: "/links",
+    href: "/useful-links",
     label: "Links",
   },
   {
