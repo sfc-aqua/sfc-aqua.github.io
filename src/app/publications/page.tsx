@@ -126,7 +126,11 @@ export default function Page() {
         </div>
         <Accordion type="single" collapsible>
           {publications.map((publication) => (
-            <AccordionItem value={publication.id} id={publication.id}>
+            <AccordionItem
+              value={publication.id}
+              id={publication.id}
+              key={publication.id}
+            >
               <AccordionTrigger>
                 <p className="">{publication.label}</p>
               </AccordionTrigger>
