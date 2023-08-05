@@ -137,10 +137,16 @@ const Links: TLink[] = [
 ];
 
 export default function Navigator() {
+
+  const [open, setOpen] = React.useState(false);
+
   return (
     <div className="sticky top-0 z-50 navbar bg-base-300">
       <div className="navbar-start">
-        <Sheet>
+        <Sheet
+          open={open}
+          onOpenChange={setOpen}
+        >
           <SheetTrigger
             className="btn-ghost lg:hidden"
             aria-label="toggle naviagtor menu"
@@ -166,13 +172,20 @@ export default function Navigator() {
               <NavigationMenu className="navbar-center" orientation="vertical">
                 <NavigationMenuList className="flex flex-col px-1">
                   {Links.map((link, index) => (
-                    <NavigationMenuItem key={index}>
+                    <NavigationMenuItem
+                      key={index}
+                    >
                       {link.children ? (
-                        <DialogNavigationMenu link={link} />
+                        <DialogNavigationMenu
+                          link={link}
+                          parentOpen={open}
+                          setParentOpen={setOpen}
+                        />
                       ) : (
                         <Link href={link.href} legacyBehavior passHref>
                           <NavigationMenuLink
                             className={navigationMenuTriggerStyle()}
+                            onClick={() => setOpen(false)}
                           >
                             {link.label}
                           </NavigationMenuLink>
@@ -195,12 +208,17 @@ export default function Navigator() {
       >
         <NavigationMenuList className="px-1">
           {Links.map((link, index) => (
-            <NavigationMenuItem key={index}>
+            <NavigationMenuItem
+              key={index}
+              onClick={() => setOpen(false)}
+            >
               {link.children ? (
                 <DialogNavigationMenu link={link} />
               ) : (
                 <Link href={link.href} legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  <NavigationMenuLink
+                    className={navigationMenuTriggerStyle()}
+                  >
                     {link.label}
                   </NavigationMenuLink>
                 </Link>
@@ -216,9 +234,21 @@ export default function Navigator() {
   );
 }
 
-const DialogNavigationMenu = ({ link }: { link: TLink }) => {
+const DialogNavigationMenu = ({
+  link,
+  parentOpen,
+  setParentOpen,
+}: {
+  link: TLink,
+  parentOpen?: boolean,
+  setParentOpen?: React.Dispatch<React.SetStateAction<boolean>>,
+}
+  ) => {
+
+  const [open, setOpen] = React.useState(false)
+
   return (
-    <Dialog>
+    <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger>
         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
           {link.label}
@@ -233,10 +263,17 @@ const DialogNavigationMenu = ({ link }: { link: TLink }) => {
             <li key={index} className="break-normal">
               <Link href={child.href} passHref>
                 <NavigationMenuLink
+                  // asChild
                   className={cn(
                     navigationMenuTriggerStyle(),
                     "text-base-content "
                   )}
+                  onClick={() => {
+                    setOpen(false)
+                    if (setParentOpen) {
+                      setParentOpen(false)
+                    }
+                  }}
                 >
                   {child.label}
                 </NavigationMenuLink>
