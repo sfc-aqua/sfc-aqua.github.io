@@ -11,7 +11,7 @@ export default function Home() {
                     AQUA
                 </h1>
                 <h2 className="text-[rem] font-mono">
-                    Advanced Quantum Architecture Research Group
+                    Advancing Quantum Architecture Research Group
                 </h2>
             </div>
             <div className="flex flex-col gap-2 p-4 md:flex-row">
