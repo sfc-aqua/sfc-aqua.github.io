@@ -224,7 +224,7 @@ const DialogNavigationMenu = ({ link }: { link: TLink }) => {
           {link.label}
         </NavigationMenuLink>
       </DialogTrigger>
-      <DialogContent className="bg-base-100 w-[90%]">
+      <DialogContent className="bg-base-100 w-[90%] max-h-[90vh] overflow-y-scroll">
         <DialogHeader>
           <DialogTitle>{link.label} Menu</DialogTitle>
         </DialogHeader>
