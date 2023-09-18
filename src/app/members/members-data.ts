@@ -15,26 +15,6 @@ export type TMember = {
 };
 
 export const members: TMember[] = [
-  // {
-  //   name: "Rodney Van Meter",
-  //   role: "Sensei",
-  //   imagePath: "/images/members/rod.png",
-  //   description: "Supervisor of the group",
-  //   links: [
-  //     { name: "Personal website", url: "http://web.sfc.keio.ac.jp/~rdv/" },
-  //     {
-  //       name: "Google scholar",
-  //       url: "https://scholar.google.co.jp/citations?hl=en&user=-YlArkcAAAAJ&view_op=list_works",
-  //     },
-  //     { name: "WIDE project", url: "https://www.wide.ad.jp/" },
-  //   ],
-  //   stat: [
-  //     { name: "Strength", value: 100, max: 100 },
-  //     { name: "Agility", value: 100, max: 100 },
-  //     { name: "Intelligence", value: 100, max: 100 },
-  //     { name: "Luck", value: 100, max: 100 },
-  //   ],
-  // },
   {
     name: "Poramet",
     role: "D1",
