@@ -9,7 +9,7 @@ export default function Page() {
   const [searchQuery, setSearchQuery] = useState("");
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center w-full">
       {/* top section with image */}
       <div
         className="flex flex-col items-center justify-center w-full h-[50vh] bg-cover bg-center bg-gradient-to-b to-primary/25 from-primary-100"

@@ -162,7 +162,10 @@ export default function Navigator() {
               />
             </svg>
           </SheetTrigger>
-          <SheetContent position={"left"} className="border-0 bg-base-300">
+          <SheetContent
+            size="lg"
+            position={"left"}
+            className="border-0 bg-base-300">
             <SheetHeader>
               <SheetTitle className="sr-only">Side Navigator</SheetTitle>
               <NavigationMenu className="navbar-center" orientation="vertical">
@@ -217,7 +220,7 @@ export default function Navigator() {
         </NavigationMenuList>
       </NavigationMenu>
       <div className="navbar-end">
-        <a className="btn">EN/JP</a>
+        <a className="btn rounded-md">EN/JP</a>
       </div>
     </div>
   );
