@@ -1,7 +1,7 @@
 {
-    "recommendations": [
-        "editorconfig.editorconfig",
-        "yoavbls.pretty-ts-errors",
-        "unifiedjs.vscode-mdx"
-    ]
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "yoavbls.pretty-ts-errors",
+    "unifiedjs.vscode-mdx"
+  ]
 }

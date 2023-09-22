@@ -1,18 +1,18 @@
 export type TMember = {
-  name: string;
-  role: string;
-  imagePath: string;
-  description: string;
+  name: string
+  role: string
+  imagePath: string
+  description: string
   links: {
-    name: string;
-    url: string;
-  }[];
+    name: string
+    url: string
+  }[]
   stat?: {
-    name: string;
-    value: number;
-    max: number;
-  }[];
-};
+    name: string
+    value: number
+    max: number
+  }[]
+}
 
 export const members: TMember[] = [
   {
@@ -31,4 +31,4 @@ export const members: TMember[] = [
       { name: "Luck", value: 10, max: 100 },
     ],
   },
-];
+]

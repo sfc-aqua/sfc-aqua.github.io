@@ -1,25 +1,25 @@
-import Books from "./books.mdx";
-import GoogleScholar from "./google-scholar.mdx";
-import JournalPapers from "./journal-papers.mdx";
-import InternationalConferencesWithProceedings from "./international-conferences-with-proceedings.mdx";
-import WorkshopsConferencesWithoutProceedingsAndPosters from "./workshops-conferences-without-proceedings-and-posters.mdx";
-import Theses from "./theses.mdx";
-import CommitteeAndWorkingGroupReports from "./committee-and-working-group-reports.mdx";
-import SubmittedInProgressPapers from "./submitted-in-progress-papers.mdx";
-import InternetDrafts from "./internet-drafts.mdx";
-import PublicPresentationsInvitedTalks from "./public-presentations-invited-talks.mdx";
-import SfcsOpenResearchForum from "./sfcs-open-research-forum.mdx";
-import Posters from "./posters.mdx";
-import WhitePapers from "./white-papers.mdx";
-import CourseMaterials from "./course-materials.mdx";
-import OtherPublications from "./other-publications.mdx";
+import Books from "./books.mdx"
+import GoogleScholar from "./google-scholar.mdx"
+import JournalPapers from "./journal-papers.mdx"
+import InternationalConferencesWithProceedings from "./international-conferences-with-proceedings.mdx"
+import WorkshopsConferencesWithoutProceedingsAndPosters from "./workshops-conferences-without-proceedings-and-posters.mdx"
+import Theses from "./theses.mdx"
+import CommitteeAndWorkingGroupReports from "./committee-and-working-group-reports.mdx"
+import SubmittedInProgressPapers from "./submitted-in-progress-papers.mdx"
+import InternetDrafts from "./internet-drafts.mdx"
+import PublicPresentationsInvitedTalks from "./public-presentations-invited-talks.mdx"
+import SfcsOpenResearchForum from "./sfcs-open-research-forum.mdx"
+import Posters from "./posters.mdx"
+import WhitePapers from "./white-papers.mdx"
+import CourseMaterials from "./course-materials.mdx"
+import OtherPublications from "./other-publications.mdx"
 
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from "@/components/ui/accordion"
 
 const publications = [
   {
@@ -111,8 +111,8 @@ const publications = [
     id: "other-publications",
     href: "/publications#other-publications",
     content: <OtherPublications />,
-  }
-];
+  },
+]
 
 export default function Page() {
   return (
@@ -139,8 +139,7 @@ export default function Page() {
             </AccordionItem>
           ))}
         </Accordion>
-
       </div>
     </div>
-  );
+  )
 }

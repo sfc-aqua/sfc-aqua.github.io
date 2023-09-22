@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "npm run format && npm run lint:fix",
+    "lint:check": "next lint",
+    "lint:fix": "next lint --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,mdx}\""
   },
   "dependencies": {
     "@mdx-js/loader": "^2.3.0",
@@ -39,6 +43,7 @@
   },
   "devDependencies": {
     "eslint": "8.47.0",
-    "eslint-config-next": "13.4.16"
+    "eslint-config-next": "13.4.16",
+    "prettier": "^3.0.1"
   }
 }
