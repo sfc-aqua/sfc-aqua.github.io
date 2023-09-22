@@ -1,12 +1,11 @@
-import Research from './page.mdx'
+import Research from "./page.mdx"
 
 export default function Page() {
-    return (
-        <div className="flex flex-col items-center justify-center py-10 px-4">
-            <div className="prose">
-                <Research />
-            </div>
-        </div>
-
-    )
+  return (
+    <div className="flex flex-col items-center justify-center py-10 px-4">
+      <div className="prose">
+        <Research />
+      </div>
+    </div>
+  )
 }

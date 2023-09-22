@@ -1,12 +1,12 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-import { members } from "./members-data";
-import MemberCard from "./member-card";
-import { cn } from "@/components/utils";
+import { useState } from "react"
+import { members } from "./members-data"
+import MemberCard from "./member-card"
+import { cn } from "@/components/utils"
 
 export default function Page() {
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState("")
 
   return (
     <div className="flex flex-col items-center justify-center w-full">
@@ -35,7 +35,11 @@ export default function Page() {
           </div>
         </div>
 
-        <div className={cn("flex flex-wrap items-center justify-center mt-10 gap-4 ")}>
+        <div
+          className={cn(
+            "flex flex-wrap items-center justify-center mt-10 gap-4 "
+          )}
+        >
           {members
             .filter(
               (member) =>
@@ -48,7 +52,5 @@ export default function Page() {
         </div>
       </div>
     </div>
-  );
+  )
 }
-
-

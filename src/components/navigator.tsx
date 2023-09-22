@@ -1,5 +1,5 @@
-"use client";
-import * as React from "react";
+"use client"
+import * as React from "react"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -10,7 +10,7 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
+} from "@/components/ui/navigation-menu"
 
 import {
   Sheet,
@@ -19,7 +19,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet";
+} from "@/components/ui/sheet"
 
 import {
   Dialog,
@@ -28,21 +28,21 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog";
+} from "@/components/ui/dialog"
 
-import Link from "next/link";
-import { cn } from "./utils";
-import { useTheme } from 'next-themes'
+import Link from "next/link"
+import { cn } from "./utils"
+import { useTheme } from "next-themes"
 
 type TLink = {
-  href: string;
-  label: string;
+  href: string
+  label: string
   children?: {
-    label: string;
-    href: string;
-    description?: string;
-  }[];
-};
+    label: string
+    href: string
+    description?: string
+  }[]
+}
 
 const Links: TLink[] = [
   {
@@ -135,10 +135,10 @@ const Links: TLink[] = [
     href: "/access",
     label: "Access",
   },
-];
+]
 
 export default function Navigator() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(false)
   const { resolvedTheme, setTheme, systemTheme } = useTheme()
 
   return (
@@ -228,7 +228,7 @@ export default function Navigator() {
           <input
             type="checkbox"
             onChange={() => {
-              setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
+              setTheme(resolvedTheme === "dark" ? "light" : "dark")
             }}
           />
           {/* sun icon */}
@@ -251,7 +251,7 @@ export default function Navigator() {
         <a className="btn rounded-md">EN/JP</a>
       </div>
     </div>
-  );
+  )
 }
 
 const DialogNavigationMenu = ({
@@ -259,11 +259,11 @@ const DialogNavigationMenu = ({
   parentOpen,
   setParentOpen,
 }: {
-  link: TLink;
-  parentOpen?: boolean;
-  setParentOpen?: React.Dispatch<React.SetStateAction<boolean>>;
+  link: TLink
+  parentOpen?: boolean
+  setParentOpen?: React.Dispatch<React.SetStateAction<boolean>>
 }) => {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(false)
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
@@ -286,9 +286,9 @@ const DialogNavigationMenu = ({
                   "text-base-content "
                 )}
                 onClick={() => {
-                  setOpen(false);
+                  setOpen(false)
                   if (setParentOpen) {
-                    setParentOpen(false);
+                    setParentOpen(false)
                   }
                 }}
               >
@@ -302,5 +302,5 @@ const DialogNavigationMenu = ({
         </ul>
       </DialogContent>
     </Dialog>
-  );
-};
+  )
+}
