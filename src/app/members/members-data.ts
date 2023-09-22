@@ -14,6 +14,26 @@ export type TMember = {
   }[]
 }
 
+const template: TMember = {
+  name: "",
+  role: "",
+  imagePath: "",
+  description: "",
+  links: [
+    {
+      name: "",
+      url: "",
+    },
+  ],
+  stat: [
+    {
+      name: "",
+      value: 0,
+      max: 0,
+    },
+  ],
+}
+
 export const members: TMember[] = [
   {
     name: "Poramet",
