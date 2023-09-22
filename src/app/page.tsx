@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Mission from "./mission.mdx";
-import News from "./news.mdx";
+import Image from "next/image"
+import Mission from "./mission.mdx"
+import News from "./news.mdx"
 
 export default function Home() {
   return (
@@ -21,5 +21,5 @@ export default function Home() {
         </div>
       </div>
     </main>
-  );
+  )
 }

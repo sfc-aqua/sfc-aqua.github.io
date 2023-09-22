@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
 @media (prefers-color-scheme: dark) {
   /* Change bodt data-theme attribute */
 }
-
-

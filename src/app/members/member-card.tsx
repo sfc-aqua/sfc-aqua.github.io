@@ -1,6 +1,6 @@
-import Link from "next/link";
-import { cn } from "@/components/utils";
-import { TMember } from "./members-data";
+import Link from "next/link"
+import { cn } from "@/components/utils"
+import { TMember } from "./members-data"
 
 const MemberCard = ({ member }: { member: TMember }) => (
   <div
@@ -48,6 +48,6 @@ const MemberCard = ({ member }: { member: TMember }) => (
       ))}
     </div>
   </div>
-);
+)
 
-export default MemberCard;
+export default MemberCard
