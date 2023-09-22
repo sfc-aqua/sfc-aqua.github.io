@@ -116,7 +116,7 @@ const publications = [
 
 export default function Page() {
   return (
-    <div className="flex flex-col items-center justify-center py-10 px-2">
+    <div className="flex flex-col items-center justify-center py-10 px-4">
       <div className="prose">
         <div id="books">
           <Books />
@@ -130,6 +130,7 @@ export default function Page() {
               value={publication.id}
               id={publication.id}
               key={publication.id}
+              className="scroll-mt-16"
             >
               <AccordionTrigger>
                 <p className="">{publication.label}</p>
