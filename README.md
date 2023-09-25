@@ -1,5 +1,25 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+
+## Prerequisites
+
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [Docker](https://code.visualstudio.com/docs/devcontainers/containers#_system-requirements)
+* [VSCode Dev Container Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+
+```bash
+$ git clone git@github.com:sfc-aqua/sfc-aqua.github.io.git
+$ cd sfc-aqua.github.io
+# open the cloned repository, if you install the 'code' command, you can do this
+# see detail of the 'code' command is here
+# https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line
+$ code .
+# or manually open it on visual studio code
+```
+
+then you can open the folder with the Dev Container.
+Open command palette by `View > Command Palette` and then type and select `Dev Containers: Rebuild and Reopen in Container`.
+
 ## Getting Started
 
 First, run install the dependencies and the development server:
