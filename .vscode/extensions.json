@@ -2,6 +2,7 @@
   "recommendations": [
     "editorconfig.editorconfig",
     "yoavbls.pretty-ts-errors",
-    "unifiedjs.vscode-mdx"
+    "unifiedjs.vscode-mdx",
+    "ms-vscode-remote.remote-containers"
   ]
 }
