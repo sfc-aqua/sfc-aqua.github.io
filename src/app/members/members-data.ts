@@ -52,6 +52,12 @@ export const members: TMember[] = [
         name: "Google Scholar",
         url: "https://scholar.google.com/citations?user=-YlArkcAAAAJ&hl=en",
       },
+      {
+        name: "IETF Datatracker",
+        url: "https://datatracker.ietf.org/person/rdv@sfc.wide.ad.jp",
+      },
+      { name: "blog", url: "https://rdvlivefromtokyo.blogspot.com/" },
+      { name: "campus web page", url: "https://web.sfc.keio.ac.jp/~rdv/" },
     ],
     stat: [
       { name: "Strength", value: 20, max: 100 },
