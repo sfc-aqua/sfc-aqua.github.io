@@ -63,6 +63,7 @@ export const members: TMember[] = [
   {
     name: "Poramet",
     role: "D1",
+    login: "poramet",
     imagePath: "/images/members/poramet.jpg",
     description: "I'm a student at Keio University",
     links: [
