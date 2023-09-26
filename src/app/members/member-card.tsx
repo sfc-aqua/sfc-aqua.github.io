@@ -14,6 +14,7 @@ const MemberCard = ({ member }: { member: TMember }) => (
       alt={member.name}
     />
     <div className="text-xl font-bold">{member.name}</div>
+    <div className="text-xl font-bold">{member.login}</div>
     <div className="badge badge-primary rounded-full font-bold">
       {member.role}
     </div>
