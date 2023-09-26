@@ -41,13 +41,17 @@ export const members: TMember[] = [
     name: "Rod Van Meter",
     login: "rdv",
     role: "Chief AQUAnaut",
-    imagePath: "/images/members/rdv-kawaguchiko-2204-recropped-small-avatar.jpg",
+    imagePath:
+      "/images/members/rdv-kawaguchiko-2204-recropped-small-avatar.jpg",
     description: "Doing quantum since 2003",
     links: [
       { name: "Mastodon", url: "https://famichiki.jp/@rdviii" },
       { name: "Facebook", url: "https://www.facebook.com/rdviii" },
       { name: "Github", url: "https://github.com/rdviii" },
-      { name: "Google Scholar", url: "https://scholar.google.com/citations?user=-YlArkcAAAAJ&hl=en" },
+      {
+        name: "Google Scholar",
+        url: "https://scholar.google.com/citations?user=-YlArkcAAAAJ&hl=en",
+      },
     ],
     stat: [
       { name: "Strength", value: 20, max: 100 },
