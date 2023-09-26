@@ -58,7 +58,7 @@ const Links: TLink[] = [
     label: "Publications",
     children: [
       {
-        label: "Book",
+        label: "Books",
         href: "/publications#books",
       },
       {

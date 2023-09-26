@@ -23,7 +23,7 @@ import {
 
 const publications = [
   {
-    label: "Book",
+    label: "Books",
     id: "books",
     href: "/publications#books",
     content: <Books />,
@@ -118,12 +118,6 @@ export default function Page() {
   return (
     <div className="flex flex-col items-center justify-center py-10 px-4">
       <div className="prose">
-        <div id="books">
-          <Books />
-        </div>
-        <div id="google-scholar">
-          <GoogleScholar />
-        </div>
         <Accordion type="single" collapsible>
           {publications.map((publication) => (
             <AccordionItem
