@@ -1,11 +1,10 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-
 ## Prerequisites
 
-* [Visual Studio Code](https://code.visualstudio.com/)
-* [Docker](https://code.visualstudio.com/docs/devcontainers/containers#_system-requirements)
-* [VSCode Dev Container Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Docker](https://code.visualstudio.com/docs/devcontainers/containers#_system-requirements)
+- [VSCode Dev Container Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
 ```bash
 $ git clone git@github.com:sfc-aqua/sfc-aqua.github.io.git
