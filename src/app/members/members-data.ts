@@ -87,6 +87,29 @@ export const members: TMember[] = [
     ],
   },
   {
+    name: "Amin Taherkhani",
+    login: "amin",
+    role: "Research Assistant",
+    imagePath: "/images/members/amin.jpg",
+    description: "(|Classical\u27E9+|Quantum\u27E9)/\u221A2 Networking",
+    links: [
+      {
+        name: "Scholar",
+        url: "https://scholar.google.com/citations?user=z8rkbsIAAAAJ&hl=en",
+      },
+      {
+        name: "Github",
+        url: "https://github.com/hhatpsi",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 12, max: 100 },
+      { name: "Agility", value: 4, max: 100 },
+      { name: "Intelligence", value: 4, max: 100 },
+      { name: "Luck", value: 60, max: 100 },
+    ],
+  },
+  {
     name: "Poramet",
     role: "D1",
     login: "poramet",
