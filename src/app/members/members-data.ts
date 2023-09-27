@@ -97,9 +97,9 @@ export const members: TMember[] = [
         name: "Scholar",
         url: "https://scholar.google.com/citations?user=z8rkbsIAAAAJ&hl=en",
       },
-      {
-        name: "Github",
-        url: "https://github.com/hhatpsi",
+      { 
+        name: "Github", 
+        url: "https://github.com/hhatpsi" 
       },
     ],
     stat: [
