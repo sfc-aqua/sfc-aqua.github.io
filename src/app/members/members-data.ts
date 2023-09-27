@@ -38,26 +38,6 @@ const template: TMember = {
 
 export const members: TMember[] = [
   {
-    name: "Amin Taherkhani",
-    login: "amin",
-    role: "Research Assistant",
-    imagePath: "/images/members/amin.jpg",
-    description: "(|Quantum>+|Classical>)/\u221A2 Networking",
-    links: [
-      {
-        name: "Scholar",
-        url: "https://scholar.google.com/citations?user=z8rkbsIAAAAJ&hl=en",
-      },
-      { name: "Github", url: "https://github.com/hhatpsi" },
-    ],
-    stat: [
-      { name: "Strength", value: 12, max: 100 },
-      { name: "Agility", value: 4, max: 100 },
-      { name: "Intelligence", value: 4, max: 100 },
-      { name: "Luck", value: 50, max: 100 },
-    ],
-  },
-  {
     name: "Rod Van Meter",
     login: "rdv",
     role: "Chief AQUAnaut",
@@ -85,6 +65,45 @@ export const members: TMember[] = [
       { name: "Agility", value: 30, max: 100 },
       { name: "Intelligence", value: 93, max: 100 },
       { name: "Luck", value: 10, max: 100 },
+    ],
+  },
+{
+    name: "Michal Hajdušek",
+    role: "Project Associate Professor",
+    login: "michal",
+    imagePath: "/images/members/michal.png",
+    description: "Engineering is hard!",
+    links: [
+      {
+        name: "Google Scholar",
+        url: "https://scholar.google.com/citations?user=8DgauUcAAAAJ&hl=en&oi=ao",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 32, max: 100 },
+      { name: "Agility", value: 68, max: 100 },
+      { name: "Intelligence", value: 91, max: 100 },
+      { name: "Luck", value: 20, max: 100 },
+    ],
+  },
+  {
+    name: "Amin Taherkhani",
+    login: "amin",
+    role: "Research Assistant",
+    imagePath: "/images/members/amin.jpg",
+    description: "(|Classical\u27E9+|Quantum\u27E9)/\u221A2 Networking",
+    links: [
+      {
+        name: "Scholar",
+        url: "https://scholar.google.com/citations?user=z8rkbsIAAAAJ&hl=en",
+      },
+      { name: "Github", url: "https://github.com/hhatpsi" },
+    ],
+    stat: [
+      { name: "Strength", value: 12, max: 100 },
+      { name: "Agility", value: 4, max: 100 },
+      { name: "Intelligence", value: 4, max: 100 },
+      { name: "Luck", value: 60, max: 100 },
     ],
   },
   {
