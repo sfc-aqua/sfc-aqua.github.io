@@ -67,7 +67,7 @@ export const members: TMember[] = [
       { name: "Luck", value: 10, max: 100 },
     ],
   },
-{
+  {
     name: "Michal Hajdušek",
     role: "Project Associate Professor",
     login: "michal",
@@ -97,7 +97,10 @@ export const members: TMember[] = [
         name: "Scholar",
         url: "https://scholar.google.com/citations?user=z8rkbsIAAAAJ&hl=en",
       },
-      { name: "Github", url: "https://github.com/hhatpsi" },
+      {
+        name: "Github",
+        url: "https://github.com/hhatpsi",
+      },
     ],
     stat: [
       { name: "Strength", value: 12, max: 100 },
