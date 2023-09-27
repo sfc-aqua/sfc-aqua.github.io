@@ -74,8 +74,10 @@ export const members: TMember[] = [
     imagePath: "/images/members/michal.png",
     description: "Engineering is hard!",
     links: [
-      { name: "Google Scholar",
-      url: "https://scholar.google.com/citations?user=8DgauUcAAAAJ&hl=en&oi=ao" },
+      {
+        name: "Google Scholar",
+        url: "https://scholar.google.com/citations?user=8DgauUcAAAAJ&hl=en&oi=ao",
+      },
     ],
     stat: [
       { name: "Strength", value: 32, max: 100 },
