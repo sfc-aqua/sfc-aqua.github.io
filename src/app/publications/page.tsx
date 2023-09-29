@@ -129,7 +129,9 @@ export default function Page() {
               <AccordionTrigger>
                 <p className="">{publication.label}</p>
               </AccordionTrigger>
-              <AccordionContent>{publication.content}</AccordionContent>
+              <AccordionContent className="pl-8">
+                {publication.content}
+              </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
