@@ -132,9 +132,7 @@ export const members: TMember[] = [
     login: "dave",
     imagePath: "/images/members/dave.png",
     description: "I'm a student at Keio University",
-    links: [
-      { name: "Github", url: "https://github.com/makotonakai" },
-    ],
+    links: [{ name: "Github", url: "https://github.com/makotonakai" }],
     stat: [
       { name: "Strength", value: 20, max: 100 },
       { name: "Agility", value: 30, max: 100 },
