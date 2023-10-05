@@ -140,4 +140,18 @@ export const members: TMember[] = [
       { name: "Luck", value: 10, max: 100 },
     ],
   },
+  {
+    name: "Kento Samuel Soon",
+    role: "B2",
+    login: "soon",
+    imagePath: "/images/members/soon.png",
+    description: "Quantum information seems interesting",
+    links: [{ name: "Github", url: "https://github.com/res6idue" }],
+    stat: [
+      { name: "Strength", value: 23, max: 100 },
+      { name: "Agility", value: 43, max: 100 },
+      { name: "Intelligence", value: 68, max: 100 },
+      { name: "Luck", value: 99, max: 100 },
+    ],
+  },
 ]
