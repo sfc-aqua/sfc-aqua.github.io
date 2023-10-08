@@ -161,10 +161,13 @@ export const members: TMember[] = [
     imagePath: "/images/members/morishita.png",
     description: "The mastermind behind this kenkyukai",
     links: [
-      { name: "Facebook", url: "https://www.facebook.com/profile.php?id=100028828711584" },
+      {
+        name: "Facebook",
+        url: "https://www.facebook.com/profile.php?id=100028828711584",
+      },
       { name: "BLOG", url: "https://scienceboy.jp/" },
       { name: "Portfolio", url: "https://morishitawataru.com/" },
-      { name: "Github", url: "https://github.com/Durey-creater" }
+      { name: "Github", url: "https://github.com/Durey-creater" },
     ],
     stat: [
       { name: "Strength", value: 100, max: 100 },
