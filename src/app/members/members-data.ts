@@ -164,7 +164,8 @@ export const members: TMember[] = [
       { name: "Facebook", url: "https://www.facebook.com/profile.php?id=100028828711584" },
       { name: "BLOG", url: "https://scienceboy.jp/" },
       { name: "Portfolio", url: "https://morishitawataru.com/" },
-      { name: "Github", url: "https://github.com/Durey-creater" }],
+      { name: "Github", url: "https://github.com/Durey-creater" }
+    ],
     stat: [
       { name: "Strength", value: 100, max: 100 },
       { name: "Agility", value: 100, max: 100 },
