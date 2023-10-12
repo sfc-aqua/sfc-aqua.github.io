@@ -87,6 +87,25 @@ export const members: TMember[] = [
     ],
   },
   {
+    name: "Bernard Ousmane Sane",
+    role: "Project Assistant Professor",
+    login: "bernard",
+    imagePath: "/images/members/bernard.jpg",
+    description: "Distributed Quantum Error Correction ",
+    links: [
+      {
+        name: "Google Scholar",
+        url: "https://scholar.google.com/citations?user=YMJbS5wAAAAJ&hl=en",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 32, max: 100 },
+      { name: "Agility", value: 68, max: 100 },
+      { name: "Intelligence", value: 91, max: 100 },
+      { name: "Luck", value: 20, max: 100 },
+    ],
+  },
+  {
     name: "Amin Taherkhani",
     login: "amin",
     role: "Research Assistant",
