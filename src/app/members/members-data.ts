@@ -149,7 +149,7 @@ export const members: TMember[] = [
     name: "Sara A. Metwalli",
     role: "D4",
     login: "sara",
-    imagePath: "/images/members/sara.jpg",
+    imagePath: "/images/members/sara.JPG",
     description: "I'm a student at Keio University",
     links: [
       { name: "Facebook", url: "" },
