@@ -146,6 +146,23 @@ export const members: TMember[] = [
     ],
   },
   {
+    name: "Sara A. Metwalli",
+    role: "D4",
+    login: "sara",
+    imagePath: "/images/members/sara.jpg",
+    description: "I'm a student at Keio University",
+    links: [
+      { name: "Facebook", url: "" },
+      { name: "Github", url: "" },
+    ],
+    stat: [
+      { name: "Strength", value: 20, max: 100 },
+      { name: "Agility", value: 30, max: 100 },
+      { name: "Intelligence", value: 50, max: 100 },
+      { name: "Luck", value: 10, max: 100 },
+    ],
+  },
+  {
     name: "Makoto Nakai",
     role: "M2",
     login: "dave",
