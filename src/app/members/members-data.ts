@@ -163,6 +163,26 @@ export const members: TMember[] = [
     ],
   },
   {
+    name: "Naphan Benchasattabuse",
+    role: "D3+",
+    login: "whit3z",
+    imagePath: "/images/members/whit3z.png",
+    description: "I don't know what I'm doing.",
+    links: [
+      {
+        name: "Google Scholar",
+        url: "https://scholar.google.com/citations?user=FRsTsksAAAAJ",
+      },
+      { name: "Github", url: "https://github.com/Naphann" },
+    ],
+    stat: [
+      { name: "Strength", value: 77, max: 100 },
+      { name: "Agility", value: 88, max: 100 },
+      { name: "Intelligence", value: 50, max: 100 },
+      { name: "Luck", value: 122, max: 100 },
+    ],
+  },
+  {
     name: "Makoto Nakai",
     role: "M2",
     login: "dave",
