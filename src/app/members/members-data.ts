@@ -212,4 +212,23 @@ export const members: TMember[] = [
       { name: "Luck", value: 100, max: 100 },
     ],
   },
+  {
+    name: "Marii Koyama",
+    login: "mia",
+    role: "B2",
+    imagePath: "/images/members/mia.png",
+    description: "I'm a student at Keio University",
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/Marie2222",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 60, max: 100 },
+      { name: "Agility", value: 70, max: 100 },
+      { name: "Intelligence", value: 30, max: 100 },
+      { name: "Luck", value: 98, max: 100 },
+    ],
+  },
 ]
