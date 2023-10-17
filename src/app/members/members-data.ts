@@ -213,22 +213,19 @@ export const members: TMember[] = [
     ],
   },
   {
-    name: "Monet Tokuyama Friedrich",
+    name: "Monet Tokuyama",
     role: "B3",
     login: "bob",
     imagePath: "/images/members/bob.jpg",
     description: "I like sushi",
     links: [
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/funkeyteth/",
-      },
-
+      { name: "Github", url: "https://github.com/funkeyteth" },
+      { name: "Instagram", url: "https://www.instagram.com/funkeyteth/" },
     ],
     stat: [
       { name: "Strength", value: 40, max: 100 },
       { name: "Agility", value: 100, max: 100 },
-      { name: "Intelligence", value: 5, max: 100 },
+      { name: "Intelligence", value: 10, max: 100 },
       { name: "Luck", value: 50, max: 100 },
     ],
   },
