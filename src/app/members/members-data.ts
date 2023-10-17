@@ -253,7 +253,7 @@ export const members: TMember[] = [
     name: "Marii Koyama",
     login: "mia",
     role: "B2",
-    imagePath: "/images/members/mia.png",
+    imagePath: "/images/members/mia.jpg",
     description: "I'm a student at Keio University",
     links: [
       {
