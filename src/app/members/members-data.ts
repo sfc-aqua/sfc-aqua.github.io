@@ -64,7 +64,7 @@ export const members: TMember[] = [
       { name: "Strength", value: 20, max: 100 },
       { name: "Agility", value: 30, max: 100 },
       { name: "Intelligence", value: 93, max: 100 },
-      { name: "Luck", value: 10, max: 100 },
+      { name: "Luck", value: 100, max: 100 },
     ],
   },
   {
@@ -283,6 +283,25 @@ export const members: TMember[] = [
     ],
   },
   {
+    name: "Austin Huang",
+    login: "austinh",
+    role: "M2",
+    imagePath: "/images/members/austin.png",
+    description: "I do quantum chemistry with quantum computers",
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/austingmhuang",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 15, max: 100 },
+      { name: "Agility", value: 25, max: 100 },
+      { name: "Intelligence", value: 45, max: 100 },
+      { name: "Luck", value: 88, max: 100 },
+    ],
+  },
+  {
     name: "Hikaru Yokomori",
     login: "voy",
     role: "B4",
@@ -305,14 +324,88 @@ export const members: TMember[] = [
     name: "Xu Haoran",
     login: "Joe",
     role: "B1",
-    imagePath: "/images/memvers/Joe.jpg",
+    imagePath: "/images/members/Joe.jpg",
     description: "May the force be with you",
-    links: [{ name: "Github", url: "https://github.com/Joe-Xuu" }],
+    links: [
+      { name: "Github", url: "https://github.com/Joe-Xuu" }
+    ],
     stat: [
       { name: "Strength", value: 50, max: 100 },
       { name: "Agility", value: 50, max: 100 },
       { name: "Intelligence", value: 50, max: 100 },
       { name: "Luck", value: 50, max: 100 },
+    ],
+  },
+  {
+    name: "Shreya Kafle",
+    login: "riya",
+    role: "B2",
+    imagePath: "/images/members/riya.jpg",
+    description: "I'm enjoying my life;)",
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/s08chan",
+      },
+      { name: "Instagram", url: "https://www.instagram.com/s08j127/" },
+    ],
+    stat: [
+      { name: "Strength", value: 40, max: 100 },
+      { name: "Agility", value: 50, max: 100 },
+      { name: "Intelligence", value: 10, max: 100 },
+      { name: "Luck", value: 80, max: 100 },
+    ],
+  },
+  {
+    name: "Tetsuma Ariyoshi",
+    login: "mono",
+    role: "B1",
+    imagePath: "/images/members/mono.png",
+    description: "I'm a student at Keio University",
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/Mononon-120",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 10, max: 100 },
+      { name: "Agility", value: 70, max: 100 },
+      { name: "Intelligence", value: 10, max: 100 },
+      { name: "Luck", value: 50, max: 100 },
+    ],
+  },
+  {
+    name: "Junseo Kwak",
+    role: "B2",
+    login: "junseo",
+    imagePath: "/images/members/junseo.jpg",
+    description: "Student at Keio University",
+    links: [{ name: "Github", url: "https://github.com/kwakie0511" }],
+    stat: [
+      { name: "Strength", value: 40, max: 100 },
+      { name: "Agility", value: 40, max: 100 },
+      { name: "Intelligence", value: 20, max: 100 },
+      { name: "Luck", value: 80, max: 100 },
+    ],
+  },
+  {
+    name: "Haruka Sakate",
+    login: "l0gic",
+    role: "B1",
+    imagePath: "/images/members/logic.jpg",
+    description: "I'm a student at Keio University",
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/HarukaSakate",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 60, max: 100 },
+      { name: "Agility", value: 70, max: 100 },
+      { name: "Intelligence", value: 30, max: 100 },
+      { name: "Luck", value: 98, max: 100 },
     ],
   },
 ]
