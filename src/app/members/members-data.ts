@@ -283,6 +283,7 @@ export const members: TMember[] = [
     ],
   },
   {
+<<<<<<< HEAD
     name: "Junseo Kwak",
     role: "B2",
     login: "junseo",
@@ -294,6 +295,43 @@ export const members: TMember[] = [
       { name: "Agility", value: 40, max: 100 },
       { name: "Intelligence", value: 20, max: 100 },
       { name: "Luck", value: 80, max: 100 },
+=======
+    name: "Austin Huang",
+    login: "austinh",
+    role: "M2",
+    imagePath: "/images/members/austin.png",
+    description: "I do quantum chemistry with quantum computers",
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/austingmhuang",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 15, max: 100 },
+      { name: "Agility", value: 25, max: 100 },
+      { name: "Intelligence", value: 45, max: 100 },
+      { name: "Luck", value: 88, max: 100 },
+    ],
+  },
+  {
+    name: "Hikaru Yokomori",
+    login: "voy",
+    role: "B4",
+    imagePath: "/images/members/voy.jpg",
+    description: "Adventuring Science",
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/Hikaru7-7",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 30, max: 100 },
+      { name: "Agility", value: 30, max: 100 },
+      { name: "Intelligence", value: 30, max: 100 },
+      { name: "Luck", value: 99, max: 100 },
+>>>>>>> main
     ],
   },
 ]
