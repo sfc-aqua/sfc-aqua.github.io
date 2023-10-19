@@ -97,12 +97,13 @@ export const members: TMember[] = [
       { name: "IETF Datatracker", url: "https://datatracker.ietf.org/person/shota@wide.ad.jp"},
       { name: "Personal website", url: "https://shota.io/" },
       { name: "Project website", url: "https://qitf.org/" },
+      { name: "See also", url: "https://r4d.mercari.com/" }
     ],
     stat: [
-      { name: "Strength", value: 9223372036854775808 , max: 100 },
-      { name: "Agility", value: 9223372036854775808, max: 100 },
-      { name: "Intelligence", value: 9223372036854775808, max: 100 },
-      { name: "Luck", value: 9223372036854775808, max: 100 },
+      { name: "Mental Strength", value: 100 , max: 100 },
+      { name: "Mail Response Agility", value: 20, max: 100 },
+      { name: "Intelligence", value: 20, max: 100 },
+      { name: "Luck", value: 100, max: 100 },
     ],
   },
   {
