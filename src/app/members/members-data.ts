@@ -376,6 +376,20 @@ export const members: TMember[] = [
     ],
   },
   {
+    name: "Xu Haoran",
+    login: "joo",
+    role: "B1",
+    imagePath: "/images/members/Joe.jpg",
+    description: "May the force be with you",
+    links: [{ name: "Github", url: "https://github.com/Joe-Xuu" }],
+    stat: [
+      { name: "Strength", value: 50, max: 100 },
+      { name: "Agility", value: 50, max: 100 },
+      { name: "Intelligence", value: 50, max: 100 },
+      { name: "Luck", value: 50, max: 100 },
+    ],
+  },
+  {
     name: "Shreya Kafle",
     login: "riya",
     role: "B2",
