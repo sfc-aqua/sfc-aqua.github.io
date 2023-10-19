@@ -283,67 +283,6 @@ export const members: TMember[] = [
     ],
   },
   {
-<<<<<<< HEAD
-=======
-    name: "Austin Huang",
-    login: "austinh",
-    role: "M2",
-    imagePath: "/images/members/austin.png",
-    description: "I do quantum chemistry with quantum computers",
-    links: [
-      {
-        name: "Github",
-        url: "https://github.com/austingmhuang",
-      },
-    ],
-    stat: [
-      { name: "Strength", value: 15, max: 100 },
-      { name: "Agility", value: 25, max: 100 },
-      { name: "Intelligence", value: 45, max: 100 },
-      { name: "Luck", value: 88, max: 100 },
-    ],
-  },
-  {
-    name: "Hikaru Yokomori",
-    login: "voy",
-    role: "B4",
-    imagePath: "/images/members/voy.jpg",
-    description: "Adventuring Science",
-    links: [
-      {
-        name: "Github",
-        url: "https://github.com/Hikaru7-7",
-      },
-    ],
-    stat: [
-      { name: "Strength", value: 30, max: 100 },
-      { name: "Agility", value: 30, max: 100 },
-      { name: "Intelligence", value: 30, max: 100 },
-      { name: "Luck", value: 99, max: 100 },
-    ],
-  },
-  {
-    name: "Shreya Kafle",
-    login: "riya",
-    role: "B2",
-    imagePath: "/images/members/riya.jpg",
-    description: "I'm enjoying my life;)",
-    links: [
-      {
-        name: "Github",
-        url: "https://github.com/s08chan",
-      },
-      { name: "Instagram", url: "https://www.instagram.com/s08j127/" },
-    ],
-    stat: [
-      { name: "Strength", value: 40, max: 100 },
-      { name: "Agility", value: 50, max: 100 },
-      { name: "Intelligence", value: 10, max: 100 },
-      { name: "Luck", value: 80, max: 100 },
-    ],
-  },
-  {
->>>>>>> main
     name: "Tetsuma Ariyoshi",
     login: "mono",
     role: "B1",
@@ -363,7 +302,6 @@ export const members: TMember[] = [
     ],
   },
   {
-<<<<<<< HEAD
     name: "Junseo Kwak",
     role: "B2",
     login: "junseo",
@@ -375,7 +313,9 @@ export const members: TMember[] = [
       { name: "Agility", value: 40, max: 100 },
       { name: "Intelligence", value: 20, max: 100 },
       { name: "Luck", value: 80, max: 100 },
-=======
+    ],
+  },
+  {
     name: "Haruka Sakate",
     login: "l0gic",
     role: "B1",
@@ -392,7 +332,6 @@ export const members: TMember[] = [
       { name: "Agility", value: 70, max: 100 },
       { name: "Intelligence", value: 30, max: 100 },
       { name: "Luck", value: 98, max: 100 },
->>>>>>> main
     ],
   },
 ]
