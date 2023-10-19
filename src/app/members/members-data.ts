@@ -282,4 +282,18 @@ export const members: TMember[] = [
       { name: "Luck", value: 98, max: 100 },
     ],
   },
+  {
+    name: "Junseo Kwak",
+    role: "B2",
+    login: "junseo",
+    imagePath: "/images/members/junseo.jpg",
+    description: "Student at Keio University",
+    links: [{ name: "Github", url: "https://github.com/kwakie0511" }],
+    stat: [
+      { name: "Strength", value: 40, max: 100 },
+      { name: "Agility", value: 40, max: 100 },
+      { name: "Intelligence", value: 20, max: 100 },
+      { name: "Luck", value: 80, max: 100 },
+    ],
+  },
 ]
