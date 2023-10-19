@@ -64,7 +64,7 @@ export const members: TMember[] = [
       { name: "Strength", value: 20, max: 100 },
       { name: "Agility", value: 30, max: 100 },
       { name: "Intelligence", value: 93, max: 100 },
-      { name: "Luck", value: 10, max: 100 },
+      { name: "Luck", value: 100, max: 100 },
     ],
   },
   {
@@ -225,6 +225,28 @@ export const members: TMember[] = [
     ],
   },
   {
+    name: "Hyensoo Choi",
+    role: "B3",
+    login: "collodi",
+    imagePath: "/images/members/collodi.jpg",
+    description:
+      "… , that this fear of erring is really the error itself. (G.W.F. Hegel)",
+    links: [
+      { name: "Github", url: "https://github.com/sierpinskiii" },
+      { name: "blog", url: "https://collodi.io/" },
+      {
+        name: "Google Scholar",
+        url: "https://scholar.google.com/citations?user=gvlU-vQAAAAJ",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 20, max: 100 },
+      { name: "Agility", value: 70, max: 100 },
+      { name: "Intelligence", value: 100, max: 100 },
+      { name: "Luck", value: 99, max: 100 },
+    ],
+  },
+  {
     name: "Wataru Morishita",
     role: "B3",
     login: "morishita",
@@ -357,6 +379,21 @@ export const members: TMember[] = [
       { name: "Agility", value: 70, max: 100 },
       { name: "Intelligence", value: 10, max: 100 },
       { name: "Luck", value: 50, max: 100 },
+    ],
+  },
+
+  {
+    name: "Junseo Kwak",
+    role: "B2",
+    login: "junseo",
+    imagePath: "/images/members/junseo.jpg",
+    description: "Student at Keio University",
+    links: [{ name: "Github", url: "https://github.com/kwakie0511" }],
+    stat: [
+      { name: "Strength", value: 40, max: 100 },
+      { name: "Agility", value: 40, max: 100 },
+      { name: "Intelligence", value: 20, max: 100 },
+      { name: "Luck", value: 80, max: 100 },
     ],
   },
   {
