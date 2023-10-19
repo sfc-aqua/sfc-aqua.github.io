@@ -1,0 +1,6 @@
+* @PorametPat
+
+*.js @zigen
+*.json @zigen
+*.ts @zigen
+*.tsx @zigen

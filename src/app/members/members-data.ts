@@ -197,6 +197,20 @@ export const members: TMember[] = [
     ],
   },
   {
+    name: "Yinjie Zhou",
+    role: "M2",
+    login: "syu",
+    imagePath: "/images/members/syu.png",
+    description: "I'm a student at Keio University",
+    links: [{ name: "Github", url: "" }],
+    stat: [
+      { name: "Strength", value: 5, max: 100 },
+      { name: "Agility", value: 15, max: 100 },
+      { name: "Intelligence", value: 10, max: 100 },
+      { name: "Luck", value: 100, max: 100 },
+    ],
+  },
+  {
     name: "Kento Samuel Soon",
     role: "B2",
     login: "soon",
@@ -285,6 +299,25 @@ export const members: TMember[] = [
       { name: "Agility", value: 25, max: 100 },
       { name: "Intelligence", value: 45, max: 100 },
       { name: "Luck", value: 88, max: 100 },
+    ]
+  },
+  {
+    name: "Hikaru Yokomori",
+    login: "voy",
+    role: "B4",
+    imagePath: "/images/members/voy.jpg",
+    description: "Adventuring Science",
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/Hikaru7-7",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 30, max: 100 },
+      { name: "Agility", value: 30, max: 100 },
+      { name: "Intelligence", value: 30, max: 100 },
+      { name: "Luck", value: 99, max: 100 },
     ],
   },
 ]
