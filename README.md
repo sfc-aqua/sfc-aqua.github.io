@@ -21,7 +21,9 @@ Open command palette by `View > Command Palette` and then type and select `Dev C
 
 ## Getting Started
 
-First, run install the dependencies and the development server:
+First, run install the dependencies. You can do it with your package manager, or run `direnv allow` under the project directory to use `nix-shell` if you're a nix user.
+
+Then, execute the development server:
 
 ```bash
 $ npm install
@@ -30,7 +32,9 @@ $ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `src/app/page.tsx`. The page auto-updates as you edit the file.
+
+To edit your profile on the Members page, open the `src/app/members/members-data.ts`, then edit/add your profile object appropriately under `const members: TMember[]`.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
