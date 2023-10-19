@@ -89,20 +89,20 @@ export const members: TMember[] = [
   {
     name: "Shota Nagayama",
     login: "shota",
-    role: "QITF Director/JST Moonshot Project Manager/Project Associate Professor",
+    role: "QITF Director",
     description: "Love & Peace & Inter-organizational effort to realize Quantum Computer Networks.",
-    imagePath: "/images/members/shota-nagayama.jpg",
+    imagePath: "/images/members/shota-nagayama1.jpg",
     links: [
+      { name: "quantum internet task force", url: "https://qitf.org/" },
+      { name: "JST Moonshot Goal 6 Project Manager", url: "https://www.jst.go.jp/moonshot/program/goal6/6C_nagayama.html"},
       { name: "Google Scholar", url: "https://scholar.google.com/citations?user=NyfLP0IAAAAJ&hl=en"},
       { name: "IETF Datatracker", url: "https://datatracker.ietf.org/person/shota@wide.ad.jp"},
-      { name: "Personal website", url: "https://shota.io/" },
-      { name: "Project website", url: "https://qitf.org/" },
-      { name: "See also", url: "https://r4d.mercari.com/" }
+      { name: "Mercari R4D Senior Researcher", url: "https://r4d.mercari.com/" },
     ],
     stat: [
-      { name: "Mental Strength", value: 100 , max: 100 },
-      { name: "Mail Response Agility", value: 20, max: 100 },
-      { name: "Intelligence", value: 20, max: 100 },
+      { name: "Strength", value: 70 , max: 100 },
+      { name: "Mail Response Agility", value: 30, max: 100 },
+      { name: "Counterintelligence", value: 40, max: 100 },
       { name: "Luck", value: 100, max: 100 },
     ],
   },
