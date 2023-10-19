@@ -331,9 +331,7 @@ export const members: TMember[] = [
         name: "Github",
         url: "https://github.com/s08chan",
       },
-      {  name: "Instagram",
-        url: "https://www.instagram.com/s08j127/",
-      },
+      { name: "Instagram", url: "https://www.instagram.com/s08j127/" },
     ],
     stat: [
       { name: "Strength", value: 40, max: 100 },
@@ -362,4 +360,3 @@ export const members: TMember[] = [
     ],
   },
 ]
-
