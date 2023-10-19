@@ -376,6 +376,6 @@ export const members: TMember[] = [
       { name: "Agility", value: 70, max: 100 },
       { name: "Intelligence", value: 30, max: 100 },
       { name: "Luck", value: 98, max: 100 },
-      ],
+    ],
   },
 ]
