@@ -299,7 +299,7 @@ export const members: TMember[] = [
       { name: "Agility", value: 25, max: 100 },
       { name: "Intelligence", value: 45, max: 100 },
       { name: "Luck", value: 88, max: 100 },
-    ]
+    ],
   },
   {
     name: "Hikaru Yokomori",
