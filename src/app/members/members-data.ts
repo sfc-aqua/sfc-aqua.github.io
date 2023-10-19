@@ -326,9 +326,7 @@ export const members: TMember[] = [
     role: "B1",
     imagePath: "/images/members/Joe.jpg",
     description: "May the force be with you",
-    links: [
-      { name: "Github", url: "https://github.com/Joe-Xuu" }
-    ],
+    links: [{ name: "Github", url: "https://github.com/Joe-Xuu" }],
     stat: [
       { name: "Strength", value: 50, max: 100 },
       { name: "Agility", value: 50, max: 100 },
