@@ -87,6 +87,25 @@ export const members: TMember[] = [
     ],
   },
   {
+    name: "Shota Nagayama",
+    login: "shota",
+    role: "QITF Director/JST Moonshot Project Manager/Project Associate Professor",
+    description: "Love & Peace & Inter-organizational effort to realize Quantum Computer Networks.",
+    imagePath: "/images/members/shota-nagayama.jpg",
+    links: [
+      { name: "Google Scholar", url: "https://scholar.google.com/citations?user=NyfLP0IAAAAJ&hl=en"},
+      { name: "IETF Datatracker", url: "https://datatracker.ietf.org/person/shota@wide.ad.jp"},
+      { name: "Personal website", url: "https://shota.io/" },
+      { name: "Project website", url: "https://qitf.org/" },
+    ],
+    stat: [
+      { name: "Strength", value: 9223372036854775808 , max: 100 },
+      { name: "Agility", value: 9223372036854775808, max: 100 },
+      { name: "Intelligence", value: 9223372036854775808, max: 100 },
+      { name: "Luck", value: 9223372036854775808, max: 100 },
+    ],
+  },
+  {
     name: "Bernard Ousmane Sane",
     role: "Project Assistant Professor",
     login: "bernard",
