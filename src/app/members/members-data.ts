@@ -225,6 +225,20 @@ export const members: TMember[] = [
     ],
   },
   {
+    name: "Kiichi Hojo",
+    role: "B1",
+    login: "kiichi",
+    imagePath: "/images/members/Kiichi.png",
+    description: "Let's give it a try",
+    links: [{ name: "Github", url: "https://github.com/kiichi123" }],
+    stat: [
+      { name: "Strength", value: 90, max: 100 },
+      { name: "Agility", value: 40, max: 100 },
+      { name: "Intelligence", value: 70, max: 100 },
+      { name: "Luck", value: 50, max: 100 },
+    ],
+  },
+  {
     name: "Wataru Morishita",
     role: "B3",
     login: "morishita",
