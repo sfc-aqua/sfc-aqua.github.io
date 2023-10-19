@@ -297,6 +297,7 @@ export const members: TMember[] = [
     stat: [
       { name: "Strength", value: 10, max: 100 },
       { name: "Agility", value: 10, max: 100 },
+      { name: "Agility", value: 70, max: 100 },
       { name: "Intelligence", value: 10, max: 100 },
       { name: "Luck", value: 50, max: 100 },
     ],
