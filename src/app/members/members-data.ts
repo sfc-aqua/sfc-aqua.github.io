@@ -344,7 +344,7 @@ export const members: TMember[] = [
   },
   {
     name: "Xu Haoran",
-    login: "Joe",
+    login: "joo",
     role: "B1",
     imagePath: "/images/members/Joe.jpg",
     description: "May the force be with you",
