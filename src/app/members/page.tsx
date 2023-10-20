@@ -11,13 +11,13 @@ export default function Page() {
   return (
     <div className="flex flex-col items-center justify-center w-full">
       {/* top section with image */}
-      <div
-        className="flex flex-col items-center justify-center w-full h-[50vh] bg-cover bg-center bg-gradient-to-b to-primary/25 from-primary-100"
-        style={{
-          backgroundImage: `url(/images/members/aqua-group-221117.jpg)`,
-        }}
-      ></div>
-
+      <div className="overscroll-auto overflow-x-scroll w-full h-[50vh] l:h-[55vh] xl:h-[60vh] bg-gradient-to-b to-primary/25 from-primary-100">
+        <img
+          src="/images/members/aqua-group-221117.jpg"
+          alt="Group"
+          className="min-w-[1000px] min-h-[361px]"
+        />
+      </div>
       <div className="flex flex-col items-center justify-center mx-10 py-10">
         <div className="text-4xl font-bold">Members</div>
         <div className="text-base-content">The people in our group</div>
