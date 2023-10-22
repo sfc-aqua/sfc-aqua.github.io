@@ -26,8 +26,8 @@ export default function Page() {
       >
         <img
           src="/images/members/aqua-group-221117.jpg"
-          alt="Group"
-          className="object-center min-w-[1000px] min-h-[361px]"
+          alt="Picture of AQUA Members"
+          className="min-w-[1000px] min-h-[361px]"
         />
       </div>
       <div className="flex flex-col items-center justify-center mx-10 py-10">
