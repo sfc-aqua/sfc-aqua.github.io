@@ -7,20 +7,23 @@ import { cn } from "@/components/utils"
 
 export default function Page() {
   const [searchQuery, setSearchQuery] = useState("")
-  const containerRef = useRef<HTMLDivElement | null>(null);
+  const containerRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
     const container = containerRef.current
-    if(container){
-      const scrollAmount = (container.scrollWidth - container.clientWidth)/2
-      container.scrollLeft = scrollAmount;
+    if (container) {
+      const scrollAmount = (container.scrollWidth - container.clientWidth) / 2
+      container.scrollLeft = scrollAmount
     }
   }, [])
 
   return (
     <div className="flex flex-col items-center justify-center w-full">
       {/* top section with image */}
-      <div ref={containerRef} className="overscroll-auto overflow-x-scroll w-full h-[50vh] l:h-[55vh] xl:h-[60vh] bg-gradient-to-b to-primary/25 from-primary-100">
+      <div
+        ref={containerRef}
+        className="overscroll-auto overflow-x-scroll w-full h-[50vh] l:h-[55vh] xl:h-[60vh] bg-gradient-to-b to-primary/25 from-primary-100"
+      >
         <img
           src="/images/members/aqua-group-221117.jpg"
           alt="Group"
