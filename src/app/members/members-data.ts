@@ -428,7 +428,25 @@ export const members: TMember[] = [
       { name: "Luck", value: 50, max: 100 },
     ],
   },
-
+  {
+    name: "Mikawa-Mallery Takumi",
+    role: "B1",
+    login: "tsukue",
+    imagePath: "/images/members/tsukue.png",
+    description: "Clueless",
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/TsukueRyu",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 0, max: 100 },
+      { name: "Agility", value: 0, max: 100 },
+      { name: "Intelligence", value: 0, max: 100 },
+      { name: "Luck", value: 0, max: 100 },
+    ],
+  },
   {
     name: "Junseo Kwak",
     role: "B2",
