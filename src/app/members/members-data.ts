@@ -269,6 +269,9 @@ export const members: TMember[] = [
       { name: "Agility", value: 40, max: 100 },
       { name: "Intelligence", value: 70, max: 100 },
       { name: "Luck", value: 50, max: 100 },
+    ],
+  },
+  {
     name: "Hyensoo Choi",
     role: "B3",
     login: "collodi",
