@@ -244,6 +244,25 @@ export const members: TMember[] = [
     ],
   },
   {
+    name: "Michael Peyron",
+    login: "michael",
+    role: "M1",
+    imagePath: "/images/members/michael.jpg",
+    description: "Its October and there is still a taste of summer in the air",
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/AliceMichael",
+      },
+    ],
+    stat: [
+      { name: "BTS Jimin is cool", value: 100, max: 100 },
+      { name: "Capybara", value: 77, max: 100 },
+      { name: "Stupidity", value: 100, max: 100 },
+      { name: "Luck, I dont believe in luck", value: 100, max: 100 },
+    ],
+  },
+  {
     name: "Kento Samuel Soon",
     role: "B2",
     login: "soon",
@@ -443,6 +462,25 @@ export const members: TMember[] = [
     ],
   },
   {
+    name: "YUMOTO Kento",
+    login: "ken-tea",
+    role: "B4",
+    imagePath: "/images/members/kent_tea.png",
+    description: "I wanna go to Peking and Shenzhen.",
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/KentTea",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 80, max: 100 },
+      { name: "Agility", value: 30, max: 100 },
+      { name: "Intelligence", value: 100, max: 100 },
+      { name: "Luck", value: 100, max: 100 },
+    ],
+  },
+  {
     name: "Mikawa-Mallery Takumi",
     role: "B1",
     login: "tsukue",
@@ -492,6 +530,45 @@ export const members: TMember[] = [
       { name: "Agility", value: 70, max: 100 },
       { name: "Intelligence", value: 30, max: 100 },
       { name: "Luck", value: 98, max: 100 },
+    ],
+  },
+  {
+    name: "Akash prasad",
+    login: "pura",
+    role: "B1",
+    imagePath: "/images/members/pura.jpg",
+    description: "I am a first semester student here",
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/purasfc",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 30, max: 100 },
+      { name: "Agility", value: 30, max: 100 },
+      { name: "Intelligence", value: 30, max: 100 },
+      { name: "Luck", value: 99, max: 100 },
+    ],
+  },
+  {
+    name: "Aman Y. Tekleab",
+    login: "aman",
+    role: "B2",
+    imagePath: "/images/members/darkifywalltemp.jpg",
+    description: "I'm me",
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/amanchapi",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 10, max: 100 },
+      { name: "Agility", value: 10, max: 100 },
+      { name: "Agility", value: 70, max: 100 },
+      { name: "Intelligence", value: 10, max: 100 },
+      { name: "Luck", value: 50, max: 100 },
     ],
   },
 ]
