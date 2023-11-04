@@ -557,4 +557,22 @@ export const members: TMember[] = [
       { name: "Luck", value: 50, max: 100 },
     ],
   },
+  {
+    name: "Samanvay Sharma",
+    login: "sam",
+    role: "M2",
+    imagePath:
+      "/images/members/sam.png",
+    description: "",
+    links: [
+      { name: "Github", url: "https://github.com/starktech23" },
+      { name: "Twitter", url: "https://twitter.com/AnsatzX" },
+    ],
+    stat: [
+      { name: "Strength", value: 96, max: 100 },
+      { name: "Agility", value: 73, max: 100 },
+      { name: "Intelligence", value: 42, max: 100 },
+      { name: "Luck", value: 100, max: 100 },
+    ],
+  },
 ]
