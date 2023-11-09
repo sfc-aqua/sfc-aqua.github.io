@@ -272,7 +272,7 @@ const DialogNavigationMenu = ({
           {link.label}
         </NavigationMenuLink>
       </DialogTrigger>
-      <DialogContent className="bg-base-100 w-[90%] max-h-[90vh] overflow-y-scroll">
+      <DialogContent className="bg-base-100 w-[90%] max-h-[90vh] overflow-y-scroll border-0 rounded-lg">
         <DialogHeader>
           <DialogTitle>{link.label} Menu</DialogTitle>
         </DialogHeader>
