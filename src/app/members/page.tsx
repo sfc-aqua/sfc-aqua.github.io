@@ -37,7 +37,7 @@ export default function Page() {
 
         <div
           className={cn(
-            "flex flex-wrap items-center justify-center mt-10 gap-4 "
+            "grid grid-rows-4 grid-flow-col items-center justify-center mt-10 gap-4 "
           )}
         >
           {members
