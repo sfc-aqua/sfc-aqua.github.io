@@ -87,6 +87,39 @@ export const members: TMember[] = [
     ],
   },
   {
+    name: "Shota Nagayama",
+    login: "shota",
+    role: "QITF Director",
+    description:
+      "Love & Peace & Comprehensive effort to realize Quantum Computer Networks.",
+    imagePath: "/images/members/shota-nagayama1.jpg",
+    links: [
+      { name: "quantum internet task force", url: "https://qitf.org/" },
+      {
+        name: "JST Moonshot Goal 6 Project Manager",
+        url: "https://www.jst.go.jp/moonshot/program/goal6/6C_nagayama.html",
+      },
+      {
+        name: "Google Scholar",
+        url: "https://scholar.google.com/citations?user=NyfLP0IAAAAJ&hl=en",
+      },
+      {
+        name: "IETF Datatracker",
+        url: "https://datatracker.ietf.org/person/shota@wide.ad.jp",
+      },
+      {
+        name: "Mercari R4D Senior Researcher",
+        url: "https://r4d.mercari.com/",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 70, max: 100 },
+      { name: "Mail Response Agility", value: 50, max: 100 },
+      { name: "Intelligence", value: 40, max: 100 },
+      { name: "Luck", value: 100, max: 100 },
+    ],
+  },
+  {
     name: "Bernard Ousmane Sane",
     role: "Project Assistant Professor",
     login: "bernard",
@@ -208,6 +241,25 @@ export const members: TMember[] = [
       { name: "Agility", value: 15, max: 100 },
       { name: "Intelligence", value: 10, max: 100 },
       { name: "Luck", value: 100, max: 100 },
+    ],
+  },
+  {
+    name: "Michael Peyron",
+    login: "michael",
+    role: "M1",
+    imagePath: "/images/members/michael.jpg",
+    description: "Its October and there is still a taste of summer in the air",
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/AliceMichael",
+      },
+    ],
+    stat: [
+      { name: "BTS Jimin is cool", value: 100, max: 100 },
+      { name: "Capybara", value: 77, max: 100 },
+      { name: "Stupidity", value: 100, max: 100 },
+      { name: "Luck, I dont believe in luck", value: 100, max: 100 },
     ],
   },
   {
@@ -343,6 +395,20 @@ export const members: TMember[] = [
     ],
   },
   {
+    name: "Xu Haoran",
+    login: "joo",
+    role: "B1",
+    imagePath: "/images/members/Joe.jpg",
+    description: "May the force be with you",
+    links: [{ name: "Github", url: "https://github.com/Joe-Xuu" }],
+    stat: [
+      { name: "Strength", value: 50, max: 100 },
+      { name: "Agility", value: 50, max: 100 },
+      { name: "Intelligence", value: 50, max: 100 },
+      { name: "Luck", value: 50, max: 100 },
+    ],
+  },
+  {
     name: "Shreya Kafle",
     login: "riya",
     role: "B2",
@@ -381,7 +447,44 @@ export const members: TMember[] = [
       { name: "Luck", value: 50, max: 100 },
     ],
   },
-
+  {
+    name: "YUMOTO Kento",
+    login: "ken-tea",
+    role: "B4",
+    imagePath: "/images/members/kent_tea.png",
+    description: "I wanna go to Peking and Shenzhen.",
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/KentTea",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 80, max: 100 },
+      { name: "Agility", value: 30, max: 100 },
+      { name: "Intelligence", value: 100, max: 100 },
+      { name: "Luck", value: 100, max: 100 },
+    ],
+  },
+  {
+    name: "Mikawa-Mallery Takumi",
+    role: "B1",
+    login: "tsukue",
+    imagePath: "/images/members/tsukue.png",
+    description: "Clueless",
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/TsukueRyu",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 0, max: 100 },
+      { name: "Agility", value: 0, max: 100 },
+      { name: "Intelligence", value: 0, max: 100 },
+      { name: "Luck", value: 0, max: 100 },
+    ],
+  },
   {
     name: "Junseo Kwak",
     role: "B2",
@@ -413,6 +516,64 @@ export const members: TMember[] = [
       { name: "Agility", value: 70, max: 100 },
       { name: "Intelligence", value: 30, max: 100 },
       { name: "Luck", value: 98, max: 100 },
+    ],
+  },
+  {
+    name: "Akash prasad",
+    login: "pura",
+    role: "B1",
+    imagePath: "/images/members/pura.jpg",
+    description: "I am a first semester student here",
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/purasfc",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 30, max: 100 },
+      { name: "Agility", value: 30, max: 100 },
+      { name: "Intelligence", value: 30, max: 100 },
+      { name: "Luck", value: 99, max: 100 },
+    ],
+  },
+  {
+    name: "Aman Y. Tekleab",
+    login: "aman",
+    role: "B2",
+    imagePath: "/images/members/darkifywalltemp.jpg",
+    description: "I'm me",
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/amanchapi",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 10, max: 100 },
+      { name: "Agility", value: 10, max: 100 },
+      { name: "Agility", value: 70, max: 100 },
+      { name: "Intelligence", value: 10, max: 100 },
+      { name: "Luck", value: 50, max: 100 },
+    ],
+  },
+  {
+    name: "Samanvay Sharma",
+    login: "sam",
+    role: "M2",
+    imagePath: "/images/members/sam.png",
+    description: "Power and Responsibility",
+    links: [
+      { name: "Github", url: "https://github.com/starktech23" },
+      { name: "Twitter", url: "https://twitter.com/AnsatzX" },
+    ],
+    stat: [
+      { name: "Luck", value: 10, max: 100 },
+      { name: "Skill", value: 10, max: 100 },
+      { name: "Concentrated Power of Will", value: 70, max: 100 },
+      { name: "Pleasure", value: 10, max: 100 },
+      { name: "Pain", value: 50, max: 100 },
+      { name: "Reason to Remember the Name", value: 100, max: 100 },
     ],
   },
 ]
