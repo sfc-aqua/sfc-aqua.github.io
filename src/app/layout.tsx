@@ -8,7 +8,8 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "AQUA",
-  description: "Prototype of a website for AQUA",
+  description:
+    "AQUA: the Advancing Quantum Architecture research group at Keio University's Shonan Fujisawa Campus",
 }
 
 export default function RootLayout({
