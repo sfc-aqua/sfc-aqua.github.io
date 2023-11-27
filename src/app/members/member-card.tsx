@@ -23,11 +23,14 @@ const MemberCard = ({ member }: { member: TMember }) => (
     <div className="text-xl font-bold">{member.name}</div>
     <div className="text-xl font-bold">{member.login}</div>
     <div className="flex flex-wrap gap-1 justify-center">
-      {
-        member.role.map((role, index) => (
-          <span className="badge badge-primary rounded-full font-bold h-min text-center" key={index}>{role}</span>
-        ))
-      }
+      {member.role.map((role, index) => (
+        <span
+          className="badge badge-primary rounded-full font-bold h-min text-center"
+          key={index}
+        >
+          {role}
+        </span>
+      ))}
     </div>
     <q className="prose">{member.description}</q>
     <Accordion type="single" collapsible>

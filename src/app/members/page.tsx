@@ -58,15 +58,10 @@ export default function Page() {
         </div>
 
         <div className="flex gap-2 mt-10">
-          <button className="btn"
-            onClick={handleOnCurrentMembersClick}
-          >
+          <button className="btn" onClick={handleOnCurrentMembersClick}>
             Current Members
           </button>
-          <button
-            className="btn"
-            onClick={handleOnAlumniClick}
-          >
+          <button className="btn" onClick={handleOnAlumniClick}>
             Alumni
           </button>
         </div>
@@ -80,13 +75,13 @@ export default function Page() {
             .filter(
               (member) =>
                 member.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                member.role.join(', ').toLowerCase().includes(searchQuery.toLowerCase())
+                member.role
+                  .join(", ")
+                  .toLowerCase()
+                  .includes(searchQuery.toLowerCase())
             )
             .map((member, index) => (
-              <MemberCard
-                key={index}
-                member={member}
-              />
+              <MemberCard key={index} member={member} />
             ))}
         </div>
       </div>

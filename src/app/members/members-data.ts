@@ -121,7 +121,7 @@ export const members: TMember[] = [
   },
   {
     name: "Bernard Ousmane Sane",
-    role:[ "Project Assistant Professor", "Current" ],
+    role: ["Project Assistant Professor", "Current"],
     login: "bernard",
     imagePath: "/images/members/bernard.jpg",
     description: "Distributed Quantum Error Correction ",
