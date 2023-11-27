@@ -17,12 +17,22 @@ export default function Page() {
     }
   }, [])
 
+  const handleOnCurrentMembersClick = () => {
+    // Filter member.role includes "Current" by add to searchQuery
+    setSearchQuery("Current")
+  }
+
+  const handleOnAlumniClick = () => {
+    // Filter member.role includes "Alumni" by add to searchQuery
+    setSearchQuery("Alumni")
+  }
+
   return (
     <div className="flex flex-col items-center justify-center w-full">
       {/* top section with image */}
       <div
         ref={containerRef}
-        className="overscroll-auto overflow-x-scroll w-full h-[50vh] l:h-[55vh] xl:h-[60vh] bg-gradient-to-b to-primary/25 from-primary-100"
+        className="overscroll-auto overflow-x-auto w-full h-[50vh] l:h-[55vh] xl:h-[60vh] bg-gradient-to-b to-primary/25 from-primary-100"
       >
         <img
           src="/images/members/aqua-group-221117.jpg"
@@ -47,16 +57,28 @@ export default function Page() {
           </div>
         </div>
 
+        <div className="flex gap-2 mt-10">
+          <button className="btn" onClick={handleOnCurrentMembersClick}>
+            Current Members
+          </button>
+          <button className="btn" onClick={handleOnAlumniClick}>
+            Alumni
+          </button>
+        </div>
+
         <div
           className={cn(
-            "grid grid-rows-4 grid-flow-col items-center justify-center mt-10 gap-4 "
+            "columns-1 sm:columns-2 md:columns-3 lg:columns-4 overflow-x-auto mt-10"
           )}
         >
           {members
             .filter(
               (member) =>
                 member.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                member.role.toLowerCase().includes(searchQuery.toLowerCase())
+                member.role
+                  .join(", ")
+                  .toLowerCase()
+                  .includes(searchQuery.toLowerCase())
             )
             .map((member, index) => (
               <MemberCard key={index} member={member} />
