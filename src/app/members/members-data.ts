@@ -604,10 +604,14 @@ export const members: TMember[] = [
     login: "parton",
     role: ["Alumni"],
     imagePath: "/images/members/parton.jpg",
-    description: "I was a member of AQUA from 2017 to 2020, where I worked on system software for quantum computers (compilers and quantum circuit optimization). I received my bachelor's degree from Keio University and am currently a PhD student at Sokendai/NII/OIST.",
+    description:
+      "I was a member of AQUA from 2017 to 2020, where I worked on system software for quantum computers (compilers and quantum circuit optimization). I received my bachelor's degree from Keio University and am currently a PhD student at Sokendai/NII/OIST.",
     links: [
       { name: "Github", url: "https://github.com/parton-quark" },
-      { name: "Google Scholar", url: "https://scholar.google.com/citations?user=gZNt8twAAAAJ&hl=ja"},
+      {
+        name: "Google Scholar",
+        url: "https://scholar.google.com/citations?user=gZNt8twAAAAJ&hl=ja",
+      },
       { name: "Personal web page", url: "https://parton.info/" },
     ],
     stat: [
@@ -617,5 +621,26 @@ export const members: TMember[] = [
         max: 4,
       },
     ],
-  }
+  },
+  {
+    name: "Takahiko Satoh",
+    login: "satoh",
+    role: ["B.A. 2010", "Alumni"],
+    imagePath: "/images/members/satoh.jpg",
+    description: "Let's fly together in a glider.",
+    links: [
+      { name: "Facebook", url: "https://www.facebook.com/takahiko.satoh.75" },
+      { name: "Github", url: "https://github.com/ymbr" },
+      {
+        name: "Google Scholar",
+        url: "https://scholar.google.com/citations?user=7sU5XMMAAAAJ&hl=ja",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 30, max: 100 },
+      { name: "Agility", value: 25, max: 100 },
+      { name: "Intelligence", value: 75, max: 100 },
+      { name: "Luck", value: 90, max: 100 },
+    ],
+  },
 ]
