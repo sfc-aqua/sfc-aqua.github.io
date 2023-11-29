@@ -576,7 +576,6 @@ export const members: TMember[] = [
       { name: "Luck", value: 50, max: 100 },
     ],
   },
-]
   {
     name: "Takahiko Satoh",
     login: "satoh",
@@ -590,7 +589,7 @@ export const members: TMember[] = [
         name: "Google Scholar",
         url: "https://scholar.google.com/citations?user=7sU5XMMAAAAJ&hl=ja",
       },
-    ],  
+    ],
     stat: [
       { name: "Strength", value: 30, max: 100 },
       { name: "Agility", value: 25, max: 100 },
