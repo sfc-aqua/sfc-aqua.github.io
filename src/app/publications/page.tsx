@@ -1,5 +1,4 @@
 import Books from "./books.mdx"
-import GoogleScholar from "./google-scholar.mdx"
 import JournalPapers from "./journal-papers.mdx"
 import RFCs from "./rfcs.mdx"
 import InternationalConferencesWithProceedings from "./international-conferences-with-proceedings.mdx"
@@ -30,12 +29,6 @@ const publications = [
     content: <Books />,
   },
   {
-    label: "Google Scholar",
-    id: "google-scholar",
-    href: "/publications#google-scholar",
-    content: <GoogleScholar />,
-  },
-  {
     label: "Journal Papers",
     id: "journal-papers",
     href: "/publications#journal-papers",
@@ -43,8 +36,8 @@ const publications = [
   },
   {
     label: "RFCs (Internet Requests for Comments)",
-    id: "RFCs",
-    href: "/publications#RFCs",
+    id: "rfcs",
+    href: "/publications#rfcs",
     content: <RFCs />,
   },
   {
