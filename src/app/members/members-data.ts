@@ -1,7 +1,7 @@
 export type TMember = {
   name: string
   login: string
-  role: string
+  role: string[]
   imagePath: string
   description: string
   links: {
@@ -18,7 +18,7 @@ export type TMember = {
 const template: TMember = {
   name: "",
   login: "",
-  role: "",
+  role: [""],
   imagePath: "",
   description: "",
   links: [
@@ -40,7 +40,7 @@ export const members: TMember[] = [
   {
     name: "Rod Van Meter",
     login: "rdv",
-    role: "Chief AQUAnaut",
+    role: ["Chief AQUAnaut", "Current"],
     imagePath:
       "/images/members/rdv-kawaguchiko-2204-recropped-small-avatar.jpg",
     description: "Doing quantum since 2003",
@@ -69,7 +69,7 @@ export const members: TMember[] = [
   },
   {
     name: "Michal Hajdušek",
-    role: "Project Associate Professor",
+    role: ["Project Associate Professor", "Current"],
     login: "michal",
     imagePath: "/images/members/michal.png",
     description: "Engineering is hard!",
@@ -89,7 +89,7 @@ export const members: TMember[] = [
   {
     name: "Shota Nagayama",
     login: "shota",
-    role: "QITF Director",
+    role: ["QITF Director", "Current"],
     description:
       "Love & Peace & Comprehensive effort to realize Quantum Computer Networks.",
     imagePath: "/images/members/shota-nagayama1.jpg",
@@ -121,7 +121,7 @@ export const members: TMember[] = [
   },
   {
     name: "Bernard Ousmane Sane",
-    role: "Project Assistant Professor",
+    role: ["Project Assistant Professor", "Current"],
     login: "bernard",
     imagePath: "/images/members/bernard.jpg",
     description: "Distributed Quantum Error Correction ",
@@ -141,7 +141,7 @@ export const members: TMember[] = [
   {
     name: "Amin Taherkhani",
     login: "amin",
-    role: "Project Assistant Professor",
+    role: ["Project Assistant Professor", "Current"],
     imagePath: "/images/members/amin.jpg",
     description: "(|Classical\u27E9+|Quantum\u27E9)/\u221A2 Networking",
     links: [
@@ -162,8 +162,31 @@ export const members: TMember[] = [
     ],
   },
   {
+    name: "Shigeya Suzuki",
+    login: "shigeya",
+    role: ["Project Professor", "Current-Adjunct 50:50 Probability"],
+    imagePath:
+      "/images/members/shigeya-2020-0628-K20BP-007_0180_4x3-smaller.jpg",
+    description: "I'm an architect",
+    links: [
+      { name: "Facebook", url: "https://www.facebook.com/shigeya" },
+      { name: "Github", url: "https://github.com/shigeya" },
+      {
+        name: "Google Scholar",
+        url: "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=YUklUm0AAAAJ",
+      },
+      { name: "Personal web page", url: "http://member.wide.ad.jp/~shigeya/" },
+    ],
+    stat: [
+      { name: "Strength", value: 5, max: 100 },
+      { name: "Agility", value: 50, max: 100 },
+      { name: "Intelligence", value: 42, max: 100 },
+      { name: "Luck", value: 200, max: 100 },
+    ],
+  },
+  {
     name: "Sara A. Metwalli",
-    role: "D4",
+    role: ["D4", "Current"],
     login: "sara",
     imagePath: "/images/members/sara.JPG",
     description: "I'm a student at Keio University",
@@ -180,7 +203,7 @@ export const members: TMember[] = [
   },
   {
     name: "Naphan Benchasattabuse",
-    role: "D3+",
+    role: ["D3+", "Current"],
     login: "whit3z",
     imagePath: "/images/members/whit3z.png",
     description: "I don't know what I'm doing.",
@@ -199,11 +222,11 @@ export const members: TMember[] = [
     ],
   },
   {
-    name: "Poramet",
-    role: "D1",
+    name: "Poramet Pathumsoot",
+    role: ["D2", "Current"],
     login: "poramet",
     imagePath: "/images/members/poramet.jpg",
-    description: "I'm a student at Keio University",
+    description: "To boldly go where no one has gone before",
     links: [
       { name: "Facebook", url: "" },
       { name: "Github", url: "" },
@@ -218,7 +241,7 @@ export const members: TMember[] = [
   {
     name: "Samanvay Sharma",
     login: "sam",
-    role: "M2",
+    role: ["M2", "Current"],
     imagePath: "/images/members/sam.png",
     description: "Power and Responsibility",
     links: [
@@ -236,7 +259,7 @@ export const members: TMember[] = [
   },
   {
     name: "Makoto Nakai",
-    role: "M2",
+    role: ["M2", "Current"],
     login: "dave",
     imagePath: "/images/members/dave.png",
     description: "I'm a student at Keio University",
@@ -250,7 +273,7 @@ export const members: TMember[] = [
   },
   {
     name: "Yinjie Zhou",
-    role: "M2",
+    role: ["M2", "Current"],
     login: "syu",
     imagePath: "/images/members/syu.png",
     description: "I'm a student at Keio University",
@@ -265,7 +288,7 @@ export const members: TMember[] = [
   {
     name: "Austin Huang",
     login: "austinh",
-    role: "M2",
+    role: ["M2", "Current"],
     imagePath: "/images/members/austin.png",
     description: "I do quantum chemistry with quantum computers",
     links: [
@@ -284,7 +307,7 @@ export const members: TMember[] = [
   {
     name: "Michael Peyron",
     login: "michael",
-    role: "M1",
+    role: ["M1", "Current"],
     imagePath: "/images/members/michael.jpg",
     description: "Its October and there is still a taste of summer in the air",
     links: [
@@ -303,7 +326,7 @@ export const members: TMember[] = [
   {
     name: "Hikaru Yokomori",
     login: "voy",
-    role: "B4",
+    role: ["B4", "Current"],
     imagePath: "/images/members/voy.jpg",
     description: "Adventuring Science",
     links: [
@@ -322,7 +345,7 @@ export const members: TMember[] = [
   {
     name: "YUMOTO Kento",
     login: "ken-tea",
-    role: "B4",
+    role: ["B4", "Current"],
     imagePath: "/images/members/kent_tea.png",
     description: "I wanna go to Peking and Shenzhen.",
     links: [
@@ -340,7 +363,7 @@ export const members: TMember[] = [
   },
   {
     name: "Hyensoo Choi",
-    role: "B3",
+    role: ["B3", "Current"],
     login: "collodi",
     imagePath: "/images/members/collodi.jpg",
     description:
@@ -362,7 +385,7 @@ export const members: TMember[] = [
   },
   {
     name: "Wataru Morishita",
-    role: "B3",
+    role: ["B3", "Current"],
     login: "morishita",
     imagePath: "/images/members/morishita.png",
     description: "The mastermind behind this kenkyukai",
@@ -384,7 +407,7 @@ export const members: TMember[] = [
   },
   {
     name: "Monet Tokuyama",
-    role: "B3",
+    role: ["B3", "Current"],
     login: "bob",
     imagePath: "/images/members/bob.jpg",
     description: "I like sushi",
@@ -401,7 +424,7 @@ export const members: TMember[] = [
   },
   {
     name: "Kento Samuel Soon",
-    role: "B2",
+    role: ["B2", "Current"],
     login: "soon",
     imagePath: "/images/members/soon.png",
     description: "Quantum information seems interesting",
@@ -416,7 +439,7 @@ export const members: TMember[] = [
   {
     name: "Marii Koyama",
     login: "mia",
-    role: "B2",
+    role: ["B2", "Current"],
     imagePath: "/images/members/mia.jpg",
     description: "I'm a student at Keio University",
     links: [
@@ -435,7 +458,7 @@ export const members: TMember[] = [
   {
     name: "Aman Y. Tekleab",
     login: "aman",
-    role: "B2",
+    role: ["B2", "Current"],
     imagePath: "/images/members/darkifywalltemp.jpg",
     description: "I'm me",
     links: [
@@ -455,7 +478,7 @@ export const members: TMember[] = [
   {
     name: "Shreya Kafle",
     login: "riya",
-    role: "B2",
+    role: ["B2", "Current"],
     imagePath: "/images/members/riya.jpg",
     description: "I'm enjoying my life;)",
     links: [
@@ -474,7 +497,7 @@ export const members: TMember[] = [
   },
   {
     name: "Junseo Kwak",
-    role: "B2",
+    role: ["B2", "Current"],
     login: "junseo",
     imagePath: "/images/members/junseo.jpg",
     description: "Student at Keio University",
@@ -489,7 +512,7 @@ export const members: TMember[] = [
   {
     name: "Tetsuma Ariyoshi",
     login: "mono",
-    role: "B1",
+    role: ["B1", "Current"],
     imagePath: "/images/members/mono.png",
     description: "I'm a student at Keio University",
     links: [
@@ -507,7 +530,7 @@ export const members: TMember[] = [
   },
   {
     name: "Mikawa-Mallery Takumi",
-    role: "B1",
+    role: ["B1", "Current"],
     login: "tsukue",
     imagePath: "/images/members/tsukue.png",
     description: "Clueless",
@@ -527,7 +550,7 @@ export const members: TMember[] = [
   {
     name: "Haruka Sakate",
     login: "l0gic",
-    role: "B1",
+    role: ["B1", "Current"],
     imagePath: "/images/members/logic.jpg",
     description: "I'm a student at Keio University",
     links: [
@@ -546,7 +569,7 @@ export const members: TMember[] = [
   {
     name: "Akash prasad",
     login: "pura",
-    role: "B1",
+    role: ["B1", "Current"],
     imagePath: "/images/members/pura.jpg",
     description: "I am a first semester student here",
     links: [
@@ -565,7 +588,7 @@ export const members: TMember[] = [
   {
     name: "Xu Haoran",
     login: "joo",
-    role: "B1",
+    role: ["B1", "Current"],
     imagePath: "/images/members/Joe.jpg",
     description: "May the force be with you",
     links: [{ name: "Github", url: "https://github.com/Joe-Xuu" }],
@@ -574,6 +597,50 @@ export const members: TMember[] = [
       { name: "Agility", value: 50, max: 100 },
       { name: "Intelligence", value: 50, max: 100 },
       { name: "Luck", value: 50, max: 100 },
+    ],
+  },
+  {
+    name: "Shin Nishio",
+    login: "parton",
+    role: ["Alumni"],
+    imagePath: "/images/members/parton.jpg",
+    description:
+      "I was a member of AQUA from 2017 to 2020, where I worked on system software for quantum computers (compilers and quantum circuit optimization). I received my bachelor's degree from Keio University and am currently a PhD student at Sokendai/NII/OIST.",
+    links: [
+      { name: "Github", url: "https://github.com/parton-quark" },
+      {
+        name: "Google Scholar",
+        url: "https://scholar.google.com/citations?user=gZNt8twAAAAJ&hl=ja",
+      },
+      { name: "Personal web page", url: "https://parton.info/" },
+    ],
+    stat: [
+      {
+        name: "Nonlocality",
+        value: 2,
+        max: 4,
+      },
+    ],
+  },
+  {
+    name: "Takahiko Satoh",
+    login: "satoh",
+    role: ["B.A. 2010", "Alumni"],
+    imagePath: "/images/members/satoh.jpg",
+    description: "Let's fly together in a glider.",
+    links: [
+      { name: "Facebook", url: "https://www.facebook.com/takahiko.satoh.75" },
+      { name: "Github", url: "https://github.com/ymbr" },
+      {
+        name: "Google Scholar",
+        url: "https://scholar.google.com/citations?user=7sU5XMMAAAAJ&hl=ja",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 30, max: 100 },
+      { name: "Agility", value: 25, max: 100 },
+      { name: "Intelligence", value: 75, max: 100 },
+      { name: "Luck", value: 90, max: 100 },
     ],
   },
 ]
