@@ -643,4 +643,29 @@ export const members: TMember[] = [
       { name: "Luck", value: 90, max: 100 },
     ],
   },
+  {
+    name: "Kentaro Teramoto",
+    login: "zigen",
+    role: ["Alumni"],
+    imagePath: "/images/members/zigen.png",
+    description: "I love programming",
+    links: [
+      { name: "Github", url: "https://github.com/zigen" },
+      { name: "Twitter", url: "https://x.com/kei_0811" },
+      {
+        name: "Google Scholar",
+        url: "https://scholar.google.com/citations?user=NziiZC8AAAAJ",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: Math.floor(Math.random() * 100), max: 100 },
+      { name: "Agility", value: Math.floor(Math.random() * 100), max: 100 },
+      {
+        name: "Intelligence",
+        value: Math.floor(Math.random() * 100),
+        max: 100,
+      },
+      { name: "Luck", value: Math.floor(Math.random() * 100), max: 100 },
+    ],
+  },
 ]
