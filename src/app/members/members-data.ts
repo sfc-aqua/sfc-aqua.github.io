@@ -669,4 +669,28 @@ export const members: TMember[] = [
       { name: "Luck", value: Math.floor(Math.random() * 100), max: 100 },
     ],
   },
+  {
+    name: "Shigetora Miyashita",
+    login: "shingy",
+    role: ["Alumni"],
+    imagePath: "/images/members/shingy.png",
+    description:
+      "Graduate Student in Nuclear Engineering and Management at UTokyo",
+    links: [
+      {
+        name: "Google Scholar",
+        url: "https://scholar.google.com/citations?user=6-xrgvQAAAAJ",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: Math.floor(Math.random() * 100), max: 100 },
+      { name: "Agility", value: Math.floor(Math.random() * 100), max: 100 },
+      {
+        name: "Intelligence",
+        value: Math.floor(Math.random() * 100),
+        max: 100,
+      },
+      { name: "Luck", value: Math.floor(Math.random() * 100), max: 100 },
+    ],
+  },
 ]
