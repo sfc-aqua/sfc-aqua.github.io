@@ -674,7 +674,8 @@ export const members: TMember[] = [
     login: "shingy",
     role: ["Alumni"],
     imagePath: "/images/members/shingy.png",
-    description: "Graduate Student in Nuclear Engineering and Management at UTokyo",
+    description:
+      "Graduate Student in Nuclear Engineering and Management at UTokyo",
     links: [
       {
         name: "Google Scholar",
