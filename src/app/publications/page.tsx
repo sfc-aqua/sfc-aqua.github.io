@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import Books from "./books.mdx"
 import JournalPapers from "./journal-papers.mdx"
@@ -118,15 +118,16 @@ const publications = [
 ]
 
 export default function Page() {
-  const [values, setValues] = useState<string[]>([]);
+  const [values, setValues] = useState<string[]>([])
   return (
     <div className="flex flex-col items-center justify-center py-10 px-4 relative">
-      <button className="btn self-end sticky top-20 z-10"
+      <button
+        className="btn self-end sticky top-20 z-10"
         onClick={() => {
           if (values.length === publications.length) {
-            setValues([]);
+            setValues([])
           } else {
-            setValues(publications.map((publication) => publication.id));
+            setValues(publications.map((publication) => publication.id))
           }
         }}
       >
@@ -150,7 +151,8 @@ export default function Page() {
             </AccordionItem>
           ))}
         </Accordion>
-      B</div>
+        B
+      </div>
     </div>
   )
 }
