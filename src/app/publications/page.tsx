@@ -151,7 +151,6 @@ export default function Page() {
             </AccordionItem>
           ))}
         </Accordion>
-        B
       </div>
     </div>
   )
