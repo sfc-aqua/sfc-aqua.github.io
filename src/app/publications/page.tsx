@@ -1,3 +1,5 @@
+"use client"
+
 import Books from "./books.mdx"
 import JournalPapers from "./journal-papers.mdx"
 import RFCs from "./rfcs.mdx"
@@ -13,6 +15,7 @@ import Posters from "./posters.mdx"
 import WhitePapers from "./white-papers.mdx"
 import CourseMaterials from "./course-materials.mdx"
 import OtherPublications from "./other-publications.mdx"
+import { useState } from "react"
 
 import {
   Accordion,
@@ -115,10 +118,23 @@ const publications = [
 ]
 
 export default function Page() {
+  const [values, setValues] = useState<string[]>([])
   return (
-    <div className="flex flex-col items-center justify-center py-10 px-4">
+    <div className="flex flex-col items-center justify-center py-10 px-4 relative">
+      <button
+        className="btn self-end sticky top-20 z-10"
+        onClick={() => {
+          if (values.length === publications.length) {
+            setValues([])
+          } else {
+            setValues(publications.map((publication) => publication.id))
+          }
+        }}
+      >
+        Expand/Collapse all
+      </button>
       <div className="prose">
-        <Accordion type="single" collapsible>
+        <Accordion type="multiple" value={values} onValueChange={setValues}>
           {publications.map((publication) => (
             <AccordionItem
               value={publication.id}
