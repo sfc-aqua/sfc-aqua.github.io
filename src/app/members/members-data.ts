@@ -59,6 +59,7 @@ export const members: TMember[] = [
       { name: "blog", url: "https://rdvlivefromtokyo.blogspot.com/" },
       { name: "campus web page", url: "https://web.sfc.keio.ac.jp/~rdv/" },
       { name: "YouTube", url: "https://www.youtube.com/@rodvanmeter517" },
+      { name: "Astrobin", url: "https://www.astrobin.com/users/rdviii/" },
     ],
     stat: [
       { name: "Strength", value: 20, max: 100 },
@@ -642,5 +643,67 @@ export const members: TMember[] = [
       { name: "Intelligence", value: 75, max: 100 },
       { name: "Luck", value: 90, max: 100 },
     ],
+  },
+  {
+    name: "Kentaro Teramoto",
+    login: "zigen",
+    role: ["Alumni"],
+    imagePath: "/images/members/zigen.png",
+    description: "I love programming",
+    links: [
+      { name: "Github", url: "https://github.com/zigen" },
+      { name: "Twitter", url: "https://x.com/kei_0811" },
+      {
+        name: "Google Scholar",
+        url: "https://scholar.google.com/citations?user=NziiZC8AAAAJ",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: Math.floor(Math.random() * 100), max: 100 },
+      { name: "Agility", value: Math.floor(Math.random() * 100), max: 100 },
+      {
+        name: "Intelligence",
+        value: Math.floor(Math.random() * 100),
+        max: 100,
+      },
+      { name: "Luck", value: Math.floor(Math.random() * 100), max: 100 },
+    ],
+  },
+  {
+    name: "Shigetora Miyashita",
+    login: "shingy",
+    role: ["Alumni"],
+    imagePath: "/images/members/shingy.png",
+    description:
+      "Graduate Student in Nuclear Engineering and Management at UTokyo",
+    links: [
+      {
+        name: "Google Scholar",
+        url: "https://scholar.google.com/citations?user=6-xrgvQAAAAJ",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: Math.floor(Math.random() * 100), max: 100 },
+      { name: "Agility", value: Math.floor(Math.random() * 100), max: 100 },
+      {
+        name: "Intelligence",
+        value: Math.floor(Math.random() * 100),
+        max: 100,
+      },
+      { name: "Luck", value: Math.floor(Math.random() * 100), max: 100 },
+    ],
+  },
+  {
+    name: "Andrew Todd",
+    login: "atodd",
+    role: ["Current", "特任助教"],
+    imagePath: "/images/members/andrew-todd.jpg",
+    description: "Why not Zoidberg?",
+    links: [
+      { name: "Homepage", url: "https://auspicacious.org/" },
+      { name: "Mastodon", url: "https://mastodon.online/@auspicacious" },
+      { name: "GitHub", url: "https://github.com/auspicacious" },
+    ],
+    stat: [{ name: "These go to 11", value: 11, max: 11 }],
   },
 ]

@@ -1,6 +1,8 @@
+"use client"
+
 import Books from "./books.mdx"
-import GoogleScholar from "./google-scholar.mdx"
 import JournalPapers from "./journal-papers.mdx"
+import RFCs from "./rfcs.mdx"
 import InternationalConferencesWithProceedings from "./international-conferences-with-proceedings.mdx"
 import WorkshopsConferencesWithoutProceedingsAndPosters from "./workshops-conferences-without-proceedings-and-posters.mdx"
 import Theses from "./theses.mdx"
@@ -13,6 +15,7 @@ import Posters from "./posters.mdx"
 import WhitePapers from "./white-papers.mdx"
 import CourseMaterials from "./course-materials.mdx"
 import OtherPublications from "./other-publications.mdx"
+import { useState } from "react"
 
 import {
   Accordion,
@@ -29,16 +32,16 @@ const publications = [
     content: <Books />,
   },
   {
-    label: "Google Scholar",
-    id: "google-scholar",
-    href: "/publications#google-scholar",
-    content: <GoogleScholar />,
-  },
-  {
     label: "Journal Papers",
     id: "journal-papers",
     href: "/publications#journal-papers",
     content: <JournalPapers />,
+  },
+  {
+    label: "RFCs (Internet Requests for Comments)",
+    id: "rfcs",
+    href: "/publications#rfcs",
+    content: <RFCs />,
   },
   {
     label: "International Conferences with Proceedings",
@@ -115,10 +118,23 @@ const publications = [
 ]
 
 export default function Page() {
+  const [values, setValues] = useState<string[]>([])
   return (
-    <div className="flex flex-col items-center justify-center py-10 px-4">
+    <div className="flex flex-col items-center justify-center py-10 px-4 relative">
+      <button
+        className="btn self-end sticky top-20 z-10"
+        onClick={() => {
+          if (values.length === publications.length) {
+            setValues([])
+          } else {
+            setValues(publications.map((publication) => publication.id))
+          }
+        }}
+      >
+        Expand/Collapse all
+      </button>
       <div className="prose">
-        <Accordion type="single" collapsible>
+        <Accordion type="multiple" value={values} onValueChange={setValues}>
           {publications.map((publication) => (
             <AccordionItem
               value={publication.id}

@@ -62,12 +62,12 @@ const Links: TLink[] = [
         href: "/publications#books",
       },
       {
-        label: "Google Scholar",
-        href: "/publications#google-scholar",
-      },
-      {
         label: "Journal Papers",
         href: "/publications#journal-papers",
+      },
+      {
+        label: "RFCs (Internet Requests for Comments)",
+        href: "/publications#rfcs",
       },
       {
         label: "International Conferences with Proceedings",
