@@ -35,7 +35,7 @@ export default function Page() {
         className="overscroll-auto overflow-x-auto w-full h-[50vh] l:h-[55vh] xl:h-[60vh] bg-gradient-to-b to-primary/25 from-primary-100"
       >
         <img
-          src="/images/members/aqua-group-221117.jpg"
+          src="/images/members/aqua-fall-241114-cropped.jpg"
           alt="Picture of AQUA Members"
           className="min-w-[1000px] min-h-[361px]"
         />
