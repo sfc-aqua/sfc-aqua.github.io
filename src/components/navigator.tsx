@@ -48,6 +48,7 @@ const Links: TLink[] = [
   {
     href: "/about",
     label: "About",
+
   },
   {
     href: "/research",
@@ -60,10 +61,12 @@ const Links: TLink[] = [
       {
         label: "Books",
         href: "/publications#books",
+        description: "Cillum duis deserunt esse ipsum ex enim cillum labore dolore. Sit anim et nisi aliqua dolor duis commodo ullamco aute laboris est fugiat ea aliquip."
       },
       {
         label: "Journal Papers",
         href: "/publications#journal-papers",
+        description: "Non qui exercitation est cillum excepteur ea voluptate et consequat anim magna culpa consectetur. Esse nostrud esse tempor."
       },
       {
         label: "RFCs (Internet Requests for Comments)",
