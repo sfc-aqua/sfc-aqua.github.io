@@ -37,7 +37,7 @@ export default function Page() {
         <img
           src="/images/members/aqua-fall-241114-cropped.jpg"
           alt="Picture of AQUA Members"
-          className="min-w-[1000px] min-h-[361px]"
+          className="min-w-[1000px] min-h-[579px]"
         />
       </div>
       <div className="flex flex-col items-center justify-center mx-10 py-10">
