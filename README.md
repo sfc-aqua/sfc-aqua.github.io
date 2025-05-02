@@ -2,65 +2,71 @@
 
 This is the source repository for the SFC AQUA homepage, accessible at [https://aqua.sfc.wide.ad.jp/](https://aqua.sfc.wide.ad.jp/) with a redirect at [https://sfc-aqua.github.io](https://sfc-aqua.github.io).
 
+## Making additions and updates
+
+First, follow the instructions in "Development," below, to set up your development environment.
+
+### Adding or updating your member information
+
+Everyone in AQUA should have a profile on the [Members page](https://aqua.sfc.wide.ad.jp/members).
+
+The profiles are generated from information in the file [`src/app/members/members-data.ts`](https://github.com/sfc-aqua/sfc-aqua.github.io/blob/main/src/app/members/members-data.ts). Edit this file to add or change your profile information.
+
+Pictures should be added to the directory [`public/images/members`](https://github.com/sfc-aqua/sfc-aqua.github.io/tree/main/public/images/members). Your picture should be in JPEG or WebP format with a 1:1 aspect ratio, maximum dimensions 500x500px, and maximum file size of 500kb. Do not use PNG for photographic or photo-like images; PNG is appropriate for rasterized vector graphics. You can upload a square picture; it will be automatically rounded for display.
+
+If you are unsure about what photo editing application to use, try the [GNU Image Manipulation Program](https://www.gimp.org/), a free, open-source alternative to Photoshop.
+
+### Adding or updating publications
+
+Your publications should be added to the appropriate file in [`src/app/publications`](https://github.com/sfc-aqua/sfc-aqua.github.io/tree/main/src/app/publications). Files in this directory use the [MDX](https://mdxjs.com/) format, which is based on the [Markdown](https://en.wikipedia.org/wiki/Markdown) markup language. If you are familiar with Markdown, you can most likely write MDX without any issues.
+
+## Development
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Prerequisites
+### Prerequisites
 
-- [Visual Studio Code](https://code.visualstudio.com/)
+In principle, everyone modifying this repository should be a member of the [sfc-aqua GitHub organization](https://github.com/sfc-aqua/). If you are not a member, ask one of the [organization owners](https://github.com/orgs/sfc-aqua/people) to add you before continuing.
+
+You must be familiar with Git usage; see the [Moonshot project Git workflow documentation](https://github.com/moonshot-nagayama-pj/public-documents/blob/main/engineering/git-workflow.md) for basics.
+
+#### Using Visual Studio Code (VSCode)
+
+These instructions will work on Windows, MacOS, or Linux.
+
+Install the following:
+
+- [VSCode](https://code.visualstudio.com/)
 - [Docker](https://code.visualstudio.com/docs/devcontainers/containers#_system-requirements)
 - [VSCode Dev Container Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
-```bash
-$ git clone git@github.com:sfc-aqua/sfc-aqua.github.io.git
-$ cd sfc-aqua.github.io
-# open the cloned repository, if you install the 'code' command, you can do this
-# see detail of the 'code' command is here
-# https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line
-$ code .
-# or manually open it on visual studio code
-```
+Using VSCode, Git clone this repository.
 
-then you can open the folder with the Dev Container.
-Open command palette by `View > Command Palette` and then type and select `Dev Containers: Rebuild and Reopen in Container`.
+Then, open the Dev Container: Open the command palette from `View > Command Palette` and then type and select `Dev Containers: Rebuild and Reopen in Container`.
 
-## Getting Started
+#### Without VSCode
 
-First, run install the dependencies. You can do it with your package manager, or run `direnv allow` under the project directory to use `nix-shell` if you're a nix user.
+On MacOS, Linux, or other Unix-like systems, simply [install NodeJS](https://nodejs.org/) on your system, `git clone` this repository, and continue.
 
-Then, execute the development server:
+### Getting Started
+
+**Before making any changes**, be sure to create a Git branch for your work.
+
+Then, to execute the development server, run the following from the repository's base directory (inside your VSCode Dev Container, if using VSCode):
 
 ```bash
 $ npm install
 $ npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `src/app/page.tsx`. The page auto-updates as you edit the file.
+**Before committing or pushing your changes**, run `npm run lint` to format your code. Improperly formatted code will be rejected.
 
-To edit your profile on the Members page, open the `src/app/members/members-data.ts`, then edit/add your profile object appropriately under `const members: TMember[]`.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-before commit your changes, you _must_ run:
-
-```bash
-$ npm run lint
-```
-
-to format your code.
-
-## Learn More
+### Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Next.js GitHub repository](https://github.com/vercel/next.js/)
