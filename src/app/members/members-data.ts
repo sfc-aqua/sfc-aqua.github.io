@@ -306,6 +306,29 @@ export const members: TMember[] = [
     ],
   },
   {
+    name: "Pawan Sharma Poudel",
+    login: "pawan",
+    role: ["M2", "Current"],
+    imagePath: "images/members/pawan.png",
+    description: "Reducing uncertainties",
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/lmpawan10",
+      },
+      {
+        name: "Linkedin",
+        url: "https://www.linkedin.com/in/pawansharmapoudel/",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 50, max: 100 },
+      { name: "Agility", value: 40, max: 100 },
+      { name: "Intelligence", value: 40, max: 100 },
+      { name: "Luck", value: 100, max: 100 },
+    ],
+  },
+  {
     name: "Michael Peyron",
     login: "michael",
     role: ["M1", "Current"],
@@ -565,6 +588,29 @@ export const members: TMember[] = [
       { name: "Agility", value: 70, max: 100 },
       { name: "Intelligence", value: 30, max: 100 },
       { name: "Luck", value: 98, max: 100 },
+    ],
+  },
+  {
+    name: "Yifeng (Tom) Shen",
+    login: "tomshen",
+    role: ["B3", "Current"],
+    imagePath: "/images/members/tomshen.png",
+    description: "I like tech things",
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/TomShen1234",
+      },
+      {
+        name: "X (Twitter)",
+        url: "https://twitter.com/TomShen1234",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 45, max: 100 },
+      { name: "Agility", value: 70, max: 100 },
+      { name: "Intelligence", value: 85, max: 100 },
+      { name: "Luck", value: Math.floor(Math.random() * 100), max: 100 },
     ],
   },
   {
