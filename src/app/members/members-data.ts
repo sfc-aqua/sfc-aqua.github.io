@@ -1,19 +1,19 @@
 export type TMember = {
-  name: string
-  login: string
-  role: string[]
-  imagePath: string
-  description: string
+  name: string;
+  login: string;
+  role: string[];
+  imagePath: string;
+  description: string;
   links: {
-    name: string
-    url: string
-  }[]
+    name: string;
+    url: string;
+  }[];
   stat?: {
-    name: string
-    value: number
-    max: number
-  }[]
-}
+    name: string;
+    value: number;
+    max: number;
+  }[];
+};
 
 const template: TMember = {
   name: "",
@@ -34,7 +34,7 @@ const template: TMember = {
       max: 0,
     },
   ],
-}
+};
 
 export const members: TMember[] = [
   {
@@ -239,7 +239,7 @@ export const members: TMember[] = [
       { name: "Luck", value: 10, max: 100 },
     ],
   },
-   {
+  {
     name: "Natchapol (Bank) Patamawisut",
     role: ["M2", "Current"],
     login: "banknatchapol",
@@ -252,12 +252,12 @@ export const members: TMember[] = [
       },
       {
         name: "Guthib",
-        url: "https://github.com/BankNatchapol"
+        url: "https://github.com/BankNatchapol",
       },
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/natchapol-patamawisut/"
-      }
+        url: "https://www.linkedin.com/in/natchapol-patamawisut/",
+      },
     ],
     stat: [
       { name: "Strength", value: 200, max: 100 },
@@ -779,4 +779,4 @@ export const members: TMember[] = [
     ],
     stat: [{ name: "These go to 11", value: 11, max: 11 }],
   },
-]
+];
