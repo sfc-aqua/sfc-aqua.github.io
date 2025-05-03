@@ -1,19 +1,19 @@
 export type TMember = {
-  name: string;
-  login: string;
-  role: string[];
-  imagePath: string;
-  description: string;
+  name: string
+  login: string
+  role: string[]
+  imagePath: string
+  description: string
   links: {
-    name: string;
-    url: string;
-  }[];
+    name: string
+    url: string
+  }[]
   stat?: {
-    name: string;
-    value: number;
-    max: number;
-  }[];
-};
+    name: string
+    value: number
+    max: number
+  }[]
+}
 
 const template: TMember = {
   name: "",
@@ -34,7 +34,7 @@ const template: TMember = {
       max: 0,
     },
   ],
-};
+}
 
 export const members: TMember[] = [
   {
@@ -779,4 +779,4 @@ export const members: TMember[] = [
     ],
     stat: [{ name: "These go to 11", value: 11, max: 11 }],
   },
-];
+]
