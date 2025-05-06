@@ -779,4 +779,23 @@ export const members: TMember[] = [
     ],
     stat: [{ name: "These go to 11", value: 11, max: 11 }],
   },
+  {
+    name: "Kanazawa Yoshiki",
+    login: "rikachan",
+    role: ["M1", "Current"],
+    imagePath: "images/members/rika.jpg",
+    description: "The heritage of the Silver Crystal",
+    links: [
+      {
+        name: "Facebook",
+        url: "https://www.facebook.com/rika15yk/",
+      },
+    ],
+    stat: [
+      { name: "Hope", value: 100, max: 100 },
+      { name: "Courage", value: 100, max: 100 },
+      { name: "Faith", value: 100, max: 100 },
+      { name: "Weakness", value: 100, max: 100 },
+    ],
+  },
 ]
