@@ -803,7 +803,8 @@ export const members: TMember[] = [
     login: "larz",
     role: ["B2", "Current"],
     imagePath: "images/members/larz.jpg",
-    description: "Bipedal humanoid with a dark purple body, armed with sharp teeth and claws, which it uses to dig through soil.",
+    description:
+      "Bipedal humanoid with a dark purple body, armed with sharp teeth and claws, which it uses to dig through soil.",
     links: [
       {
         name: "Github",
