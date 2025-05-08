@@ -798,4 +798,23 @@ export const members: TMember[] = [
       { name: "Weakness", value: 100, max: 100 },
     ],
   },
+  {
+    name: "Siddartha Bhandari",
+    login: "siddartha",
+    role: ["B3", "Current"],
+    imagePath: "images/members/rika.jpg",
+    description: "がんばるぞー",
+    links: [
+      {
+        name: "github",
+        url: "https://github.com/SIDDHARTHABHANDARI",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 20, max: 100 },
+      { name: "Agility", value: 20, max: 100 },
+      { name: "Intelligence", value: 0, max: 100 },
+      { name: "Luck", value: 100, max: 100 },
+    ],
+  },
 ]
