@@ -563,7 +563,7 @@ export const members: TMember[] = [
   {
     name: "Tetsuma Ariyoshi",
     login: "mono",
-    role: ["B1", "Current"],
+    role: ["B3", "Current"],
     imagePath: "/images/members/mono.png",
     description: "I'm a student at Keio University",
     links: [
