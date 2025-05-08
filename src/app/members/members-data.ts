@@ -817,4 +817,23 @@ export const members: TMember[] = [
       { name: "Luck", value: 30, max: 100 },
     ],
   },
+  {
+    name: "Manasvi(Mana) Patwardhan",
+    login: "manasvi",
+    role: ["B2", "Current"],
+    imagePath: "images/members/mana.jpg",
+    description: "Here for the vibes",
+    links: [
+      {
+        name: "GitHub",
+        url: "https://github.com/mana-pat1",
+      },
+    ],
+    stat: [
+      { name: "Happiness", value: 100, max: 100 },
+      { name: "Agility", value: 80, max: 100 },
+      { name: "Intelligence", value: 60, max: 100 },
+      { name: "Luck", value: 80, max: 100 },
+    ],
+  },
 ]
