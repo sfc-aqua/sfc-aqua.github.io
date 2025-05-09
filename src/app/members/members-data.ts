@@ -377,9 +377,9 @@ export const members: TMember[] = [
   {
     name: "Hikaru Yokomori",
     login: "voy",
-    role: ["B4", "Current"],
+    role: ["M1", "Current"],
     imagePath: "/images/members/voy.jpg",
-    description: "Adventuring Science",
+    description: "I study and explore Hikaru",
     links: [
       {
         name: "Github",
@@ -387,10 +387,10 @@ export const members: TMember[] = [
       },
     ],
     stat: [
-      { name: "Strength", value: 30, max: 100 },
-      { name: "Agility", value: 30, max: 100 },
-      { name: "Intelligence", value: 30, max: 100 },
-      { name: "Luck", value: 99, max: 100 },
+      { name: "Strength", value: 70, max: 100 },
+      { name: "Agility", value: 70, max: 100 },
+      { name: "Intelligence", value: 70, max: 100 },
+      { name: "Luck", value: 130, max: 130 },
     ],
   },
   {
