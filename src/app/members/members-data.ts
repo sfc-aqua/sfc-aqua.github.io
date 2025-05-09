@@ -458,19 +458,19 @@ export const members: TMember[] = [
   },
   {
     name: "Monet Tokuyama",
-    role: ["B3", "Current"],
+    role: ["M1", "Current"],
     login: "bob",
     imagePath: "/images/members/bob.jpg",
-    description: "I like sushi",
+    description: "Photons are cool",
     links: [
       { name: "Github", url: "https://github.com/funkeyteth" },
       { name: "Instagram", url: "https://www.instagram.com/funkeyteth/" },
     ],
     stat: [
-      { name: "Strength", value: 40, max: 100 },
-      { name: "Agility", value: 100, max: 100 },
-      { name: "Intelligence", value: 10, max: 100 },
-      { name: "Luck", value: 50, max: 100 },
+      { name: "Strength", value: 41, max: 100 },
+      { name: "Agility", value: 81, max: 100 },
+      { name: "Intelligence", value: 31, max: 100 },
+      { name: "Luck", value: 100, max: 100 },
     ],
   },
   {
@@ -799,6 +799,28 @@ export const members: TMember[] = [
     ],
   },
   {
+    name: "Lars Matsumiya",
+    login: "larz",
+    role: ["B2", "Current"],
+    imagePath: "images/members/larz.jpg",
+    description:
+      "Bipedal humanoid with a dark purple body, armed with sharp teeth and claws, which it uses to dig through soil.",
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/master-of-ppap",
+      },
+    ],
+    stat: [
+      { name: "HP", value: 50, max: 255 },
+      { name: "Attack", value: 75, max: 255 },
+      { name: "Defense", value: 75, max: 255 },
+      { name: "Special Attack", value: 65, max: 255 },
+      { name: "Special Defense", value: 65, max: 255 },
+      { name: "Speed", value: 50, max: 255 },
+    ],
+  },
+  {
     name: "Kouki Maeda",
     login: "k0uki",
     role: ["B4", "Current"],
@@ -853,6 +875,42 @@ export const members: TMember[] = [
       { name: "Agility", value: 70, max: 100 },
       { name: "Intelligence", value: 10, max: 100 },
       { name: "Luck", value: 90, max: 100 },
+    ],
+  },
+  {
+    name: "Kenya Suzuki",
+    login: "kenya",
+    role: ["B3", "Current"],
+    imagePath: "images/members/kenya.jpeg",
+    description: "im from Alaska",
+    links: [
+      {
+        name: "GitHub",
+        url: "https://github.com/kenyas",
+      },
+    ],
+    stat: [
+      { name: "Happiness", value: 96, max: 100 },
+      { name: "Agility", value: 100, max: 100 },
+      { name: "Intelligence", value: 40, max: 100 },
+      { name: "Luck", value: 80, max: 100 },
+    ],
+  },
+  {
+    name: "Daisuke Takeuchi",
+    login: "remon",
+    role: ["B2", "Current"],
+    imagePath: "images/members/remon.jpg",
+    description: "I like 'R'emon.",
+    links: [
+      {
+        name: "GitHub",
+        url: "https://github.com/remonnnokawa",
+      },
+    ],
+    stat: [
+      { name: "Tennis", value: 100, max: 100 },
+      { name: "Newcomer", value: 80, max: 100 },
     ],
   },
 ]
