@@ -458,19 +458,19 @@ export const members: TMember[] = [
   },
   {
     name: "Monet Tokuyama",
-    role: ["B3", "Current"],
+    role: ["M1", "Current"],
     login: "bob",
     imagePath: "/images/members/bob.jpg",
-    description: "I like sushi",
+    description: "Photons are cool",
     links: [
       { name: "Github", url: "https://github.com/funkeyteth" },
       { name: "Instagram", url: "https://www.instagram.com/funkeyteth/" },
     ],
     stat: [
-      { name: "Strength", value: 40, max: 100 },
-      { name: "Agility", value: 100, max: 100 },
-      { name: "Intelligence", value: 10, max: 100 },
-      { name: "Luck", value: 50, max: 100 },
+      { name: "Strength", value: 41, max: 100 },
+      { name: "Agility", value: 81, max: 100 },
+      { name: "Intelligence", value: 31, max: 100 },
+      { name: "Luck", value: 100, max: 100 },
     ],
   },
   {
