@@ -377,9 +377,9 @@ export const members: TMember[] = [
   {
     name: "Hikaru Yokomori",
     login: "voy",
-    role: ["B4", "Current"],
+    role: ["M1", "Current"],
     imagePath: "/images/members/voy.jpg",
-    description: "Adventuring Science",
+    description: "I study and explore Hikaru",
     links: [
       {
         name: "Github",
@@ -387,10 +387,10 @@ export const members: TMember[] = [
       },
     ],
     stat: [
-      { name: "Strength", value: 30, max: 100 },
-      { name: "Agility", value: 30, max: 100 },
-      { name: "Intelligence", value: 30, max: 100 },
-      { name: "Luck", value: 99, max: 100 },
+      { name: "Strength", value: 70, max: 100 },
+      { name: "Agility", value: 70, max: 100 },
+      { name: "Intelligence", value: 70, max: 100 },
+      { name: "Luck", value: 130, max: 130 },
     ],
   },
   {
@@ -563,7 +563,7 @@ export const members: TMember[] = [
   {
     name: "Tetsuma Ariyoshi",
     login: "mono",
-    role: ["B1", "Current"],
+    role: ["B3", "Current"],
     imagePath: "/images/members/mono.png",
     description: "I'm a student at Keio University",
     links: [
@@ -818,6 +818,44 @@ export const members: TMember[] = [
       { name: "Special Attack", value: 65, max: 255 },
       { name: "Special Defense", value: 65, max: 255 },
       { name: "Speed", value: 50, max: 255 },
+    ],
+  },
+  {
+    name: "Kouki Maeda",
+    login: "k0uki",
+    role: ["B4", "Current"],
+    imagePath: "images/members/kouki.jpeg",
+    description: "I'm a student at Keio University",
+    links: [
+      {
+        name: "GitHub",
+        url: "https://github.com/sky12hi12",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 70, max: 100 },
+      { name: "Agility", value: 80, max: 100 },
+      { name: "Intelligence", value: 60, max: 100 },
+      { name: "Luck", value: 30, max: 100 },
+    ],
+  },
+  {
+    name: "Manasvi(Mana) Patwardhan",
+    login: "manasvi",
+    role: ["B2", "Current"],
+    imagePath: "images/members/mana.jpg",
+    description: "Here for the vibes",
+    links: [
+      {
+        name: "GitHub",
+        url: "https://github.com/mana-pat1",
+      },
+    ],
+    stat: [
+      { name: "Happiness", value: 100, max: 100 },
+      { name: "Agility", value: 80, max: 100 },
+      { name: "Intelligence", value: 60, max: 100 },
+      { name: "Luck", value: 80, max: 100 },
     ],
   },
 ]
