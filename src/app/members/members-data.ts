@@ -836,4 +836,25 @@ export const members: TMember[] = [
       { name: "Luck", value: 80, max: 100 },
     ],
   },
+  {
+    name: "Sohma Kobayashi",
+    login: "sohma",
+    role: ["B1", "Current"],
+    imagePath: "",
+    description: "Can you hear the music?",
+    links: [
+      {
+        name: "GitHub",
+        url: "https://github.com/shumoku-dtl",
+      },
+    ],
+    stat: [
+      { name: "Charms", value: 80, max: 100 },
+      { name: "Defense Against the Dark Arts", value: 80, max: 100 },
+      { name: "Potions", value: 30, max: 100 },
+      { name: "Muggle Studies", value: 100, max: 100 },
+      { name: "History of Magic", value: 70, max: 100 },
+      { name: "Divination", value: 0, max: 100 },
+    ],
+  },
 ]
