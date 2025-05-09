@@ -379,7 +379,7 @@ export const members: TMember[] = [
     login: "voy",
     role: ["M1", "Current"],
     imagePath: "/images/members/voy.jpg",
-    description: "I study and explore Hikaru",
+    description: "I study and explore Hikaru✨⚽️",
     links: [
       {
         name: "Github",
@@ -490,9 +490,9 @@ export const members: TMember[] = [
   {
     name: "Marii Koyama",
     login: "mia",
-    role: ["B2", "Current"],
+    role: ["B4", "Current"],
     imagePath: "/images/members/mia.jpg",
-    description: "I'm a student at Keio University",
+    description: "I cook strawberry pasta 🍓🍝",
     links: [
       {
         name: "Github",
@@ -500,9 +500,9 @@ export const members: TMember[] = [
       },
     ],
     stat: [
-      { name: "Strength", value: 60, max: 100 },
-      { name: "Agility", value: 70, max: 100 },
-      { name: "Intelligence", value: 30, max: 100 },
+      { name: "Strenth", value: 60, max: 100 },
+      { name: "Anxiety", value: 5, max: 100 },
+      { name: "Intemperance", value: 20, max: 100 },
       { name: "Luck", value: 98, max: 100 },
     ],
   },
