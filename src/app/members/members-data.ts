@@ -840,7 +840,7 @@ export const members: TMember[] = [
     name: "Sohma Kobayashi",
     login: "sohma",
     role: ["B1", "Current"],
-    imagePath: "",
+    imagePath: "images/members/sohma.jpg",
     description: "Can you hear the music?",
     links: [
       {
