@@ -186,7 +186,7 @@ export default function Navigation() {
         <Toggle onPressedChange={(pressed) => {
           setTheme(resolvedTheme === "dark" ? "light" : "dark")
         }}>
-          {resolvedTheme === "dark" ? <>☀️</> : <>🌙</>}
+          {resolvedTheme === "dark" ? <>☀️</> : <>⭐</>}
         </Toggle>
       </NavigationMenuItem>
     </NavigationMenuList>
