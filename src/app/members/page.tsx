@@ -32,7 +32,7 @@ export default function Page() {
       {/* top section with image */}
       <div
         ref={containerRef}
-        className="overscroll-auto overflow-x-auto w-full h-[40vh] md:h-[55vh] xl:h-[60vh] bg-gradient-to-b to-primary/25 from-primary-100 max-w-[1800px]"
+        className="overscroll-auto overflow-x-auto w-full h-[40vh] md:h-[55vh] xl:h-[60vh] bg-linear-to-b to-primary/25 from-primary-100 max-w-[1800px]"
       >
         <img
           src="/images/members/aqua-fall-241114-cropped.jpg"

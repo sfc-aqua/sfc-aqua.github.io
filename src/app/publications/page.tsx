@@ -133,7 +133,7 @@ export default function Page() {
       >
         Expand/Collapse all
       </button>
-      <div className="prose">
+      <div className="prose dark:prose-invert">
         <Accordion type="multiple" value={values} onValueChange={setValues}>
           {publications.map((publication) => (
             <AccordionItem

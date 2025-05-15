@@ -27,8 +27,8 @@ export default function RootLayout({
       </head>
       <body
         className={cn(
-          inter.className
-          // 'min-h-screen'
+          inter.className,
+          'min-h-screen'
         )}
       >
         <Providers>

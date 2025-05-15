@@ -13,10 +13,10 @@ export default function Home() {
         </h2>
       </div>
       <div className="flex flex-col gap-2 p-4 md:flex-row">
-        <div className="p-4 prose border rounded-xl border-base-content/5 bg-base-200">
+        <div className="p-4 prose dark:prose-invert border rounded-xl border-base-content/5 bg-base-200">
           <Mission />
         </div>
-        <div className="p-4 prose border rounded-xl border-base-content/5 bg-base-200">
+        <div className="p-4 prose dark:prose-invert border rounded-xl border-base-content/5 bg-base-200">
           <News />
         </div>
       </div>
