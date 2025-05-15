@@ -554,7 +554,7 @@ export const members: TMember[] = [
   },
   {
     name: "Junseo Kwak",
-    role: ["B2", "Current"],
+    role: ["B4", "Current"],
     login: "junseo",
     imagePath: "/images/members/junseo.jpg",
     description: "Student at Keio University",
