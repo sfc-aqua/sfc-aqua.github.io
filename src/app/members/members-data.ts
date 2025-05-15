@@ -479,14 +479,18 @@ export const members: TMember[] = [
     login: "soon",
     imagePath: "/images/members/soon.jpeg",
     description: "Surviving as a classical brain in a quantum world",
-    links: [{ name: "Github", url: "https://github.com/res6idue" },
-            { name: "Google Scholar", url: "https://scholar.google.com/citations?hl=ja&user=-4_UUvwAAAAJ"}
+    links: [
+      { name: "Github", url: "https://github.com/res6idue" },
+      {
+        name: "Google Scholar",
+        url: "https://scholar.google.com/citations?hl=ja&user=-4_UUvwAAAAJ",
+      },
     ],
     stat: [
       { name: "Stability", value: 68, max: 100 },
-      { name: "Code Distance", value: 3, max:100 },
+      { name: "Code Distance", value: 3, max: 100 },
       { name: "Mobility", value: 47, max: 100 },
-      { name: "Luck", value: Math.random()*100, max: 100 },
+      { name: "Luck", value: Math.random() * 100, max: 100 },
     ],
   },
   {
@@ -920,7 +924,8 @@ export const members: TMember[] = [
     login: "sakumatcho",
     role: ["D2", "Project Assistant Professor", "Current"],
     imagePath: "images/members/sakuma.jpeg",
-    description: "If you do it, it will be done. If you do not it, it will not be done. If nothing can be done, it is because you do not do it.",
+    description:
+      "If you do it, it will be done. If you do not it, it will not be done. If nothing can be done, it is because you do not do it.",
     links: [
       {
         name: "GitHub",
@@ -930,7 +935,7 @@ export const members: TMember[] = [
     stat: [
       { name: "Swimming", value: 100, max: 100 },
       { name: "Strength and Conditioning", value: 30, max: 100 },
-      { name: "GUNDAM", value: 30, max: 100 }
+      { name: "GUNDAM", value: 30, max: 100 },
     ],
   },
   {
@@ -944,7 +949,7 @@ export const members: TMember[] = [
         name: "Google Scholar",
         url: "https://scholar.google.com/citations?user=xHw_rQ0AAAAJ",
       },
-    ]
+    ],
   },
   {
     name: "Gordon Cui",
@@ -957,7 +962,7 @@ export const members: TMember[] = [
         name: "GitHub",
         url: "https://github.com/syuii",
       },
-    ]
+    ],
   },
   {
     name: "Yuta Imahoko",
@@ -970,6 +975,6 @@ export const members: TMember[] = [
         name: "GitHub",
         url: "https://github.com/yuta07092001",
       },
-    ]
-  }
+    ],
+  },
 ]
