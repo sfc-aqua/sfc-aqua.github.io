@@ -1,6 +1,6 @@
 import "./globals.css"
 import { Inter } from "next/font/google"
-import Navigator from "@/components/navigator-2"
+
 import { cn } from "@/components/utils"
 import { Providers } from "./Providers"
 
@@ -32,7 +32,6 @@ export default function RootLayout({
         )}
       >
         <Providers>
-          <Navigator />
           {children}
         </Providers>
       </body>

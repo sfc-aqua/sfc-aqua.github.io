@@ -4,7 +4,7 @@ import News from "./news.mdx"
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center w-full min-h-screen">
+    <>
       {/** Hero section */}
       <div className="min-h-[60vw] flex flex-col justify-center items-center w-full h-min">
         <h1 className="text-[9rem] font-mono">AQUA</h1>
@@ -20,6 +20,6 @@ export default function Home() {
           <News />
         </div>
       </div>
-    </main>
+    </>
   )
 }

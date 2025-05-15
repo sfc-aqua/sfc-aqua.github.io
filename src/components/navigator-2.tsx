@@ -17,7 +17,7 @@ import {
 import { useTheme } from "next-themes"
 import { Toggle } from "@/components/ui/toggle"
 
-const Links: {
+export const Links: {
   href: string
   label: string
   children?: {
@@ -42,17 +42,17 @@ const Links: {
         {
           label: "Books",
           href: "/publications#books",
-          description: "Cillum duis deserunt esse ipsum ex enim cillum labore dolore. Sit anim et nisi aliqua dolor duis commodo ullamco aute laboris est fugiat ea aliquip."
+          // description: "Cillum duis deserunt esse ipsum ex enim cillum labore dolore. Sit anim et nisi aliqua dolor duis commodo ullamco aute laboris est fugiat ea aliquip."
         },
         {
           label: "Journal Papers",
           href: "/publications#journal-papers",
-          description: "Non qui exercitation est cillum excepteur ea voluptate et consequat anim magna culpa consectetur. Esse nostrud esse tempor."
+          // description: "Non qui exercitation est cillum excepteur ea voluptate et consequat anim magna culpa consectetur. Esse nostrud esse tempor."
         },
         {
           label: "RFCs (Internet Requests for Comments)",
           href: "/publications#rfcs",
-          description: "Do est qui excepteur anim do consectetur labore dolore adipisicing id veniam aute sint anim. Aliqua voluptate ad deserunt proident."
+          // description: "Do est qui excepteur anim do consectetur labore dolore adipisicing id veniam aute sint anim. Aliqua voluptate ad deserunt proident."
         },
         {
           label: "International Conferences with Proceedings",
@@ -126,72 +126,61 @@ const Links: {
 export default function Navigation() {
   const { resolvedTheme, setTheme, systemTheme } = useTheme()
 
-  return (<NavigationMenu className="py-2 sticky top-0 backdrop-blur-md bg-background/30 max-w-full">
-    <NavigationMenuList className="flex w-full">
-      {/* <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="size-5 sm:hidden"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M4 6h16M4 12h8m-8 6h16"
-        />
-      </svg> */}
-      <NavigationMenuItem
-        key='home'
-        className="self-start"
-      >
-        <Link href='/' legacyBehavior passHref >
-          <NavigationMenuLink className={cn(navigationMenuTriggerStyle())}>
-            <span>🌊 AQUA</span>
-          </NavigationMenuLink>
-        </Link>
-      </NavigationMenuItem>
-      {Links.map((component) => {
-        return component.children ? (
-          <NavigationMenuItem
-            key={component.label}
-          >
-            <NavigationMenuTrigger>{component.label}</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                {component.children.map((subComponent) => (
-                  <ListItem
-                    key={subComponent.label}
-                    title={subComponent.label}
-                    href={subComponent.href}
-                  >
-                    {subComponent.description}
-                  </ListItem>
-                ))}
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>) : (
-          <NavigationMenuItem
-            key={component.label}
-          >
-            <Link href={component.href} legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                {component.label}
-              </NavigationMenuLink>
-            </Link>
-          </NavigationMenuItem>)
-      })}
-      <NavigationMenuItem key='theme'>
-        <Toggle onPressedChange={(pressed) => {
-          setTheme(resolvedTheme === "dark" ? "light" : "dark")
-        }}>
-          {resolvedTheme === "dark" ? <>☀️</> : <>⭐</>}
-        </Toggle>
-      </NavigationMenuItem>
-    </NavigationMenuList>
+  return (
+    <NavigationMenu className="py-2 sticky top-2 rounded-2xl px-4 backdrop-blur-md bg-background/30 max-w-full hidden sm:block z-10" viewport={false}>
+      <NavigationMenuList className="flex w-full">
+        <NavigationMenuItem
+          key='home'
+          className="self-start"
+        >
+          <Link href='/' legacyBehavior passHref >
+            <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "bg-transparent hover:bg-accent/50")}>
+              🌊 AQUA
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        {Links.map((component) => {
+          return component.children ? (
+            <NavigationMenuItem
+              key={component.label}
 
-  </NavigationMenu>)
+            >
+              <NavigationMenuTrigger className="bg-transparent hover:bg-accent/50">{component.label}</NavigationMenuTrigger>
+              <NavigationMenuContent className="">
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] z-20">
+                  {component.children.map((subComponent) => (
+                    <ListItem
+                      key={subComponent.label}
+                      title={subComponent.label}
+                      href={subComponent.href}
+
+                    >
+                      {subComponent.description}
+                    </ListItem>
+                  ))}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>) : (
+            <NavigationMenuItem
+              key={component.label}
+            >
+              <Link href={component.href} legacyBehavior passHref>
+                <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'bg-transparent hover:bg-accent/50')}>
+                  {component.label}
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>)
+        })}
+        <NavigationMenuItem key='theme'>
+          <Toggle onPressedChange={(pressed) => {
+            setTheme(resolvedTheme === "dark" ? "light" : "dark")
+          }}>
+            {resolvedTheme === "dark" ? <>☀️</> : <>⭐</>}
+          </Toggle>
+        </NavigationMenuItem>
+      </NavigationMenuList>
+
+    </NavigationMenu>)
 }
 
 const ListItem = React.forwardRef<
@@ -219,3 +208,8 @@ const ListItem = React.forwardRef<
   )
 })
 ListItem.displayName = "ListItem"
+
+// import React, { useState } from "react"
+// import Link from "next/link"
+// import { useTheme } from "next-themes"
+// ...import your NavigationMenu, NavigationMenuItem, etc.

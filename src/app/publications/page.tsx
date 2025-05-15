@@ -16,6 +16,7 @@ import WhitePapers from "./white-papers.mdx"
 import CourseMaterials from "./course-materials.mdx"
 import OtherPublications from "./other-publications.mdx"
 import { useState } from "react"
+import { ListCollapseIcon } from "lucide-react"
 
 import {
   Accordion,
@@ -23,6 +24,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { Button } from "@/components/ui/button"
 
 const publications = [
   {
@@ -121,8 +123,8 @@ export default function Page() {
   const [values, setValues] = useState<string[]>([])
   return (
     <div className="flex flex-col items-center justify-center py-10 px-4 relative">
-      <button
-        className="btn self-end sticky top-20 z-10"
+      <Button
+        className="self-end sticky top-20 z-10"
         onClick={() => {
           if (values.length === publications.length) {
             setValues([])
@@ -131,10 +133,10 @@ export default function Page() {
           }
         }}
       >
-        Expand/Collapse all
-      </button>
+        <ListCollapseIcon/>
+      </Button>
       <div className="prose dark:prose-invert">
-        <Accordion type="multiple" value={values} onValueChange={setValues}>
+        <Accordion type="multiple" value={values} onValueChange={setValues} className="w-full">
           {publications.map((publication) => (
             <AccordionItem
               value={publication.id}

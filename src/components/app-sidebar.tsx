@@ -1,0 +1,83 @@
+import { Calendar, Home, Inbox, Search, Settings } from "lucide-react"
+
+import {
+  Sidebar,
+  SidebarContent,
+  SidebarGroup,
+  SidebarGroupContent,
+  SidebarGroupLabel,
+  SidebarMenu,
+  SidebarMenuButton,
+  SidebarMenuItem,
+  SidebarMenuSub,
+  SidebarMenuSubItem,
+  SidebarMenuSubButton
+} from "@/components/ui/sidebar"
+
+import { Links } from "./navigator-2"
+
+// Menu items.
+const items = [
+  {
+    title: "Home",
+    url: "#",
+    icon: Home,
+  },
+  {
+    title: "Inbox",
+    url: "#",
+    icon: Inbox,
+  },
+  {
+    title: "Calendar",
+    url: "#",
+    icon: Calendar,
+  },
+  {
+    title: "Search",
+    url: "#",
+    icon: Search,
+  },
+  {
+    title: "Settings",
+    url: "#",
+    icon: Settings,
+  },
+]
+
+export function AppSidebar() {
+  return (
+    <Sidebar>
+      <SidebarContent>
+        <SidebarGroup>
+          <SidebarGroupLabel>🌊 AQUA</SidebarGroupLabel>
+          <SidebarGroupContent>
+            <SidebarMenu>
+              {Links.map((item) => (
+                <SidebarMenuItem key={item.label}>
+                  <SidebarMenuButton asChild>
+                    <a href={item.href}>
+                      <span>{item.label}</span>
+                    </a>
+                  </SidebarMenuButton>
+                  {item.children && <SidebarMenuSub>
+                    {item.children.map((subitem) => (
+                      <SidebarMenuSubItem>
+                        <SidebarMenuSubButton asChild>
+                          <a href={subitem.href}>
+                            <span>{subitem.label}</span>
+                          </a>
+                        </SidebarMenuSubButton>
+                      </SidebarMenuSubItem>
+                    ))}
+                  </SidebarMenuSub>}
+                </SidebarMenuItem>
+              ))}
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+
+      </SidebarContent>
+    </Sidebar>
+  )
+}
