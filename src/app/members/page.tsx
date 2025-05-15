@@ -61,12 +61,8 @@ export default function Page() {
         </div>
 
         <div className="flex gap-2 mt-10">
-          <Button onClick={handleOnCurrentMembersClick}>
-            Current Members
-          </Button>
-          <Button onClick={handleOnAlumniClick}>
-            Alumni
-          </Button>
+          <Button onClick={handleOnCurrentMembersClick}>Current Members</Button>
+          <Button onClick={handleOnAlumniClick}>Alumni</Button>
         </div>
 
         <div

@@ -133,10 +133,15 @@ export default function Page() {
           }
         }}
       >
-        <ListCollapseIcon/>
+        <ListCollapseIcon />
       </Button>
       <div className="prose dark:prose-invert">
-        <Accordion type="multiple" value={values} onValueChange={setValues} className="w-full">
+        <Accordion
+          type="multiple"
+          value={values}
+          onValueChange={setValues}
+          className="w-full"
+        >
           {publications.map((publication) => (
             <AccordionItem
               value={publication.id}

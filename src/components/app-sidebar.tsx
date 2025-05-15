@@ -11,7 +11,7 @@ import {
   SidebarMenuItem,
   SidebarMenuSub,
   SidebarMenuSubItem,
-  SidebarMenuSubButton
+  SidebarMenuSubButton,
 } from "@/components/ui/sidebar"
 
 import { Links } from "./navigator"
@@ -60,23 +60,24 @@ export function AppSidebar() {
                       <span>{item.label}</span>
                     </a>
                   </SidebarMenuButton>
-                  {item.children && <SidebarMenuSub>
-                    {item.children.map((subitem) => (
-                      <SidebarMenuSubItem key={subitem.label}>
-                        <SidebarMenuSubButton asChild>
-                          <a href={subitem.href}>
-                            <span>{subitem.label}</span>
-                          </a>
-                        </SidebarMenuSubButton>
-                      </SidebarMenuSubItem>
-                    ))}
-                  </SidebarMenuSub>}
+                  {item.children && (
+                    <SidebarMenuSub>
+                      {item.children.map((subitem) => (
+                        <SidebarMenuSubItem key={subitem.label}>
+                          <SidebarMenuSubButton asChild>
+                            <a href={subitem.href}>
+                              <span>{subitem.label}</span>
+                            </a>
+                          </SidebarMenuSubButton>
+                        </SidebarMenuSubItem>
+                      ))}
+                    </SidebarMenuSub>
+                  )}
                 </SidebarMenuItem>
               ))}
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
-
       </SidebarContent>
     </Sidebar>
   )

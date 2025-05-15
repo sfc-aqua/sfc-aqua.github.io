@@ -25,15 +25,8 @@ export default function RootLayout({
           href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
         />
       </head>
-      <body
-        className={cn(
-          inter.className,
-          'min-h-screen'
-        )}
-      >
-        <Providers>
-          {children}
-        </Providers>
+      <body className={cn(inter.className, "min-h-screen")}>
+        <Providers>{children}</Providers>
       </body>
     </html>
   )
