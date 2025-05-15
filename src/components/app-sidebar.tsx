@@ -14,7 +14,7 @@ import {
   SidebarMenuSubButton
 } from "@/components/ui/sidebar"
 
-import { Links } from "./navigator-2"
+import { Links } from "./navigator"
 
 // Menu items.
 const items = [
@@ -62,7 +62,7 @@ export function AppSidebar() {
                   </SidebarMenuButton>
                   {item.children && <SidebarMenuSub>
                     {item.children.map((subitem) => (
-                      <SidebarMenuSubItem>
+                      <SidebarMenuSubItem key={subitem.label}>
                         <SidebarMenuSubButton asChild>
                           <a href={subitem.href}>
                             <span>{subitem.label}</span>

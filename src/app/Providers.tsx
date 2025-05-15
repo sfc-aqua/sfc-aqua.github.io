@@ -3,7 +3,7 @@
 import { ThemeProvider } from "next-themes"
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 import { AppSidebar } from "@/components/app-sidebar"
-import Navigator from "@/components/navigator-2"
+import Navigator from "@/components/navigator"
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
