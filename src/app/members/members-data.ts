@@ -475,16 +475,22 @@ export const members: TMember[] = [
   },
   {
     name: "Kento Samuel Soon",
-    role: ["B2", "Current"],
+    role: ["B4", "Current"],
     login: "soon",
-    imagePath: "/images/members/soon.png",
-    description: "Quantum information seems interesting",
-    links: [{ name: "Github", url: "https://github.com/res6idue" }],
+    imagePath: "/images/members/soon.jpeg",
+    description: "Surviving as a classical brain in a quantum world",
+    links: [
+      { name: "Github", url: "https://github.com/res6idue" },
+      {
+        name: "Google Scholar",
+        url: "https://scholar.google.com/citations?hl=ja&user=-4_UUvwAAAAJ",
+      },
+    ],
     stat: [
-      { name: "Strength", value: 23, max: 100 },
-      { name: "Agility", value: 43, max: 100 },
-      { name: "Intelligence", value: 68, max: 100 },
-      { name: "Luck", value: 99, max: 100 },
+      { name: "Stability", value: 68, max: 100 },
+      { name: "Code Distance", value: 3, max: 100 },
+      { name: "Mobility", value: 47, max: 100 },
+      { name: "Luck", value: Math.random() * 100, max: 100 },
     ],
   },
   {
@@ -643,9 +649,9 @@ export const members: TMember[] = [
   {
     name: "Akash prasad",
     login: "pura",
-    role: ["B1", "Current"],
-    imagePath: "/images/members/pura.jpg",
-    description: "I am a first semester student here",
+    role: ["B3", "Current"],
+    imagePath: "/images/members/pura.jpeg",
+    description: "I'm having fun here",
     links: [
       {
         name: "Github",
@@ -911,6 +917,64 @@ export const members: TMember[] = [
     stat: [
       { name: "Tennis", value: 100, max: 100 },
       { name: "Newcomer", value: 80, max: 100 },
+    ],
+  },
+  {
+    name: "Daisuke Sakuma",
+    login: "sakumatcho",
+    role: ["D2", "Project Assistant Professor", "Current"],
+    imagePath: "images/members/sakuma.jpeg",
+    description:
+      "If you do it, it will be done. If you do not it, it will not be done. If nothing can be done, it is because you do not do it.",
+    links: [
+      {
+        name: "GitHub",
+        url: "https://github.com/Sakumatcho",
+      },
+    ],
+    stat: [
+      { name: "Swimming", value: 100, max: 100 },
+      { name: "Strength and Conditioning", value: 30, max: 100 },
+      { name: "GUNDAM", value: 30, max: 100 },
+    ],
+  },
+  {
+    name: "Takafumi Oka",
+    login: "takafumi",
+    role: ["D2", "Current"],
+    imagePath: "images/members/takafumi.jpeg",
+    description: "I am a PhD student at Keio University",
+    links: [
+      {
+        name: "Google Scholar",
+        url: "https://scholar.google.com/citations?user=xHw_rQ0AAAAJ",
+      },
+    ],
+  },
+  {
+    name: "Gordon Cui",
+    login: "syui",
+    role: ["M1", "Current"],
+    imagePath: "images/members/syui.jpeg",
+    description: "hi",
+    links: [
+      {
+        name: "GitHub",
+        url: "https://github.com/syuii",
+      },
+    ],
+  },
+  {
+    name: "Yuta Imahoko",
+    login: "yuta0709",
+    role: ["B3", "Current"],
+    imagePath: "images/members/yuta.jpeg",
+    description: "I love DQC",
+    links: [
+      {
+        name: "GitHub",
+        url: "https://github.com/yuta07092001",
+      },
     ],
   },
 ]
