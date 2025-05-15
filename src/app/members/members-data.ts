@@ -515,7 +515,7 @@ export const members: TMember[] = [
   {
     name: "Aman Y. Tekleab",
     login: "aman",
-    role: ["B2", "Current"],
+    role: ["B3", "Current"],
     imagePath: "/images/members/darkifywalltemp.jpg",
     description: "I'm me",
     links: [
@@ -526,9 +526,27 @@ export const members: TMember[] = [
     ],
     stat: [
       { name: "Strength", value: 10, max: 100 },
-      { name: "Agility", value: 10, max: 100 },
       { name: "Agility", value: 70, max: 100 },
       { name: "Intelligence", value: 10, max: 100 },
+      { name: "Luck", value: 50, max: 100 },
+    ],
+  },
+  {
+    name: "Hien Nguyen",
+    login: "driedbones05",
+    role: ["B2", "Current"],
+    imagePath: "/images/members/driedbones05.jpg",
+    description: "I have nothing to see",
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/driedbones05",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 50, max: 100 },
+      { name: "Agility", value: 50, max: 100 },
+      { name: "Intelligence", value: 50, max: 100 },
       { name: "Luck", value: 50, max: 100 },
     ],
   },
