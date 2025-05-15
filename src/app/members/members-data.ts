@@ -529,7 +529,7 @@ export const members: TMember[] = [
   {
     name: "Shreya Kafle",
     login: "riya",
-    role: ["B2", "Current"],
+    role: ["B4", "Current"],
     imagePath: "/images/members/riya.jpg",
     description: "I'm enjoying my life;)",
     links: [
