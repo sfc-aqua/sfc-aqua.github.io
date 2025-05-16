@@ -13,44 +13,30 @@ import {
   SidebarMenuSubItem,
   SidebarMenuSubButton,
 } from "@/components/ui/sidebar"
+import { useTheme } from "next-themes"
+import { Toggle } from "@/components/ui/toggle"
 
 import { Links } from "./navigator"
-
-// Menu items.
-const items = [
-  {
-    title: "Home",
-    url: "#",
-    icon: Home,
-  },
-  {
-    title: "Inbox",
-    url: "#",
-    icon: Inbox,
-  },
-  {
-    title: "Calendar",
-    url: "#",
-    icon: Calendar,
-  },
-  {
-    title: "Search",
-    url: "#",
-    icon: Search,
-  },
-  {
-    title: "Settings",
-    url: "#",
-    icon: Settings,
-  },
-]
+import Link from "next/link"
 
 export function AppSidebar() {
+  const { resolvedTheme, setTheme, systemTheme } = useTheme()
   return (
-    <Sidebar>
+    <Sidebar className="sm:hidden">
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>🌊 AQUA</SidebarGroupLabel>
+          <SidebarGroupLabel className="flex justify-between">
+            <Link href='/' legacyBehavior>
+              🌊 AQUA
+            </Link>
+            <Toggle
+              onPressedChange={(pressed) => {
+                setTheme(resolvedTheme === "dark" ? "light" : "dark")
+              }}
+            >
+              {resolvedTheme === "dark" ? <>☀️</> : <>⭐</>}
+            </Toggle>
+          </SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {Links.map((item) => (
