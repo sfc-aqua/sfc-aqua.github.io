@@ -23,7 +23,6 @@ import {
 import { Button } from "@/components/ui/button"
 import { EllipsisIcon } from "lucide-react"
 
-
 const MemberCardV2 = ({ member }: { member: TMember }) => {
   return (
     <Card className="relative">
@@ -95,7 +94,9 @@ const MemberCardV2 = ({ member }: { member: TMember }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Button asChild variant="link">{link.name}</Button>
+                    <Button asChild variant="link">
+                      {link.name}
+                    </Button>
                   </Link>
                 ))}
               </div>

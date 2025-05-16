@@ -15,12 +15,10 @@ export function Providers({ children }: { children: React.ReactNode }) {
     >
       <SidebarProvider defaultOpen={false}>
         <AppSidebar />
-        <main className='flex flex-col w-screen items-center'>
+        <main className="flex flex-col w-screen items-center">
           <Navigator />
           <SidebarTrigger className="sm:hidden p-1 fixed top-2 left-2 bg-background z-10 size-10 border" />
-          <div className="container">
-          {children}
-          </div>
+          <div className="container">{children}</div>
         </main>
       </SidebarProvider>
     </ThemeProvider>

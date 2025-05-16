@@ -26,7 +26,7 @@ export function AppSidebar() {
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel className="flex justify-between">
-            <Link href='/' legacyBehavior>
+            <Link href="/" legacyBehavior>
               🌊 AQUA
             </Link>
             <Toggle
