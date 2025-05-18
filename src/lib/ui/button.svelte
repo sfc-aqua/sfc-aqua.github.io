@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { cn } from '$lib/utils';
+	// import { cn } from '$lib/utils';
+	import { cn } from '../utils';
 	import { Button, type ButtonRootProps } from 'bits-ui';
 	import { type VariantProps, tv } from 'tailwind-variants';
 	import type { Snippet } from 'svelte';
