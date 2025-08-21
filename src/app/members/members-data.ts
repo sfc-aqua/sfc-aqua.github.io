@@ -475,16 +475,22 @@ export const members: TMember[] = [
   },
   {
     name: "Kento Samuel Soon",
-    role: ["B2", "Current"],
+    role: ["B4", "Current"],
     login: "soon",
-    imagePath: "/images/members/soon.png",
-    description: "Quantum information seems interesting",
-    links: [{ name: "Github", url: "https://github.com/res6idue" }],
+    imagePath: "/images/members/soon.jpeg",
+    description: "Surviving as a classical brain in a quantum world",
+    links: [
+      { name: "Github", url: "https://github.com/res6idue" },
+      {
+        name: "Google Scholar",
+        url: "https://scholar.google.com/citations?hl=ja&user=-4_UUvwAAAAJ",
+      },
+    ],
     stat: [
-      { name: "Strength", value: 23, max: 100 },
-      { name: "Agility", value: 43, max: 100 },
-      { name: "Intelligence", value: 68, max: 100 },
-      { name: "Luck", value: 99, max: 100 },
+      { name: "Stability", value: 68, max: 100 },
+      { name: "Code Distance", value: 3, max: 100 },
+      { name: "Mobility", value: 47, max: 100 },
+      { name: "Luck", value: Math.random() * 100, max: 100 },
     ],
   },
   {
@@ -509,7 +515,7 @@ export const members: TMember[] = [
   {
     name: "Aman Y. Tekleab",
     login: "aman",
-    role: ["B2", "Current"],
+    role: ["B3", "Current"],
     imagePath: "/images/members/darkifywalltemp.jpg",
     description: "I'm me",
     links: [
@@ -520,16 +526,34 @@ export const members: TMember[] = [
     ],
     stat: [
       { name: "Strength", value: 10, max: 100 },
-      { name: "Agility", value: 10, max: 100 },
       { name: "Agility", value: 70, max: 100 },
       { name: "Intelligence", value: 10, max: 100 },
       { name: "Luck", value: 50, max: 100 },
     ],
   },
   {
+    name: "Hien Nguyen",
+    login: "driedbones05",
+    role: ["B2", "Current"],
+    imagePath: "/images/members/driedbones05.jpg",
+    description: "I have nothing to see",
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/driedbones05",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 50, max: 100 },
+      { name: "Agility", value: 50, max: 100 },
+      { name: "Intelligence", value: 50, max: 100 },
+      { name: "Luck", value: 50, max: 100 },
+    ],
+  },
+  {
     name: "Shreya Kafle",
     login: "riya",
-    role: ["B2", "Current"],
+    role: ["B4", "Current"],
     imagePath: "/images/members/riya.jpg",
     description: "I'm enjoying my life;)",
     links: [
@@ -548,7 +572,7 @@ export const members: TMember[] = [
   },
   {
     name: "Junseo Kwak",
-    role: ["B2", "Current"],
+    role: ["B4", "Current"],
     login: "junseo",
     imagePath: "/images/members/junseo.jpg",
     description: "Student at Keio University",
@@ -643,9 +667,9 @@ export const members: TMember[] = [
   {
     name: "Akash prasad",
     login: "pura",
-    role: ["B1", "Current"],
-    imagePath: "/images/members/pura.jpg",
-    description: "I am a first semester student here",
+    role: ["B3", "Current"],
+    imagePath: "/images/members/pura.jpeg",
+    description: "I'm having fun here",
     links: [
       {
         name: "Github",
@@ -799,6 +823,28 @@ export const members: TMember[] = [
     ],
   },
   {
+    name: "Lars Matsumiya",
+    login: "larz",
+    role: ["B2", "Current"],
+    imagePath: "images/members/larz.jpg",
+    description:
+      "Bipedal humanoid with a dark purple body, armed with sharp teeth and claws, which it uses to dig through soil.",
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/master-of-ppap",
+      },
+    ],
+    stat: [
+      { name: "HP", value: 50, max: 255 },
+      { name: "Attack", value: 75, max: 255 },
+      { name: "Defense", value: 75, max: 255 },
+      { name: "Special Attack", value: 65, max: 255 },
+      { name: "Special Defense", value: 65, max: 255 },
+      { name: "Speed", value: 50, max: 255 },
+    ],
+  },
+  {
     name: "Kouki Maeda",
     login: "k0uki",
     role: ["B4", "Current"],
@@ -834,6 +880,138 @@ export const members: TMember[] = [
       { name: "Agility", value: 80, max: 100 },
       { name: "Intelligence", value: 60, max: 100 },
       { name: "Luck", value: 80, max: 100 },
+    ],
+  },
+  {
+    name: "Yuki Kurosawa",
+    login: "kyuryu",
+    role: ["B3", "Current"],
+    imagePath: "images/members/kyuryu.jpg",
+    description: "I'm kyuryu",
+    links: [
+      {
+        name: "GitHub",
+        url: "https://github.com/yuki9638",
+      },
+    ],
+    stat: [
+      { name: "Happiness", value: 100, max: 100 },
+      { name: "Agility", value: 80, max: 100 },
+      { name: "Intelligence", value: 60, max: 100 },
+      { name: "Luck", value: 80, max: 100 },
+    ],
+  },
+  {
+    name: "Siddartha(Sid) Bhandari",
+    login: "siddartha",
+    role: ["B3", "Current"],
+    imagePath: "images/members/siddartha_pfp.jpg",
+    description: "がんばるぞー",
+    links: [
+      {
+        name: "GitHub",
+        url: "https://github.com/SIDDARTHABHANDARI",
+      },
+    ],
+    stat: [
+      { name: "Happiness", value: 40, max: 100 },
+      { name: "Agility", value: 70, max: 100 },
+      { name: "Intelligence", value: 10, max: 100 },
+      { name: "Luck", value: 90, max: 100 },
+    ],
+  },
+  {
+    name: "Kenya Suzuki",
+    login: "kenya",
+    role: ["B3", "Current"],
+    imagePath: "images/members/kenya.jpeg",
+    description: "im from Alaska",
+    links: [
+      {
+        name: "GitHub",
+        url: "https://github.com/kenyas",
+      },
+    ],
+    stat: [
+      { name: "Happiness", value: 96, max: 100 },
+      { name: "Agility", value: 100, max: 100 },
+      { name: "Intelligence", value: 40, max: 100 },
+      { name: "Luck", value: 80, max: 100 },
+    ],
+  },
+  {
+    name: "Daisuke Takeuchi",
+    login: "remon",
+    role: ["B2", "Current"],
+    imagePath: "images/members/remon.jpg",
+    description: "I like 'R'emon.",
+    links: [
+      {
+        name: "GitHub",
+        url: "https://github.com/remonnnokawa",
+      },
+    ],
+    stat: [
+      { name: "Tennis", value: 100, max: 100 },
+      { name: "Newcomer", value: 80, max: 100 },
+    ],
+  },
+  {
+    name: "Daisuke Sakuma",
+    login: "sakumatcho",
+    role: ["D2", "Project Assistant Professor", "Current"],
+    imagePath: "images/members/sakuma.jpeg",
+    description:
+      "If you do it, it will be done. If you do not it, it will not be done. If nothing can be done, it is because you do not do it.",
+    links: [
+      {
+        name: "GitHub",
+        url: "https://github.com/Sakumatcho",
+      },
+    ],
+    stat: [
+      { name: "Swimming", value: 100, max: 100 },
+      { name: "Strength and Conditioning", value: 30, max: 100 },
+      { name: "GUNDAM", value: 30, max: 100 },
+    ],
+  },
+  {
+    name: "Takafumi Oka",
+    login: "takafumi",
+    role: ["D2", "Current"],
+    imagePath: "images/members/takafumi.jpeg",
+    description: "I am a PhD student at Keio University",
+    links: [
+      {
+        name: "Google Scholar",
+        url: "https://scholar.google.com/citations?user=xHw_rQ0AAAAJ",
+      },
+    ],
+  },
+  {
+    name: "Gordon Cui",
+    login: "syui",
+    role: ["M1", "Current"],
+    imagePath: "images/members/syui.jpeg",
+    description: "hi",
+    links: [
+      {
+        name: "GitHub",
+        url: "https://github.com/syuii",
+      },
+    ],
+  },
+  {
+    name: "Yuta Imahoko",
+    login: "yuta0709",
+    role: ["B3", "Current"],
+    imagePath: "images/members/yuta.jpeg",
+    description: "I love DQC",
+    links: [
+      {
+        name: "GitHub",
+        url: "https://github.com/yuta07092001",
+      },
     ],
   },
 ]
