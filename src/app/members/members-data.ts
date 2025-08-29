@@ -204,14 +204,14 @@ export const members: TMember[] = [
   },
   {
     name: "Naphan Benchasattabuse",
-    role: ["D3+", "Current"],
+    role: ["Project Assistant Professor"],
     login: "whit3z",
     imagePath: "/images/members/whit3z.png",
     description: "I don't know what I'm doing.",
     links: [
       {
         name: "Google Scholar",
-        url: "https://scholar.google.com/citations?user=FRsTsksAAAAJ",
+        url: "https://scholar.google.com/citations?user=FRsTsksAAAAJ&hl=en",
       },
       { name: "Github", url: "https://github.com/Naphann" },
     ],
