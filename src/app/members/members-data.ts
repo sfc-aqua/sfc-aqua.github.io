@@ -204,7 +204,7 @@ export const members: TMember[] = [
   },
   {
     name: "Naphan Benchasattabuse",
-    role: ["Project Assistant Professor"],
+    role: ["Project Assistant Professor", "Current"],
     login: "whit3z",
     imagePath: "/images/members/whit3z.png",
     description: "I don't know what I'm doing.",
