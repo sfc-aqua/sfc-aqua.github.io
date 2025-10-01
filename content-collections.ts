@@ -4,8 +4,8 @@ import { compileMarkdown } from '@content-collections/markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeKatex from 'rehype-katex'
 import remarkMath from 'remark-math'
-import { memberSchema } from './src/members/data'
-import { publicationSchema } from './src/publications/data'
+import { memberSchema, calculateMemberTag } from './src/members/data'
+import { prePublicationSchema } from './src/publications/data'
 
 const posts = defineCollection({
 	name: 'posts',
@@ -60,9 +60,11 @@ const members = defineCollection({
 			remarkPlugins: [remarkGfm, remarkMath],
 			rehypePlugins: [rehypeKatex],
 		})
+
 		return {
 			...document,
 			content,
+			...calculateMemberTag(document),
 		}
 	},
 })
@@ -71,7 +73,7 @@ const publications = defineCollection({
 	name: 'publication',
 	directory: 'src/publications',
 	include: '**/*.md',
-	schema: publicationSchema,
+	schema: prePublicationSchema,
 	transform: async (document, context) => {
 		const content = await compileMarkdown(context, document, {
 			remarkPlugins: [remarkGfm, remarkMath],

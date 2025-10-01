@@ -3,7 +3,6 @@
 	import * as Dialog from '$lib/components/ui/dialog/index.js'
 	import { Badge } from '$lib/components/ui/badge/index.js'
 	import { Button } from '$lib/components/ui/button/index.js'
-	import { asset } from '$app/paths'
 
 	type Props = {
 		member: any
@@ -29,7 +28,7 @@
 						class="animate-spin-slow absolute inset-0 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 opacity-75 blur-md dark:from-pink-400 dark:via-purple-400 dark:to-blue-400 dark:opacity-50"
 					></div>
 					<img
-						src={asset(member.imagePath)}
+						src={member.imagePath}
 						alt={member.login}
 						class="relative h-32 w-32 rounded-full border-4 border-card object-cover shadow-lg"
 					/>

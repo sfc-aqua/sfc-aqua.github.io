@@ -24,10 +24,34 @@ export const load: PageLoad = async () => {
 		}
 	})
 
+	let members = allMembers
+
+	members = members.map((member) => {
+		let content = member.content
+
+		content = content.replace(
+			/(<img[^>]*\ssrc=["'])\/members\/([^"']+)(["'][^>]*>)/gi,
+			(match, before, imagePath, after) => {
+				const assetPath = asset(`/${imagePath}`)
+				const resolvedPath = `${before}${assetPath}${after}`
+				return resolvedPath
+			}
+		)
+
+		let imagePath = asset(`/${member.imagePath.slice(1)}`)
+		// console.log(imagePath)
+
+		return {
+			...member,
+			content: content,
+			imagePath: imagePath,
+		}
+	})
+
 	// Process each pages to transform image paths
 	return {
 		pages,
-		members: allMembers,
+		members: members,
 	}
 }
 

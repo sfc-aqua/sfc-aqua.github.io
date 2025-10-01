@@ -82,6 +82,11 @@ function matchAuthorToLogin(authorName: string): string | null {
 	return nameToLogin.get(normalized) || null
 }
 
+function extractYear(dateString: string): number | null {
+	const yearMatch = dateString.match(/\b(19|20)\d{2}\b/)
+	return yearMatch ? parseInt(yearMatch[0]) : null
+}
+
 function parsePublicationLine(block: string): Publication | null {
 	const trimmed = block.trim()
 	const match = trimmed.match(/^\d+\.\s+(.+)$/s)
@@ -131,10 +136,15 @@ function generateMarkdownFile(pub: Publication, index: number, category: string)
 
 	const filename = `${String(index).padStart(3, '0')}-${slug}.md`
 
+	const year = extractYear(pub.date)
+	const yearField = year ? `year: ${year}` : 'year: null'
+
 	const frontmatter = `---
 logins: [${pub.logins.map((l) => `"${l}"`).join(', ')}]
 keywords: []
 category: "${category}"
+title: "${pub.title.replace(/"/g, '\\"')}"
+${yearField}
 ---
 
 `
@@ -143,6 +153,7 @@ category: "${category}"
 
 	return { filename, content }
 }
+
 function processFile(filepath: string, outputBaseDir: string) {
 	const filename = basename(filepath, '.mdx')
 	console.log(`\n📄 Processing: ${filename}.mdx`)

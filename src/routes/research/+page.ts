@@ -3,7 +3,9 @@ import { error } from '@sveltejs/kit'
 import { allPages, allPublications } from 'content-collections'
 import { asset } from '$app/paths'
 
-export const load: PageLoad = async ({ route }) => {
+export const load: PageLoad = async ({ route, parent }) => {
+	const { members } = await parent()
+
 	const pcontent = allPages.find((page) => '/' + page.slug == route.id)
 	if (!pcontent) {
 		error(404, `Could not find ${route.id}`)
@@ -47,5 +49,6 @@ export const load: PageLoad = async ({ route }) => {
 	return {
 		pcontent: pcontent,
 		publications: publications,
+		members: members,
 	}
 }
