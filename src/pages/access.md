@@ -1,0 +1,21 @@
+---
+title: Access
+summary: The content of the access page
+---
+
+# Access
+
+〒252-0882 神奈川県藤沢市遠藤5322
+
+Keio University Shonan Fujisawa Campus Address: 5322 Endo, Fujisawa-shi, Kanagawa 252-0882 Japan
+
+AQUA is active at Keio University Shonan Fujisawa Campus **△N211**.
+
+## Access to Keio University Shonan Fujisawa Campus (SFC)
+
+**Transportation**
+
+- Odakyu Enoshima Line/Sotetsu IzuMino Line/Yokohama Subway Blue Line Get off at **"湘南台 Shonandai"** station. From West Exit of Shonandai, ride KanaChuBus 湘24(sho-24) line bound for "慶應大学 Keio University". After about 15 minutes, get off at **"慶應大学本館前　 Keio daigaku honkanmae"**.
+- JR Tokaido Line Get off at **"辻堂 Tsujido"**.From North Exit of Tsujido, ride Kanachu Bus 辻34(Tsuji-34)line bound for "慶應大学 Keio University".After 25 minutes, get off at **"慶應大学本館前　 Keio daigaku honkanmae"**.
+
+## Campus map

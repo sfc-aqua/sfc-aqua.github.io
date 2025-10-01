@@ -1,4 +1,3 @@
-
 # sfc-aqua.github.io
 
 This is the source repository for the SFC AQUA homepage, accessible at [https://aqua.sfc.wide.ad.jp/](https://aqua.sfc.wide.ad.jp/) with a redirect at [https://sfc-aqua.github.io](https://sfc-aqua.github.io).

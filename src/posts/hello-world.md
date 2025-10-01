@@ -1,9 +1,9 @@
 ---
-title: "Hello world"
-summary: "This is my first post!"
+title: 'Hello world'
+summary: 'This is my first post!'
 ---
- 
+
 # Hello world
- 
+
 This is my first post!
 ... rest of the markdown content
