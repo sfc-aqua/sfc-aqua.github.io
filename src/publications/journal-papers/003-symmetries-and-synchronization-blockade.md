@@ -1,0 +1,7 @@
+---
+logins: ["michal"]
+keywords: []
+category: "journal-papers"
+---
+
+P Solanki, F M Mehdi, M Hajdušek, S Vinjanampathy, **Symmetries and Synchronization Blockade**, [Phys. Rev. A, 108, 022216](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.108.022216) Aug 2023

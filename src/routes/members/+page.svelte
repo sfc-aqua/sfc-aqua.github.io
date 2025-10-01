@@ -9,10 +9,16 @@
 	import MemberModal from './member-modal.svelte'
 	import { Sparkles, ChevronRight } from 'lucide-svelte'
 
+
 	let { data }: PageProps = $props()
+
+	let memberFromUrl: string | null = $state(null)
+	$effect.pre(() => {
+		memberFromUrl = page.url.searchParams.get('member')
+	})
 	
 	// Derive selected member from URL params
-	let selectedMemberLogin = $derived(page.url.searchParams.get('member'))
+	let selectedMemberLogin = $derived(memberFromUrl)
 	let selectedMember = $derived(
 		selectedMemberLogin 
 			? data.members.find(m => m.login === selectedMemberLogin) 
