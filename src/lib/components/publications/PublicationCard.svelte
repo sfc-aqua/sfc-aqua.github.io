@@ -1,7 +1,7 @@
 <!-- $lib/components/publications/PublicationCard.svelte -->
 <script lang="ts">
 	import { type TPublication } from '../../../publications/data'
-	import { type TMember } from '../../../members/data'
+	import { type MemberWithTag } from '../../../members/data'
 	import { Badge } from '$lib/components/ui/badge'
 	import { Button } from '$lib/components/ui/button'
 	import * as Collapsible from '$lib/components/ui/collapsible'
@@ -17,17 +17,17 @@
 		Share2,
 	} from 'lucide-svelte'
 	import CopyButton from './CopyButton.svelte'
-	import { resolve } from '$app/paths'
+	import { searchState } from '$lib/stores/search.svelte'
+	import { createPublicationId } from '$lib/utils'
 
 	type Props = {
 		publication: TPublication
-		memberMap: Map<string, TMember>
-		pubId: string
+		memberMap: Map<string, MemberWithTag>
 		citationThreshold?: number
 		layout?: 'list' | 'grid'
 	}
 
-	let { publication, memberMap, pubId, citationThreshold = 0, layout = 'list' }: Props = $props()
+	let { publication, memberMap, citationThreshold = 0, layout = 'list' }: Props = $props()
 
 	let isOpen = $state(false)
 
@@ -81,6 +81,7 @@
 <Collapsible.Root
 	bind:open={isOpen}
 	class="h-full rounded-lg border bg-card transition-all duration-200 hover:border-primary/50 hover:shadow-md"
+	id={createPublicationId(publication)}
 >
 	<div class="flex flex-col p-4 {layout === 'grid' ? 'h-full' : ''}">
 		<!-- Clickable Header -->
@@ -297,7 +298,7 @@
 						{#each publication.logins as login}
 							{@const member = memberMap.get(login)}
 							{#if member}
-								{@const memberLink = resolve('/members') + '/?member=' + member.login}
+								<!-- {@const memberLink = resolve('/members') + '/?member=' + member.login}
 								<a
 									href={memberLink}
 									class="flex items-center gap-1.5 text-xs transition-colors hover:text-primary hover:underline"
@@ -312,7 +313,24 @@
 										</Avatar.Fallback>
 									</Avatar.Root>
 									{member.name}
-								</a>
+								</a> -->
+								<Button
+									onclick={() => {
+										searchState.selectMember(member)
+									}}
+									variant="ghost"
+								>
+									<Avatar.Root class="h-5 w-5">
+										<Avatar.Image src={member.imagePath} alt={member.name} />
+										<Avatar.Fallback class="text-[0.6rem]">
+											{member.name
+												.split(' ')
+												.map((n) => n[0])
+												.join('')}
+										</Avatar.Fallback>
+									</Avatar.Root>
+									{member.name}
+								</Button>
 							{/if}
 						{/each}
 					</div>

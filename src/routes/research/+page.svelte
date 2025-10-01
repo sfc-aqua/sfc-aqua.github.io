@@ -2,11 +2,16 @@
 <script lang="ts">
 	import type { PageProps } from './$types'
 	import { type TPublication } from '../../publications/data'
-	import { type TMember } from '../../members/data'
+	import { type MemberWithTag } from '../../members/data'
 	import { Input } from '$lib/components/ui/input'
 	import { Button } from '$lib/components/ui/button'
 	import * as Select from '$lib/components/ui/select'
 	import { Search, ChartCandlestick, LayoutGrid, LayoutList } from 'lucide-svelte'
+	import { afterNavigate } from '$app/navigation'
+	import { page } from '$app/state'
+	import { scrollToPublication, findPublicationById, waitForElement } from '$lib/utils'
+	import { browser } from '$app/environment'
+	import { tick } from 'svelte'
 
 	import PublicationStats from '$lib/components/publications/PublicationStats2.svelte'
 	import FeaturedBanner from '$lib/components/publications/FeaturedBanner.svelte'
@@ -17,7 +22,7 @@
 
 	const content = $derived(data.pcontent)
 	const memberMap = $derived(
-		new Map<string, TMember>(data.members?.map((m: TMember) => [m.login, m]) || [])
+		new Map<string, MemberWithTag>(data.members?.map((m: MemberWithTag) => [m.login, m]) || [])
 	)
 
 	function formatCategory(category: string): string {
@@ -77,6 +82,94 @@
 			element.scrollIntoView({ behavior: 'smooth', block: 'start' })
 		}
 	}
+
+	// Track previous hash to detect changes
+	let previousHash = $state('')
+
+	let isHandlingHash = $state(false)
+	async function handleHashNavigation(hash: string) {
+		if (!hash || !browser || isHandlingHash) return
+
+		isHandlingHash = true
+		console.log('🔍 Handling hash navigation:', hash)
+
+		try {
+			// Find the publication by hash
+			const publication = findPublicationById(data.publications, hash)
+
+			if (!publication) {
+				console.error('❌ Publication not found for hash:', hash)
+				isHandlingHash = false
+				return
+			}
+
+			console.log('✅ Publication found:', publication.title || publication.content.slice(0, 50))
+
+			// Clear search to show all publications
+			searchQuery = ''
+
+			// Select the specific category (not 'all') to show all publications in that category
+			const publicationCategory = publication.category || 'uncategorized'
+			console.log('📂 Setting category to:', publicationCategory)
+			selectedCategory = publicationCategory
+
+			// Wait for Svelte to re-render with new category
+			await tick()
+
+			// Wait a bit more for DOM to stabilize
+			await new Promise((resolve) => setTimeout(resolve, 100))
+
+			// Wait for the element to appear
+			console.log('⏳ Waiting for element to appear in DOM...')
+			const element = await waitForElement(hash, 50)
+
+			if (element) {
+				console.log('✅ Element found, scrolling...')
+				setTimeout(() => {
+					scrollToPublication(hash)
+					isHandlingHash = false
+				}, 150)
+			} else {
+				console.error('❌ Element still not found after selecting category')
+				isHandlingHash = false
+			}
+		} catch (error) {
+			console.error('❌ Error handling hash navigation:', error)
+			isHandlingHash = false
+		}
+	}
+
+	// Handle navigation from other pages
+	afterNavigate(() => {
+		const hash = page.url.hash.slice(1)
+		if (hash) {
+			setTimeout(() => scrollToPublication(hash), 100)
+			previousHash = hash
+		}
+	})
+
+	// Watch for hash changes (same-page navigation)
+	let lastHash = $state('')
+	$effect(() => {
+		const hash = page.url.hash.slice(1)
+		if (hash && hash !== lastHash) {
+			lastHash = hash
+			handleHashNavigation(hash)
+		}
+	})
+
+	// // Watch for hash changes on the same page
+	// $effect(() => {
+	// 	// console.log("Change reference")
+	// 	const currentHash = page.url.hash.slice(1)
+
+	// 	// Only scroll if hash actually changed and is not empty
+	// 	if (currentHash && currentHash !== previousHash) {
+	// 		// console.log("scroll fire?")
+	// 		setTimeout(() => scrollToPublication(currentHash), 100)
+	// 		previousHash = currentHash
+	// 	}
+	// })
 </script>
 
 <svelte:window onscroll={handleScroll} />
@@ -86,7 +179,7 @@
 </div>
 
 <div
-	class="container mx-auto mt-12 flex flex-col items-center justify-center px-4 pb-16"
+	class="container mx-auto mt-12 flex flex-col items-center justify-center gap-4 px-4 pb-16"
 	id="publications-top"
 >
 	<div class="mb-6 flex w-full items-center justify-between">
@@ -216,3 +309,19 @@
 >
 	<Search class="h-4 w-4" />
 </Button>
+
+<style>
+	:global(.highlight-pulse) {
+		animation: highlight-pulse 2s ease-out;
+	}
+
+	@keyframes highlight-pulse {
+		0%,
+		100% {
+			background-color: transparent;
+		}
+		50% {
+			background-color: hsl(var(--primary) / 0.1);
+		}
+	}
+</style>

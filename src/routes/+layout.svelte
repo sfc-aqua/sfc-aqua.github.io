@@ -3,6 +3,7 @@
 	import favicon from '$lib/assets/favicon.svg'
 	import Navbar from '../lib/components/navbar.svelte'
 	import { ModeWatcher } from 'mode-watcher'
+	import { type MemberWithTag } from '../members/data'
 
 	let { children, data } = $props()
 </script>

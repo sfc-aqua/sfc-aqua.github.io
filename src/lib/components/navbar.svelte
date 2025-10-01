@@ -4,17 +4,43 @@
 	import * as Sheet from '$lib/components/ui/sheet/index.js'
 	import { resolve } from '$app/paths'
 	import { toggleMode } from 'mode-watcher'
-	import Command from '$lib/components/command.svelte'
+	import Command from '$lib/components/command2.svelte'
+	import { goto } from '$app/navigation'
+	import type { MemberWithTag } from '../../members/data'
+	import MemberModal from './members/MemberModal.svelte'
+	import { searchState } from '$lib/stores/search.svelte'
+	import { page } from '$app/state'
 
 	let { data } = $props()
 
-	let opensearch = $state(false)
+	// let opensearch = $state(false)
+	// let selectedMember: MemberWithTag | null = $state(null)
+	// let modalOpen = $state(false)
 
 	function handleKeydown(e: KeyboardEvent) {
 		if (e.key === 'k' && (e.metaKey || e.ctrlKey)) {
 			e.preventDefault()
-			opensearch = !opensearch
+			// opensearch = !opensearch
+			searchState.toggleOpen()
 		}
+	}
+
+	function handleMemberSelect(member: MemberWithTag) {
+		// selectedMember = member
+		// modalOpen = true
+		searchState.selectMember(member)
+		// Also update URL if needed
+		const url = new URL(window.location.href)
+		url.searchParams.set('member', member.login)
+		goto(url, { replaceState: false, noScroll: true, keepFocus: true })
+	}
+
+	function handleModalClose() {
+		// modalOpen = false
+		searchState.closeModal()
+		const url = new URL(window.location.href)
+		url.searchParams.delete('member')
+		goto(url, { replaceState: false, noScroll: true, keepFocus: true })
 	}
 
 	// Define your navigation links here
@@ -28,10 +54,21 @@
 	]
 
 	let open = $state(false)
+
+	// Sync URL with modal state on load
+	$effect(() => {
+		const memberLogin = page.url.searchParams.get('member')
+		if (memberLogin && data.members) {
+			const member = data.members.find((m: any) => m.login === memberLogin)
+			if (member) {
+				searchState.selectMember(member)
+			}
+		}
+	})
 </script>
 
 <svelte:document onkeydown={handleKeydown} />
-<Command {data} bind:open={opensearch} />
+<Command {data} bind:open={searchState.commandOpen} onMemberSelect={handleMemberSelect} />
 {#snippet qwantaicon()}
 	<div class="w-30 text-2xl font-bold">
 		<a href={resolve('/')}> 🌊 AQUA </a>
@@ -88,7 +125,8 @@
 				variant="outline"
 				class="border-primary text-sm text-muted-foreground"
 				onclick={() => {
-					opensearch = !opensearch
+					// opensearch = !opensearch
+					searchState.toggleOpen()
 				}}
 			>
 				Search...
@@ -110,3 +148,11 @@
 		</div>
 	</div>
 </header>
+
+{#if searchState.selectedMember}
+	<MemberModal
+		member={searchState.selectedMember}
+		open={searchState.modalOpen}
+		onOpenChange={(open) => !open && handleModalClose()}
+	/>
+{/if}

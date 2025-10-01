@@ -1,7 +1,7 @@
 <!-- $lib/components/publications/PublicationsList.svelte -->
 <script lang="ts">
 	import { type TPublication } from '../../../publications/data'
-	import { type TMember } from '../../../members/data'
+	import { type MemberWithTag } from '../../../members/data'
 	import { Badge } from '$lib/components/ui/badge'
 	import { Button } from '$lib/components/ui/button'
 	import { Separator } from '$lib/components/ui/separator'
@@ -10,7 +10,7 @@
 	type Props = {
 		publications: TPublication[]
 		groupedPubs: Record<string, TPublication[]>
-		memberMap: Map<string, TMember>
+		memberMap: Map<string, MemberWithTag>
 		selectedCategory: string
 		searchQuery: string
 		formatCategory: (category: string) => string
@@ -69,13 +69,7 @@
 						: 'space-y-2'}
 				>
 					{#each pubs.slice(0, 5) as publication, idx}
-						<PublicationCard
-							{publication}
-							{memberMap}
-							pubId={`${category}-${idx}`}
-							{citationThreshold}
-							{layout}
-						/>
+						<PublicationCard {publication} {memberMap} {citationThreshold} {layout} />
 					{/each}
 				</div>
 
@@ -99,13 +93,7 @@
 				: 'space-y-2'}
 		>
 			{#each publications as publication, idx}
-				<PublicationCard
-					{publication}
-					{memberMap}
-					pubId={`filtered-${idx}`}
-					{citationThreshold}
-					{layout}
-				/>
+				<PublicationCard {publication} {memberMap} {citationThreshold} {layout} />
 			{/each}
 		</div>
 	{/if}

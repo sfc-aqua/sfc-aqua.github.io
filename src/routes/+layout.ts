@@ -1,5 +1,5 @@
 import type { PageLoad } from './$types'
-import { allPages, allMembers } from 'content-collections'
+import { allPages, allMembers, allPublications } from 'content-collections'
 import { asset } from '$app/paths'
 
 export const load: PageLoad = async () => {
@@ -48,10 +48,46 @@ export const load: PageLoad = async () => {
 		}
 	})
 
+	let publications = allPublications
+
+	publications = publications.map((publication) => {
+		let content = publication.content
+
+		content = content.replace(
+			/(<img[^>]*\ssrc=["'])\/publications\/([^"']+)(["'][^>]*>)/gi,
+			(match, before, imagePath, after) => {
+				const assetPath = asset(`/publications/${imagePath}`)
+				const resolvedPath = `${before}${assetPath}${after}`
+				// console.log(resolvedPath)
+				return resolvedPath
+			}
+		)
+
+		content = content.replace(
+			/(<a[^>]*\shref=["'])\/publications\/([^"']+)(["'][^>]*>)/gi,
+			(match, before, filePath, after) => {
+				const assetPath = asset(`/publications/${filePath}`)
+				// const assetPath = filePath
+				const resolvedPath = `${before}${assetPath}${after}`
+				// console.log(resolvedPath)
+				return resolvedPath
+				// return "assetPath"
+			}
+		)
+
+		// console.log(content)
+
+		return {
+			...publication,
+			content: content,
+		}
+	})
+
 	// Process each pages to transform image paths
 	return {
 		pages,
 		members: members,
+		publications: publications,
 	}
 }
 
