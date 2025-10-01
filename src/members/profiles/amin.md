@@ -5,12 +5,12 @@ role:
   - Project Assistant Professor
   - Current
 imagePath: /members/amin.jpg
-description: "(|Classical⟩+|Quantum⟩)/√2 Networking"
+description: '(|Classical⟩+|Quantum⟩)/√2 Networking'
 links:
   - name: Scholar
-    url: "https://scholar.google.com/citations?user=z8rkbsIAAAAJ&hl=en"
+    url: 'https://scholar.google.com/citations?user=z8rkbsIAAAAJ&hl=en'
   - name: Github
-    url: "https://github.com/hhatpsi"
+    url: 'https://github.com/hhatpsi'
 stat:
   - name: Strength
     value: 12

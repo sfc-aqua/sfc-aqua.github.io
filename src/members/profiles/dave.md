@@ -8,7 +8,7 @@ imagePath: /members/dave.png
 description: "I'm a student at Keio University"
 links:
   - name: Github
-    url: "https://github.com/makotonakai"
+    url: 'https://github.com/makotonakai'
 stat:
   - name: Strength
     value: 20

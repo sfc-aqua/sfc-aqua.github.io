@@ -8,9 +8,9 @@ imagePath: /members/tomshen.png
 description: I like tech things
 links:
   - name: Github
-    url: "https://github.com/TomShen1234"
+    url: 'https://github.com/TomShen1234'
   - name: X (Twitter)
-    url: "https://twitter.com/TomShen1234"
+    url: 'https://twitter.com/TomShen1234'
 stat:
   - name: Strength
     value: 45

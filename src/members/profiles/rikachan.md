@@ -8,7 +8,7 @@ imagePath: /members/rika.jpg
 description: The heritage of the Silver Crystal
 links:
   - name: Facebook
-    url: "https://www.facebook.com/rika15yk/"
+    url: 'https://www.facebook.com/rika15yk/'
 stat:
   - name: Hope
     value: 100

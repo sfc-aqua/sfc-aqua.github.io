@@ -1,7 +1,7 @@
 ---
 logins: []
 keywords: []
-category: "workshops-conferences-without-proceedings-and-posters"
+category: 'workshops-conferences-without-proceedings-and-posters'
 ---
 
 Shota Nagayama and Rodney Van Meter, **Modifying IKE to use Quantum Key Distribution,** [Internet Conference 2009](http://www.internetconference.org/ic2009/), Oct. 2009.

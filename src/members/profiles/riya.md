@@ -8,9 +8,9 @@ imagePath: /members/riya.jpg
 description: "I'm enjoying my life;)"
 links:
   - name: Github
-    url: "https://github.com/s08chan"
+    url: 'https://github.com/s08chan'
   - name: Instagram
-    url: "https://www.instagram.com/s08j127/"
+    url: 'https://www.instagram.com/s08j127/'
 stat:
   - name: Strength
     value: 40

@@ -8,7 +8,7 @@ imagePath: /members/kent_tea.png
 description: I wanna go to Peking and Shenzhen.
 links:
   - name: Github
-    url: "https://github.com/KentTea"
+    url: 'https://github.com/KentTea'
 stat:
   - name: Strength
     value: 80

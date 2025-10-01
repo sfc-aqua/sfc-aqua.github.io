@@ -8,9 +8,9 @@ imagePath: /members/sam.png
 description: Power and Responsibility
 links:
   - name: Github
-    url: "https://github.com/starktech23"
+    url: 'https://github.com/starktech23'
   - name: Twitter
-    url: "https://twitter.com/AnsatzX"
+    url: 'https://twitter.com/AnsatzX'
 stat:
   - name: Luck
     value: 10

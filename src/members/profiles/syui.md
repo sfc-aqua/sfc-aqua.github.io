@@ -8,7 +8,7 @@ imagePath: /members/syui.jpeg
 description: hi
 links:
   - name: GitHub
-    url: "https://github.com/syuii"
+    url: 'https://github.com/syuii'
 ---
 
 # Gordon Cui

@@ -8,9 +8,9 @@ imagePath: /members/pawan.png
 description: Reducing uncertainties
 links:
   - name: Github
-    url: "https://github.com/lmpawan10"
+    url: 'https://github.com/lmpawan10'
   - name: Linkedin
-    url: "https://www.linkedin.com/in/pawansharmapoudel/"
+    url: 'https://www.linkedin.com/in/pawansharmapoudel/'
 stat:
   - name: Strength
     value: 50

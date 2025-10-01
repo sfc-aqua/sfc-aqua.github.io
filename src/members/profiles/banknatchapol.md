@@ -8,11 +8,11 @@ imagePath: /members/banknatchapol.jpg
 description: Tomorrow has been exhausting.
 links:
   - name: Google Scholar
-    url: "https://scholar.google.com/citations?user=2oKwxZ0AAAAJ"
+    url: 'https://scholar.google.com/citations?user=2oKwxZ0AAAAJ'
   - name: Guthib
-    url: "https://github.com/BankNatchapol"
+    url: 'https://github.com/BankNatchapol'
   - name: Linkedin
-    url: "https://www.linkedin.com/in/natchapol-patamawisut/"
+    url: 'https://www.linkedin.com/in/natchapol-patamawisut/'
 stat:
   - name: Strength
     value: 200

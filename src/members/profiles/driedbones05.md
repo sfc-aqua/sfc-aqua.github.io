@@ -8,7 +8,7 @@ imagePath: /members/driedbones05.jpg
 description: I have nothing to see
 links:
   - name: Github
-    url: "https://github.com/driedbones05"
+    url: 'https://github.com/driedbones05'
 stat:
   - name: Strength
     value: 50

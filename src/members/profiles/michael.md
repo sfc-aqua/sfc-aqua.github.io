@@ -8,7 +8,7 @@ imagePath: /members/michael.jpg
 description: Its October and there is still a taste of summer in the air
 links:
   - name: Github
-    url: "https://github.com/AliceMichael"
+    url: 'https://github.com/AliceMichael'
 stat:
   - name: BTS Jimin is cool
     value: 100

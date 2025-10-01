@@ -9,7 +9,7 @@ imagePath: /members/sakuma.jpeg
 description: If you do it, it will be done. If you do not it, it will not be done. If nothing can be done, it is because you do not do it.
 links:
   - name: GitHub
-    url: "https://github.com/Sakumatcho"
+    url: 'https://github.com/Sakumatcho'
 stat:
   - name: Swimming
     value: 100

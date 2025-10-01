@@ -1,7 +1,7 @@
 ---
-logins: ["whit3z", "michal", "rdv"]
+logins: ['whit3z', 'michal', 'rdv']
 keywords: []
-category: "international-conferences-with-proceedings"
+category: 'international-conferences-with-proceedings'
 ---
 
 N Benchasattabuse, M Hajdušek, R Van Meter, **Architecture and Protocols for All-Photonic Quantum Repeaters**, [2024 IEEE International Conference on Quantum Computing and Engineering (QCE), pp. 1879-1889](https://ieeexplore.ieee.org/document/10821477) Sep 2024

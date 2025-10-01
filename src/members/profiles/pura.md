@@ -8,7 +8,7 @@ imagePath: /members/pura.jpeg
 description: "I'm having fun here"
 links:
   - name: Github
-    url: "https://github.com/purasfc"
+    url: 'https://github.com/purasfc'
 stat:
   - name: Strength
     value: 30

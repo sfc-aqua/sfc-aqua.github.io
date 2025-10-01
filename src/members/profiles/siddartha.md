@@ -8,7 +8,7 @@ imagePath: /members/siddartha_pfp.jpg
 description: がんばるぞー
 links:
   - name: GitHub
-    url: "https://github.com/SIDDARTHABHANDARI"
+    url: 'https://github.com/SIDDARTHABHANDARI'
 stat:
   - name: Happiness
     value: 40

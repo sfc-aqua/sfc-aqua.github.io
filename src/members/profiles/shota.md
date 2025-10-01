@@ -5,18 +5,18 @@ role:
   - QITF Director
   - Current
 imagePath: /members/shota-nagayama1.jpg
-description: "Love & Peace & Comprehensive effort to realize Quantum Computer Networks."
+description: 'Love & Peace & Comprehensive effort to realize Quantum Computer Networks.'
 links:
   - name: quantum internet task force
-    url: "https://qitf.org/"
+    url: 'https://qitf.org/'
   - name: JST Moonshot Goal 6 Project Manager
-    url: "https://www.jst.go.jp/moonshot/program/goal6/6C_nagayama.html"
+    url: 'https://www.jst.go.jp/moonshot/program/goal6/6C_nagayama.html'
   - name: Google Scholar
-    url: "https://scholar.google.com/citations?user=NyfLP0IAAAAJ&hl=en"
+    url: 'https://scholar.google.com/citations?user=NyfLP0IAAAAJ&hl=en'
   - name: IETF Datatracker
-    url: "https://datatracker.ietf.org/person/shota@wide.ad.jp"
+    url: 'https://datatracker.ietf.org/person/shota@wide.ad.jp'
   - name: Mercari R4D Senior Researcher
-    url: "https://r4d.mercari.com/"
+    url: 'https://r4d.mercari.com/'
 stat:
   - name: Strength
     value: 70

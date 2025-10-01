@@ -8,7 +8,7 @@ imagePath: /members/junseo.jpg
 description: Student at Keio University
 links:
   - name: Github
-    url: "https://github.com/kwakie0511"
+    url: 'https://github.com/kwakie0511'
 stat:
   - name: Strength
     value: 40

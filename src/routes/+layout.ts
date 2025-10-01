@@ -3,7 +3,6 @@ import { allPages, allMembers } from 'content-collections'
 import { asset } from '$app/paths'
 
 export const load: PageLoad = async () => {
-
 	// Fetch all pages from the content collection and filter or sort (optional)
 	let pages = allPages
 
@@ -28,7 +27,7 @@ export const load: PageLoad = async () => {
 	// Process each pages to transform image paths
 	return {
 		pages,
-		members: allMembers
+		members: allMembers,
 	}
 }
 

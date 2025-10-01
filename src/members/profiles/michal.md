@@ -5,10 +5,10 @@ role:
   - Project Associate Professor
   - Current
 imagePath: /members/michal.png
-description: "Engineering is hard!"
+description: 'Engineering is hard!'
 links:
   - name: Google Scholar
-    url: "https://scholar.google.com/citations?user=8DgauUcAAAAJ&hl=en&oi=ao"
+    url: 'https://scholar.google.com/citations?user=8DgauUcAAAAJ&hl=en&oi=ao'
 stat:
   - name: Strength
     value: 32

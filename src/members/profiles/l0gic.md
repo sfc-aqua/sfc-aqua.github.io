@@ -8,7 +8,7 @@ imagePath: /members/logic.jpg
 description: "I'm a student at Keio University"
 links:
   - name: Github
-    url: "https://github.com/HarukaSakate"
+    url: 'https://github.com/HarukaSakate'
 stat:
   - name: Strength
     value: 60

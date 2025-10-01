@@ -32,7 +32,10 @@
 				style="animation: floatIn 0.4s ease-out {i * 0.05}s backwards;"
 			>
 				<Card.Root
-					class={cn("relative h-full transform cursor-pointer overflow-hidden border-2 transition-all duration-300 hover:scale-105 hover:shadow-xl", member.isAlumni && "opacity-75")}
+					class={cn(
+						'relative h-full transform cursor-pointer overflow-hidden border-2 transition-all duration-300 hover:scale-105 hover:shadow-xl',
+						member.isAlumni && 'opacity-75'
+					)}
 				>
 					{#if member.isAlumni}
 						<div class="absolute top-2 right-2 z-10">

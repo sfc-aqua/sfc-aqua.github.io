@@ -8,7 +8,7 @@ imagePath: /members/kenya.jpeg
 description: im from Alaska
 links:
   - name: GitHub
-    url: "https://github.com/kenyas"
+    url: 'https://github.com/kenyas'
 stat:
   - name: Happiness
     value: 96

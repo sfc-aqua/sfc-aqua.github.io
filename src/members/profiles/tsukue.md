@@ -8,7 +8,7 @@ imagePath: /members/tsukue.png
 description: Clueless
 links:
   - name: Github
-    url: "https://github.com/TsukueRyu"
+    url: 'https://github.com/TsukueRyu'
 stat:
   - name: Strength
     value: 0

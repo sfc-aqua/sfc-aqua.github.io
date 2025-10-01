@@ -8,9 +8,9 @@ imagePath: /members/soon.jpeg
 description: Surviving as a classical brain in a quantum world
 links:
   - name: Github
-    url: "https://github.com/res6idue"
+    url: 'https://github.com/res6idue'
   - name: Google Scholar
-    url: "https://scholar.google.com/citations?hl=ja&user=-4_UUvwAAAAJ"
+    url: 'https://scholar.google.com/citations?hl=ja&user=-4_UUvwAAAAJ'
 stat:
   - name: Stability
     value: 68

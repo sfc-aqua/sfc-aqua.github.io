@@ -8,9 +8,9 @@ imagePath: /members/bob.jpg
 description: Photons are cool
 links:
   - name: Github
-    url: "https://github.com/funkeyteth"
+    url: 'https://github.com/funkeyteth'
   - name: Instagram
-    url: "https://www.instagram.com/funkeyteth/"
+    url: 'https://www.instagram.com/funkeyteth/'
 stat:
   - name: Strength
     value: 41

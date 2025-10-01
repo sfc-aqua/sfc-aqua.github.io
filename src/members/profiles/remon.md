@@ -8,7 +8,7 @@ imagePath: /members/remon.jpg
 description: "I like 'R'emon."
 links:
   - name: GitHub
-    url: "https://github.com/remonnnokawa"
+    url: 'https://github.com/remonnnokawa'
 stat:
   - name: Tennis
     value: 100

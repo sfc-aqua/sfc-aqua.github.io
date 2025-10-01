@@ -1,7 +1,7 @@
 ---
-logins: ["rdv"]
+logins: ['rdv']
 keywords: []
-category: "international-conferences-with-proceedings"
+category: 'international-conferences-with-proceedings'
 ---
 
 Rodney Van Meter, Kohei M. Itoh, and Thaddeus D. Ladd, **Architecture-Dependent Execution Time of Shor's Algorithm,** Proc. Mesoscopic Superconductivity and Spintronics (MS+S2006), Feb. 2006. Available from the [arXiv](http://arxiv.org/) as [quant-ph/0507023](http://arxiv.org/abs/quant-ph/0507023).

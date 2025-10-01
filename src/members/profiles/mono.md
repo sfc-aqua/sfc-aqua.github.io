@@ -8,7 +8,7 @@ imagePath: /members/mono.png
 description: "I'm a student at Keio University"
 links:
   - name: Github
-    url: "https://github.com/Mononon-120"
+    url: 'https://github.com/Mononon-120'
 stat:
   - name: Strength
     value: 10

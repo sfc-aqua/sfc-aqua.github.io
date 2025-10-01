@@ -8,7 +8,7 @@ imagePath: /members/voy.jpg
 description: I study and explore Hikaru✨⚽️
 links:
   - name: Github
-    url: "https://github.com/Hikaru7-7"
+    url: 'https://github.com/Hikaru7-7'
 stat:
   - name: Strength
     value: 70

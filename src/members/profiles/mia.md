@@ -8,7 +8,7 @@ imagePath: /members/mia.jpg
 description: I cook strawberry pasta 🍓🍝
 links:
   - name: Github
-    url: "https://github.com/Marie2222"
+    url: 'https://github.com/Marie2222'
 stat:
   - name: Strenth
     value: 60

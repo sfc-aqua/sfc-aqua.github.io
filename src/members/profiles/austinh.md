@@ -8,7 +8,7 @@ imagePath: /members/austin.png
 description: I do quantum chemistry with quantum computers
 links:
   - name: Github
-    url: "https://github.com/austingmhuang"
+    url: 'https://github.com/austingmhuang'
 stat:
   - name: Strength
     value: 15

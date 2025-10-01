@@ -8,7 +8,7 @@ imagePath: /members/kouki.jpeg
 description: "I'm a student at Keio University"
 links:
   - name: GitHub
-    url: "https://github.com/sky12hi12"
+    url: 'https://github.com/sky12hi12'
 stat:
   - name: Strength
     value: 70

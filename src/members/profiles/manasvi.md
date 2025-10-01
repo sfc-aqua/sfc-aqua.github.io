@@ -8,7 +8,7 @@ imagePath: /members/mana.jpg
 description: Here for the vibes
 links:
   - name: GitHub
-    url: "https://github.com/mana-pat1"
+    url: 'https://github.com/mana-pat1'
 stat:
   - name: Happiness
     value: 100

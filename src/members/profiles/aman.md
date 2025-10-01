@@ -8,7 +8,7 @@ imagePath: /members/darkifywalltemp.jpg
 description: "I'm me"
 links:
   - name: Github
-    url: "https://github.com/amanchapi"
+    url: 'https://github.com/amanchapi'
 stat:
   - name: Strength
     value: 10

@@ -1,7 +1,7 @@
 // migrate.ts
 import fs from 'fs'
 import path from 'path'
-import { members } from './data';
+import { members } from './data'
 
 type TMember = {
 	name: string

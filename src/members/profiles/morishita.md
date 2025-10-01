@@ -8,13 +8,13 @@ imagePath: /members/morishita.png
 description: The mastermind behind this kenkyukai
 links:
   - name: Facebook
-    url: "https://www.facebook.com/profile.php?id=100028828711584"
+    url: 'https://www.facebook.com/profile.php?id=100028828711584'
   - name: BLOG
-    url: "https://scienceboy.jp/"
+    url: 'https://scienceboy.jp/'
   - name: Portfolio
-    url: "https://morishitawataru.com/"
+    url: 'https://morishitawataru.com/'
   - name: Github
-    url: "https://github.com/Durey-creater"
+    url: 'https://github.com/Durey-creater'
 stat:
   - name: Strength
     value: 100

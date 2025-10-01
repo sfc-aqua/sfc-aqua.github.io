@@ -8,11 +8,11 @@ imagePath: /members/collodi.jpg
 description: … , that this fear of erring is really the error itself. (G.W.F. Hegel)
 links:
   - name: Github
-    url: "https://github.com/sierpinskiii"
+    url: 'https://github.com/sierpinskiii'
   - name: blog
-    url: "https://collodi.io/"
+    url: 'https://collodi.io/'
   - name: Google Scholar
-    url: "https://scholar.google.com/citations?user=gvlU-vQAAAAJ"
+    url: 'https://scholar.google.com/citations?user=gvlU-vQAAAAJ'
 stat:
   - name: Strength
     value: 20

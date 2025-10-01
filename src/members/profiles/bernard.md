@@ -5,10 +5,10 @@ role:
   - Project Assistant Professor
   - Current
 imagePath: /members/bernard.jpg
-description: Distributed Quantum Error Correction 
+description: Distributed Quantum Error Correction
 links:
   - name: Google Scholar
-    url: "https://scholar.google.com/citations?user=YMJbS5wAAAAJ&hl=en"
+    url: 'https://scholar.google.com/citations?user=YMJbS5wAAAAJ&hl=en'
 stat:
   - name: Strength
     value: 32
@@ -26,4 +26,4 @@ stat:
 
 # Bernard Ousmane Sane
 
-Distributed Quantum Error Correction 
+Distributed Quantum Error Correction

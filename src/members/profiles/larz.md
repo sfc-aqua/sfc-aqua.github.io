@@ -8,7 +8,7 @@ imagePath: /members/larz.jpg
 description: Bipedal humanoid with a dark purple body, armed with sharp teeth and claws, which it uses to dig through soil.
 links:
   - name: Github
-    url: "https://github.com/master-of-ppap"
+    url: 'https://github.com/master-of-ppap'
 stat:
   - name: HP
     value: 50

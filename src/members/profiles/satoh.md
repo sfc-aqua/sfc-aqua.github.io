@@ -8,11 +8,11 @@ imagePath: /members/satoh.jpg
 description: "Let's fly together in a glider."
 links:
   - name: Facebook
-    url: "https://www.facebook.com/takahiko.satoh.75"
+    url: 'https://www.facebook.com/takahiko.satoh.75'
   - name: Github
-    url: "https://github.com/ymbr"
+    url: 'https://github.com/ymbr'
   - name: Google Scholar
-    url: "https://scholar.google.com/citations?user=7sU5XMMAAAAJ&hl=ja"
+    url: 'https://scholar.google.com/citations?user=7sU5XMMAAAAJ&hl=ja'
 stat:
   - name: Strength
     value: 30

@@ -8,7 +8,7 @@ imagePath: /members/kyuryu.jpg
 description: "I'm kyuryu"
 links:
   - name: GitHub
-    url: "https://github.com/yuki9638"
+    url: 'https://github.com/yuki9638'
 stat:
   - name: Happiness
     value: 100
