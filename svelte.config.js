@@ -15,6 +15,17 @@ const config = {
 			'@/*': './path/to/lib/*',
 			'content-collections': './.content-collections/generated',
 		},
+		prerender: {
+			handleHttpError: ({ path, referrer, message }) => {
+				// ignore deliberate link to shiny 404 page
+				if (path.includes('/publications/')) {
+					return
+				}
+
+				// otherwise fail the build
+				throw new Error(message)
+			},
+		},
 	},
 }
 

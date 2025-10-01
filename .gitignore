@@ -347,3 +347,5 @@ dist
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+static/publications/bob_fin_sotsuron.pdf
