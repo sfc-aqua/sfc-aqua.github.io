@@ -204,14 +204,14 @@ export const members: TMember[] = [
   },
   {
     name: "Naphan Benchasattabuse",
-    role: ["D3+", "Current"],
+    role: ["Project Assistant Professor", "Current"],
     login: "whit3z",
     imagePath: "/images/members/whit3z.png",
     description: "I don't know what I'm doing.",
     links: [
       {
         name: "Google Scholar",
-        url: "https://scholar.google.com/citations?user=FRsTsksAAAAJ",
+        url: "https://scholar.google.com/citations?user=FRsTsksAAAAJ&hl=en",
       },
       { name: "Github", url: "https://github.com/Naphann" },
     ],
@@ -873,6 +873,25 @@ export const members: TMember[] = [
       {
         name: "GitHub",
         url: "https://github.com/mana-pat1",
+      },
+    ],
+    stat: [
+      { name: "Happiness", value: 100, max: 100 },
+      { name: "Agility", value: 80, max: 100 },
+      { name: "Intelligence", value: 60, max: 100 },
+      { name: "Luck", value: 80, max: 100 },
+    ],
+  },
+  {
+    name: "Yuki Kurosawa",
+    login: "kyuryu",
+    role: ["B3", "Current"],
+    imagePath: "images/members/kyuryu.jpg",
+    description: "I'm kyuryu",
+    links: [
+      {
+        name: "GitHub",
+        url: "https://github.com/yuki9638",
       },
     ],
     stat: [
