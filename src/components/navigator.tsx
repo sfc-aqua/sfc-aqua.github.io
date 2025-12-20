@@ -13,6 +13,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
+  NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
 import { useTheme } from "next-themes"
 import { Toggle } from "@/components/ui/toggle"
@@ -26,105 +27,104 @@ export const Links: {
     description?: string
   }[]
 }[] = [
-  {
-    href: "/about",
-    label: "About",
-  },
-  {
-    href: "/research",
-    label: "Research",
-  },
-  {
-    href: "/publications",
-    label: "Publications",
-    children: [
-      {
-        label: "Books",
-        href: "/publications#books",
-      },
-      {
-        label: "Journal Papers",
-        href: "/publications#journal-papers",
-      },
-      {
-        label: "RFCs (Internet Requests for Comments)",
-        href: "/publications#rfcs",
-      },
-      {
-        label: "International Conferences with Proceedings",
-        href: "/publications#international-conferences-with-proceedings",
-      },
-      {
-        label: "Workshops, Conferences Without Proceedings and Posters",
-        href: "/publications#workshops-conferences-without-proceedings-and-posters",
-      },
-      {
-        label: "Theses",
-        href: "/publications#theses",
-      },
-      {
-        label: "Committee and Working Group Reports",
-        href: "/publications#committee-and-working-group-reports",
-      },
-      {
-        label: "Submitted/in progress papers",
-        href: "/publications#submitted-in-progress-papers",
-      },
-      {
-        label: "Internet Drafts",
-        href: "/publications#internet-drafts",
-      },
-      {
-        label: "Public Presentations/Invited Talks",
-        href: "/publications#public-presentations-invited-talks",
-      },
-      {
-        label: "SFC's Open Research Forum",
-        href: "/publications#sfcs-open-research-forum",
-      },
-      {
-        label: "posters",
-        href: "/publications#posters",
-      },
-      {
-        label: "White Papers",
-        href: "/publications#white-papers",
-      },
-      {
-        label: "Course Materials",
-        href: "/publications#course-materials",
-      },
-      {
-        label: "Other Publications",
-        href: "/publications#other-publications",
-      },
-    ],
-  },
-  {
-    href: "/members",
-    label: "Members",
-  },
-  {
-    href: "/for-students",
-    label: "For students",
-  },
-  {
-    href: "/useful-links",
-    label: "Links",
-  },
-  {
-    href: "/access",
-    label: "Access",
-  },
-]
+    {
+      href: "/about",
+      label: "About",
+    },
+    {
+      href: "/research",
+      label: "Research",
+    },
+    {
+      href: "/publications",
+      label: "Publications",
+      children: [
+        {
+          label: "Books",
+          href: "/publications#books",
+        },
+        {
+          label: "Journal Papers",
+          href: "/publications#journal-papers",
+        },
+        {
+          label: "RFCs (Internet Requests for Comments)",
+          href: "/publications#rfcs",
+        },
+        {
+          label: "International Conferences with Proceedings",
+          href: "/publications#international-conferences-with-proceedings",
+        },
+        {
+          label: "Workshops, Conferences Without Proceedings and Posters",
+          href: "/publications#workshops-conferences-without-proceedings-and-posters",
+        },
+        {
+          label: "Theses",
+          href: "/publications#theses",
+        },
+        {
+          label: "Committee and Working Group Reports",
+          href: "/publications#committee-and-working-group-reports",
+        },
+        {
+          label: "Submitted/in progress papers",
+          href: "/publications#submitted-in-progress-papers",
+        },
+        {
+          label: "Internet Drafts",
+          href: "/publications#internet-drafts",
+        },
+        {
+          label: "Public Presentations/Invited Talks",
+          href: "/publications#public-presentations-invited-talks",
+        },
+        {
+          label: "SFC's Open Research Forum",
+          href: "/publications#sfcs-open-research-forum",
+        },
+        {
+          label: "posters",
+          href: "/publications#posters",
+        },
+        {
+          label: "White Papers",
+          href: "/publications#white-papers",
+        },
+        {
+          label: "Course Materials",
+          href: "/publications#course-materials",
+        },
+        {
+          label: "Other Publications",
+          href: "/publications#other-publications",
+        },
+      ],
+    },
+    {
+      href: "/members",
+      label: "Members",
+    },
+    {
+      href: "/for-students",
+      label: "For students",
+    },
+    {
+      href: "/useful-links",
+      label: "Links",
+    },
+    {
+      href: "/access",
+      label: "Access",
+    },
+  ]
 
 export default function Navigation() {
   const { resolvedTheme, setTheme, systemTheme } = useTheme()
 
   return (
     <NavigationMenu
-      className="py-2 sticky top-0 px-4 bg-background hidden sm:block z-10 rounded-b-xl"
-      viewport={false}
+      className="py-2 sticky top-0 px-4 bg-background hidden sm:block z-10 rounded-b-xl relative"
     >
       <NavigationMenuList className="flex w-[95vw]">
         <NavigationMenuItem key="home" className="self-start">
@@ -182,6 +182,12 @@ export default function Navigation() {
           </Toggle>
         </NavigationMenuItem>
       </NavigationMenuList>
+      <div className="absolute top-full left-0 flex w-full justify-center perspective-[2000px]">
+        <NavigationMenuViewport
+          className="text-popover-foreground bg-background data-[state=closed]:animate-scale-out data-[state=open]:animate-scale-in relative mt-2.5 h-[var(--radix-navigation-menu-viewport-height)] w-full origin-[top_center] overflow-hidden rounded-md border shadow-lg transition-[width,_height] duration-200 sm:w-[var(--radix-navigation-menu-viewport-width)] "
+        />
+      </div>
+
     </NavigationMenu>
   )
 }
