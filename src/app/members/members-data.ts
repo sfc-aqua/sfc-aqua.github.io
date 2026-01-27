@@ -270,7 +270,6 @@ export const members: TMember[] = [
     name: "Samanvay Sharma",
     login: "sam",
     role: ["M2", "Current"],
-    imagePath: "/images/members/sam.png",
     description: "Power and Responsibility",
     stat: [
       { name: "Luck", value: 10, max: 100 },
