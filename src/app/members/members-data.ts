@@ -272,7 +272,7 @@ export const members: TMember[] = [
     role: ["M2", "Current"],
     imagePath: "/images/members/sam.png",
     description: "Power and Responsibility",
-    links: [{name: "",url: "",},],
+    links: [],
     stat: [
       { name: "Luck", value: 10, max: 100 },
       { name: "Skill", value: 20, max: 100 },
