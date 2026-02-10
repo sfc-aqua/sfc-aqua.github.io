@@ -841,11 +841,11 @@ export const members: TMember[] = [
     login: "sohma",
     role: ["B1", "Current"],
     imagePath: "images/members/sohma.jpg",
-    description: "Can you hear the music?",
+    description: "Wovon man nicht sprechen kann, darüber muss man schweigen",
     links: [
       {
         name: "GitHub",
-        url: "https://github.com/shumoku-dtl",
+        url: "https://github.com/sohma-kbysh",
       },
     ],
     stat: [
