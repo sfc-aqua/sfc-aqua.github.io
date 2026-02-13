@@ -187,7 +187,7 @@ export const members: TMember[] = [
   },
   {
     name: "Sara A. Metwalli",
-    role: ["D4", "Current"],
+    role: ["Alumni"],
     login: "sara",
     imagePath: "/images/members/sara.JPG",
     description: "I'm a student at Keio University",
@@ -284,7 +284,7 @@ export const members: TMember[] = [
   },
   {
     name: "Makoto Nakai",
-    role: ["M2", "Current"],
+    role: ["Alumni"],
     login: "dave",
     imagePath: "/images/members/dave.png",
     description: "I'm a student at Keio University",
@@ -298,7 +298,7 @@ export const members: TMember[] = [
   },
   {
     name: "Yinjie Zhou",
-    role: ["M2", "Current"],
+    role: ["Alumni"],
     login: "syu",
     imagePath: "/images/members/syu.png",
     description: "I'm a student at Keio University",
@@ -313,7 +313,7 @@ export const members: TMember[] = [
   {
     name: "Austin Huang",
     login: "austinh",
-    role: ["M2", "Current"],
+    role: ["Alumni"],
     imagePath: "/images/members/austin.png",
     description: "I do quantum chemistry with quantum computers",
     links: [
@@ -355,7 +355,7 @@ export const members: TMember[] = [
   {
     name: "Michael Peyron",
     login: "michael",
-    role: ["M1", "Current"],
+    role: ["Alumni"],
     imagePath: "/images/members/michael.jpg",
     description: "Its October and there is still a taste of summer in the air",
     links: [
@@ -393,7 +393,7 @@ export const members: TMember[] = [
   {
     name: "YUMOTO Kento",
     login: "ken-tea",
-    role: ["B4", "Current"],
+    role: ["Alumni"],
     imagePath: "/images/members/kent_tea.png",
     description: "I wanna go to Peking and Shenzhen.",
     links: [
@@ -411,7 +411,7 @@ export const members: TMember[] = [
   },
   {
     name: "Hyensoo Choi",
-    role: ["B3", "Current"],
+    role: ["Alumni"],
     login: "collodi",
     imagePath: "/images/members/collodi.jpg",
     description:
@@ -433,7 +433,7 @@ export const members: TMember[] = [
   },
   {
     name: "Wataru Morishita",
-    role: ["B3", "Current"],
+    role: ["Alumni"],
     login: "morishita",
     imagePath: "/images/members/morishita.png",
     description: "The mastermind behind this kenkyukai",
@@ -622,7 +622,7 @@ export const members: TMember[] = [
   {
     name: "Haruka Sakate",
     login: "l0gic",
-    role: ["B1", "Current"],
+    role: ["Alumni"],
     imagePath: "/images/members/logic.jpg",
     description: "I'm a student at Keio University",
     links: [
@@ -683,7 +683,7 @@ export const members: TMember[] = [
   {
     name: "Xu Haoran",
     login: "joo",
-    role: ["B1", "Current"],
+    role: ["Alumni"],
     imagePath: "/images/members/Joe.jpg",
     description: "May the force be with you",
     links: [{ name: "Github", url: "https://github.com/Joe-Xuu" }],
