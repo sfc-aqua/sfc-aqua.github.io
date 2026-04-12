@@ -766,10 +766,10 @@ export const members: TMember[] = [
   {
     name: "Shigetora Miyashita",
     login: "shingy",
-    role: ["Alumni"],
+    role: ["Alumni", "SoftBank"],
     imagePath: "/images/members/shingy.png",
     description:
-      "Graduate Student in Nuclear Engineering and Management at UTokyo",
+      "Quantum and high-performance computing for solving partial differential equations",
     links: [
       {
         name: "Google Scholar",
