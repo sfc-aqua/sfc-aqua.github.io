@@ -1,6 +1,6 @@
 import "./globals.css"
 import { Inter } from "next/font/google"
-import Navigator from "@/components/navigator"
+
 import { cn } from "@/components/utils"
 import { Providers } from "./Providers"
 
@@ -25,16 +25,8 @@ export default function RootLayout({
           href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
         />
       </head>
-      <body
-        className={cn(
-          inter.className
-          // 'min-h-screen'
-        )}
-      >
-        <Providers>
-          <Navigator />
-          {children}
-        </Providers>
+      <body className={cn(inter.className, "min-h-screen")}>
+        <Providers>{children}</Providers>
       </body>
     </html>
   )
