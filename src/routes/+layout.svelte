@@ -17,7 +17,7 @@
 <div class="flex min-h-screen flex-col">
 	<Navbar {data} />
 
-	<main class="grow basis-full">
+	<main class="grow">
 		{@render children?.()}
 	</main>
 

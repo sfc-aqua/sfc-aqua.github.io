@@ -19,5 +19,10 @@
 			isSelected={selectedMemberLogin === member.login}
 			onclick={() => onMemberClick(member)}
 		/>
+				<!-- <MemberCard
+			{member}
+			index={i}
+			onclick={() => onMemberClick(member)}
+		/> -->
 	{/each}
 </div>

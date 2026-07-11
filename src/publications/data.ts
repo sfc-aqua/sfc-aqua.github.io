@@ -4,7 +4,6 @@ export const prePublicationSchema = z.object({
 	logins: z.string().array(),
 	keywords: z.string().array(),
 	category: z.string(),
-	// Add these fields:
 	title: z.string().optional(),
 	year: z.number().nullable(),
 	month: z.number().optional(),
