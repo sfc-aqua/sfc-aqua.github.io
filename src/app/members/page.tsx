@@ -69,7 +69,7 @@ export default function Page() {
 
         <div
           className={cn(
-            "columns-1 sm:columns-2 md:columns-3 lg:columns-4 overflow-x-auto mt-10"
+            "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 overflow-x-auto mt-10"
           )}
         >
           {members
@@ -81,6 +81,22 @@ export default function Page() {
                   .toLowerCase()
                   .includes(searchQuery.toLowerCase())
             )
+            .sort((firstMember, secondMember) => {
+              const getSortOrder = (member: (typeof members)[number]) => {
+                if (member.name === "Rod Van Meter") return 0
+
+                const roles = member.role.join(" ")
+                if (/Professor|Director|助教/.test(roles)) return 1
+                if (/^D\d/.test(roles)) return 2
+                if (/^M2/.test(roles)) return 3
+                if (/^M1/.test(roles)) return 4
+                if (/^B\d/.test(roles)) return 5
+                if (roles.includes("Alumni")) return 6
+                return 6
+              }
+
+              return getSortOrder(firstMember) - getSortOrder(secondMember)
+            })
             .map((member, index) => (
               <MemberCard key={index} member={member} />
             ))}
