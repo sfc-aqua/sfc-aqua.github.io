@@ -1070,7 +1070,7 @@ export const members: TMember[] = [
   {
     name: "Eliott Flechtner",
     login: "eliott",
-    role: ["Intern", "Current"],
+    role: ["Alumni", "s26 Intern"],
     imagePath: "images/members/EliottFlechtner.png",
     description: "一期一会",
     links: [],

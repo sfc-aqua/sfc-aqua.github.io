@@ -26,7 +26,7 @@ export const studentActivities: StudentActivity[] = [
     students: ["tomshen"],
     links: [{ label: "Paper", url: "https://arxiv.org/pdf/2605.07295" }],
     photo: {
-      src: "/images/student-activities/QCE26/tomshen_QCE26_presentation.jpg",
+      src: "/images/student-activities/QCE26/tomshen_QCE26_presentation_v2.jpg",
       alt: "Paper presentation by tomshen at IEEE Quantum Week 2026",
     },
   },
