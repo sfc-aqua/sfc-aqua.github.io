@@ -65,6 +65,10 @@
   line-height: 1.6;
 }
 
+.achievement-accent {
+  --achievement-accent-rgb: 139, 92, 246;
+}
+
 @media (max-width: 700px) {
   .aqua-particle-hero {
     min-height: 76vh;

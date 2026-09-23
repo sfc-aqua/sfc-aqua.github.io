@@ -86,13 +86,22 @@ function ActivityCard({ activity }: { activity: StudentActivity }) {
             src={activity.photo.src}
             unoptimized
           />
-        ) : (
-          <div className="absolute inset-0 grid place-items-center bg-gradient-to-br from-primary/15 via-base-300 to-secondary/15">
-            <div className="text-center text-base-content/50">
-              <div className="mb-2 text-4xl" aria-hidden="true">
+        ) : activity.photoStatus === "pending" ? (
+          <div className="achievement-accent absolute inset-0 grid place-items-center bg-gradient-to-br from-[rgba(var(--achievement-accent-rgb),0.28)] via-base-300 to-[rgba(var(--achievement-accent-rgb),0.08)]">
+            <div className="text-center text-base-content/70">
+              <div className="mb-3 text-4xl" aria-hidden="true">
                 ◇
               </div>
-              <span className="text-sm font-medium">Photo coming soon</span>
+              <p className="font-medium">Photo will be added soon</p>
+            </div>
+          </div>
+        ) : (
+          <div className="absolute inset-0 grid place-items-center bg-gradient-to-br from-[rgba(var(--aqua-particle-rgb),0.18)] via-base-300 to-base-200">
+            <div className="px-6 text-center">
+              <p className="font-mono text-sm font-bold uppercase tracking-[0.2em] text-[rgb(var(--aqua-particle-rgb))]">
+                AQUA Student Achievement
+              </p>
+              <p className="mt-3 text-xl font-bold">{activity.title}</p>
             </div>
           </div>
         )}
