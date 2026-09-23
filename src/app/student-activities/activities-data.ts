@@ -34,7 +34,8 @@ export const studentActivities: StudentActivity[] = [
   {
     date: "2026-09-14",
     title: "Poster presentation at IEEE Quantum Week 2026",
-    description: "",
+    description:
+      "Gave a poster presentation at QCE 2026 on performance benchmarking of distributed quantum computing with Q-Fly and 2D Grid network architectures. The presentation identifies the range of optical-switch insertion loss in which Q-Fly outperforms the 2D Grid.",
     students: ["sakumacho"],
     links: [
       {
@@ -46,7 +47,7 @@ export const studentActivities: StudentActivity[] = [
         url: "/images/student-activities/QCE26/sakuma_QCE26_poster.pdf",
       },
     ],
-    photoStatus: "pending",
+    photoStatus: "unavailable",
   },
   {
     date: "2026-09-14",
