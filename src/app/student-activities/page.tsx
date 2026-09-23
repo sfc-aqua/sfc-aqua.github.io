@@ -27,7 +27,7 @@ function ActivityCard({ activity }: { activity: StudentActivity }) {
     <article className="grid overflow-hidden rounded-2xl border border-base-content/10 bg-base-200 shadow-sm transition-shadow hover:shadow-md md:grid-cols-[minmax(0,1.35fr)_minmax(16rem,0.65fr)]">
       <div className="flex flex-col p-6 md:p-8">
         <time
-          className="mb-3 font-mono text-sm font-semibold tracking-wide text-primary"
+          className="mb-3 font-mono text-sm font-semibold tracking-wide text-[rgb(var(--aqua-particle-rgb))]"
           dateTime={activity.date}
         >
           {formatDate(activity.date)}
@@ -48,7 +48,7 @@ function ActivityCard({ activity }: { activity: StudentActivity }) {
             <div className="flex flex-wrap gap-2">
               {activity.students.map((student) => (
                 <span
-                  className="badge badge-primary h-auto rounded-full px-3 py-2 font-semibold"
+                  className="badge h-auto rounded-full border-transparent bg-[rgb(var(--aqua-particle-rgb))] px-3 py-2 font-semibold text-base-100"
                   key={student}
                 >
                   {student}
@@ -61,7 +61,7 @@ function ActivityCard({ activity }: { activity: StudentActivity }) {
             <div className="flex flex-wrap gap-2">
               {activity.links.map((link) => (
                 <a
-                  className="btn btn-outline btn-primary btn-sm rounded-full"
+                  className="btn btn-outline btn-sm rounded-full border-[rgb(var(--aqua-particle-rgb))] text-[rgb(var(--aqua-particle-rgb))] hover:border-[rgb(var(--aqua-particle-rgb))] hover:bg-[rgb(var(--aqua-particle-rgb))] hover:text-base-100"
                   href={link.url}
                   key={`${link.label}-${link.url}`}
                   rel="noopener noreferrer"
@@ -109,7 +109,7 @@ export default function StudentActivitiesPage() {
   return (
     <main className="mx-auto min-h-screen w-full max-w-6xl px-4 py-12 md:px-8 md:py-20">
       <header className="mb-12 max-w-3xl">
-        <p className="mb-3 font-mono text-sm font-semibold uppercase tracking-[0.2em] text-primary">
+        <p className="mb-3 font-mono text-sm font-semibold uppercase tracking-[0.2em] text-[rgb(var(--aqua-particle-rgb))]">
           AQUA student news
         </p>
         <h1 className="mb-5 text-4xl font-bold tracking-tight md:text-6xl">
