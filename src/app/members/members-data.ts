@@ -1067,4 +1067,18 @@ export const members: TMember[] = [
       { name: "Luck", value: 2, max: 100 },
     ],
   },
+  {
+    name: "Eliott Flechtner",
+    login: "eliott",
+    role: ["Intern", "Current"],
+    imagePath: "images/members/EliottFlechtner.png",
+    description: "一期一会",
+    links: [],
+    stat: [
+      { name: "Strength", value: 0, max: 100 },
+      { name: "Agility", value: 100, max: 100 },
+      { name: "Intelligence", value: 0, max: 100 },
+      { name: "Luck", value: 100, max: 100 },
+    ],
+  },
 ]

@@ -91,8 +91,9 @@ export default function Page() {
                 if (/^M2/.test(roles)) return 3
                 if (/^M1/.test(roles)) return 4
                 if (/^B\d/.test(roles)) return 5
-                if (roles.includes("Alumni")) return 6
-                return 6
+                if (roles.includes("Intern")) return 6
+                if (roles.includes("Alumni")) return 7
+                return 8
               }
 
               return getSortOrder(firstMember) - getSortOrder(secondMember)
