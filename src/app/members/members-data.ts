@@ -494,8 +494,8 @@ export const members: TMember[] = [
     name: "Marii Koyama",
     login: "mia",
     role: ["M1", "Current", "Lab leader"],
-    imagePath: "/images/members/mia.jpg",
-    description: "I cook strawberry pasta 🍓🍝",
+    imagePath: "/images/members/mia_hp.jpg",
+    description: "In a superposition of working and looking busy",
     links: [
       {
         name: "Github",
@@ -510,7 +510,7 @@ export const members: TMember[] = [
       { name: "Strenth", value: 60, max: 100 },
       { name: "Anxiety", value: 5, max: 100 },
       { name: "Intemperance", value: 20, max: 100 },
-      { name: "Luck", value: 98, max: 100 },
+      { name: "Luck", value: 120, max: 100 },
     ],
   },
   {
@@ -1013,6 +1013,58 @@ export const members: TMember[] = [
         name: "GitHub",
         url: "https://github.com/yuta07092001",
       },
+    ],
+  },
+  {
+    name: "Yutaro Yoshii",
+    login: "martian",
+    role: ["M1", "Current"],
+    imagePath: "images/members/martian.png",
+    description: "☕️",
+    links: [
+      {
+        name: "GitHub",
+        url: "https://github.com/martian17",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 20, max: 100 },
+      { name: "Agility", value: 60, max: 100 },
+      { name: "Intelligence", value: 80, max: 100 },
+      { name: "Luck", value: 40, max: 100 },
+    ],
+  },
+  {
+    name: "Minh Tran",
+    login: "croft",
+    role: ["D1", "Current"],
+    imagePath: "images/members/croft.jpg",
+    description: "I'm son of a captain",
+    links: [],
+    stat: [
+      { name: "Strength", value: 33.3, max: 100 },
+      { name: "Agility", value: 33.3, max: 100 },
+      { name: "Intelligence", value: 33.3, max: 100 },
+      { name: "Luck", value: -1, max: 100 },
+    ],
+  },
+  {
+    name: "Fahrizal Djohar",
+    login: "ari",
+    role: ["D1", "Current"],
+    imagePath: "images/members/ari.jpeg",
+    description: "a student",
+    links: [
+      {
+        name: "GitHub",
+        url: "https://github.com/arid15",
+      },
+    ],
+    stat: [
+      { name: "Strength", value: 2, max: 100 },
+      { name: "Agility", value: 1, max: 100 },
+      { name: "Intelligence", value: 2, max: 100 },
+      { name: "Luck", value: 2, max: 100 },
     ],
   },
 ]
