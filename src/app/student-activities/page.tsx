@@ -2,12 +2,6 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import { studentActivities, type StudentActivity } from "./activities-data"
 
-export const metadata: Metadata = {
-  title: "Student Activities | AQUA",
-  description:
-    "News and achievements from students in the AQUA research group.",
-}
-
 const dateFormatter = new Intl.DateTimeFormat("en", {
   year: "numeric",
   month: "long",
@@ -118,9 +112,6 @@ export default function StudentActivitiesPage() {
   return (
     <main className="mx-auto min-h-screen w-full max-w-6xl px-4 py-12 md:px-8 md:py-20">
       <header className="mb-12 max-w-3xl">
-        <p className="mb-3 font-mono text-sm font-semibold uppercase tracking-[0.2em] text-[rgb(var(--aqua-particle-rgb))]">
-          AQUA student news
-        </p>
         <h1 className="mb-5 text-4xl font-bold tracking-tight md:text-6xl">
           Student Activities
         </h1>
