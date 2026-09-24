@@ -91,11 +91,30 @@ export default function Page() {
                 if (/^M2/.test(roles)) return 3
                 if (/^M1/.test(roles)) return 4
                 if (/^B\d/.test(roles)) return 5
+                if (roles.includes("Alumni") && /\b20\d{2}\b/.test(roles)) {
+                  return 6
+                }
                 if (roles.includes("Alumni")) return 7
-                return 6
+                return 8
               }
 
-              return getSortOrder(firstMember) - getSortOrder(secondMember)
+              const firstSortOrder = getSortOrder(firstMember)
+              const secondSortOrder = getSortOrder(secondMember)
+
+              if (firstSortOrder !== secondSortOrder) {
+                return firstSortOrder - secondSortOrder
+              }
+
+              if (firstSortOrder === 6) {
+                const firstYear = firstMember.role.join(" ").match(/20[0-9]{2}/)
+                const secondYear = secondMember.role
+                  .join(" ")
+                  .match(/20[0-9]{2}/)
+
+                return Number(secondYear?.[0]) - Number(firstYear?.[0])
+              }
+
+              return 0
             })
             .map((member, index) => (
               <MemberCard key={index} member={member} />

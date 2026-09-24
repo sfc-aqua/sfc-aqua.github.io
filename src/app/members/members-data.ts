@@ -187,10 +187,10 @@ export const members: TMember[] = [
   },
   {
     name: "Sara A. Metwalli",
-    role: ["Alumni"],
+    role: ["Ph.D. 2026", "Alumni"],
     login: "sara",
     imagePath: "/images/members/sara.JPG",
-    description: "I'm a student at Keio University",
+    description: "I was a student at Keio University",
     links: [
       { name: "Facebook", url: "" },
       { name: "Github", url: "" },
@@ -224,7 +224,7 @@ export const members: TMember[] = [
   },
   {
     name: "Poramet Pathumsoot",
-    role: ["Alumni"],
+    role: ["Ph.D. 2026", "Alumni"],
     login: "poramet",
     imagePath: "/images/members/poramet.jpg",
     description: "To boldly go where no one has gone before",
@@ -241,7 +241,7 @@ export const members: TMember[] = [
   },
   {
     name: "Natchapol (Bank) Patamawisut",
-    role: ["Alumni"],
+    role: ["M.A. 2026", "Alumni"],
     login: "banknatchapol",
     imagePath: "/images/members/banknatchapol.jpg",
     description: "Tomorrow has been exhausting.",
@@ -269,7 +269,7 @@ export const members: TMember[] = [
   {
     name: "Samanvay Sharma",
     login: "sam",
-    role: ["Alumni"],
+    role: ["M.A. 2026", "Alumni"],
     imagePath: "/images/members/sam.png",
     description: "Power and Responsibility",
     links: [],
@@ -284,10 +284,10 @@ export const members: TMember[] = [
   },
   {
     name: "Makoto Nakai",
-    role: ["Alumni"],
+    role: ["M.A. 2024", "Alumni"],
     login: "dave",
     imagePath: "/images/members/dave.png",
-    description: "I'm a student at Keio University",
+    description: "I was a student at Keio University",
     links: [{ name: "Github", url: "https://github.com/makotonakai" }],
     stat: [
       { name: "Strength", value: 20, max: 100 },
@@ -298,10 +298,10 @@ export const members: TMember[] = [
   },
   {
     name: "Yinjie Zhou",
-    role: ["Alumni"],
+    role: ["M.A. 2022", "Alumni"],
     login: "syu",
     imagePath: "/images/members/syu.png",
-    description: "I'm a student at Keio University",
+    description: "I was a student at Keio University",
     links: [{ name: "Github", url: "" }],
     stat: [
       { name: "Strength", value: 5, max: 100 },
@@ -313,7 +313,7 @@ export const members: TMember[] = [
   {
     name: "Austin Huang",
     login: "austinh",
-    role: ["Alumni"],
+    role: ["M.A. 2024", "Alumni"],
     imagePath: "/images/members/austin.png",
     description: "I do quantum chemistry with quantum computers",
     links: [
@@ -332,7 +332,7 @@ export const members: TMember[] = [
   {
     name: "Pawan Sharma Poudel",
     login: "pawan",
-    role: ["Alumni"],
+    role: ["M.A. 2026", "Alumni"],
     imagePath: "images/members/pawan.png",
     description: "Reducing uncertainties",
     links: [
@@ -374,7 +374,7 @@ export const members: TMember[] = [
   {
     name: "Hikaru Yokomori",
     login: "voy",
-    role: ["Alumni"],
+    role: ["M.A. 2026", "Alumni"],
     imagePath: "/images/members/voy.jpg",
     description: "I study and explore Hikaru✨⚽️",
     links: [
@@ -433,7 +433,7 @@ export const members: TMember[] = [
   },
   {
     name: "Wataru Morishita",
-    role: ["Alumni"],
+    role: ["B.A. 2024", "Alumni"],
     login: "morishita",
     imagePath: "/images/members/morishita.png",
     description: "The mastermind behind this kenkyukai",
@@ -494,7 +494,7 @@ export const members: TMember[] = [
     name: "Marii Koyama",
     login: "mia",
     role: ["M1", "Current", "Lab leader"],
-    imagePath: "/images/members/mia_hp.jpg",
+    imagePath: "/images/members/mia_hp.JPG",
     description: "In a superposition of working and looking busy",
     links: [
       {
@@ -590,7 +590,7 @@ export const members: TMember[] = [
     login: "mono",
     role: ["Alumni"],
     imagePath: "/images/members/mono.png",
-    description: "I'm a student at Keio University",
+    description: "Hi",
     links: [
       {
         name: "Github",
@@ -628,7 +628,7 @@ export const members: TMember[] = [
     login: "l0gic",
     role: ["Alumni"],
     imagePath: "/images/members/logic.jpg",
-    description: "I'm a student at Keio University",
+    description: "Hi",
     links: [
       {
         name: "Github",
@@ -701,7 +701,7 @@ export const members: TMember[] = [
   {
     name: "Shin Nishio",
     login: "parton",
-    role: ["Alumni"],
+    role: ["B.A. 2020", "Alumni"],
     imagePath: "/images/members/parton.jpg",
     description:
       "I was a member of AQUA from 2017 to 2020, where I worked on system software for quantum computers (compilers and quantum circuit optimization). I received my bachelor's degree from Keio University and am currently a PhD student at Sokendai/NII/OIST.",
@@ -745,7 +745,7 @@ export const members: TMember[] = [
   {
     name: "Kentaro Teramoto",
     login: "zigen",
-    role: ["Alumni"],
+    role: ["M.A. 2023", "Alumni"],
     imagePath: "/images/members/zigen.png",
     description: "I love programming",
     links: [
@@ -770,7 +770,7 @@ export const members: TMember[] = [
   {
     name: "Shigetora Miyashita",
     login: "shingy",
-    role: ["Alumni", "SoftBank"],
+    role: ["B.A. 2023", "Alumni", "SoftBank"],
     imagePath: "/images/members/shingy.png",
     description:
       "Quantum and high-performance computing for solving partial differential equations",
@@ -850,7 +850,7 @@ export const members: TMember[] = [
     login: "k0uki",
     role: ["Alumni"],
     imagePath: "images/members/kouki.jpeg",
-    description: "I'm a student at Keio University",
+    description: "I was a Bachelor's student at Keio University",
     links: [
       {
         name: "GitHub",
@@ -992,7 +992,7 @@ export const members: TMember[] = [
   {
     name: "Gordon Cui",
     login: "syui",
-    role: ["Alumni"],
+    role: ["M.A. 2026", "Alumni"],
     imagePath: "images/members/syui.jpeg",
     description: "hi",
     links: [
@@ -1070,7 +1070,7 @@ export const members: TMember[] = [
   {
     name: "Eliott Flechtner",
     login: "eliott",
-    role: ["Alumni", "s26 Intern"],
+    role: ["s26 Intern", "Alumni"],
     imagePath: "images/members/EliottFlechtner.png",
     description: "一期一会",
     links: [],
@@ -1079,6 +1079,20 @@ export const members: TMember[] = [
       { name: "Agility", value: 100, max: 100 },
       { name: "Intelligence", value: 0, max: 100 },
       { name: "Luck", value: 100, max: 100 },
+    ],
+  },
+  {
+    name: "Pawit Limpasuthum",
+    login: "gemlim",
+    role: ["B2", "Current"],
+    imagePath: "images/members/gemlim.jpg",
+    description: "I’m everything, everywhere, all at once",
+    links: [],
+    stat: [
+      { name: "Strength", value: 5, max: 100 },
+      { name: "Agility", value: 50, max: 100 },
+      { name: "Intelligence", value: 40, max: 100 },
+      { name: "Luck", value: 80, max: 100 },
     ],
   },
 ]
