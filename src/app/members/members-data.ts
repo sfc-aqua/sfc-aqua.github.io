@@ -190,7 +190,7 @@ export const members: TMember[] = [
     role: ["Alumni"],
     login: "sara",
     imagePath: "/images/members/sara.JPG",
-    description: "I'm a student at Keio University",
+    description: "I was a student at Keio University",
     links: [
       { name: "Facebook", url: "" },
       { name: "Github", url: "" },
@@ -287,7 +287,7 @@ export const members: TMember[] = [
     role: ["Alumni"],
     login: "dave",
     imagePath: "/images/members/dave.png",
-    description: "I'm a student at Keio University",
+    description: "I was a student at Keio University",
     links: [{ name: "Github", url: "https://github.com/makotonakai" }],
     stat: [
       { name: "Strength", value: 20, max: 100 },
@@ -301,7 +301,7 @@ export const members: TMember[] = [
     role: ["Alumni"],
     login: "syu",
     imagePath: "/images/members/syu.png",
-    description: "I'm a student at Keio University",
+    description: "I was a student at Keio University",
     links: [{ name: "Github", url: "" }],
     stat: [
       { name: "Strength", value: 5, max: 100 },
@@ -494,7 +494,7 @@ export const members: TMember[] = [
     name: "Marii Koyama",
     login: "mia",
     role: ["M1", "Current", "Lab leader"],
-    imagePath: "/images/members/mia_hp.jpg",
+    imagePath: "/images/members/mia_hp.JPG",
     description: "In a superposition of working and looking busy",
     links: [
       {
@@ -590,7 +590,7 @@ export const members: TMember[] = [
     login: "mono",
     role: ["Alumni"],
     imagePath: "/images/members/mono.png",
-    description: "I'm a student at Keio University",
+    description: "Hi",
     links: [
       {
         name: "Github",
@@ -628,7 +628,7 @@ export const members: TMember[] = [
     login: "l0gic",
     role: ["Alumni"],
     imagePath: "/images/members/logic.jpg",
-    description: "I'm a student at Keio University",
+    description: "Hi",
     links: [
       {
         name: "Github",
@@ -850,7 +850,7 @@ export const members: TMember[] = [
     login: "k0uki",
     role: ["Alumni"],
     imagePath: "images/members/kouki.jpeg",
-    description: "I'm a student at Keio University",
+    description: "I was a Bachelor's student at Keio University",
     links: [
       {
         name: "GitHub",
