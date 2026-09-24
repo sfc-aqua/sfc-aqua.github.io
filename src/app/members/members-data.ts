@@ -187,7 +187,7 @@ export const members: TMember[] = [
   },
   {
     name: "Sara A. Metwalli",
-    role: ["Ph.D. 2026", "Alumni"],
+    role: ["Ph.D. 2024", "Alumni"],
     login: "sara",
     imagePath: "/images/members/sara.JPG",
     description: "I was a student at Keio University",
@@ -298,7 +298,7 @@ export const members: TMember[] = [
   },
   {
     name: "Yinjie Zhou",
-    role: ["M.A. 2022", "Alumni"],
+    role: ["B.A. 2022", "Alumni"],
     login: "syu",
     imagePath: "/images/members/syu.png",
     description: "I was a student at Keio University",

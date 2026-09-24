@@ -81,7 +81,7 @@ export const studentActivities: StudentActivity[] = [
   },
   {
     date: "2026-03-23",
-    title: "AQUA Member Named Valedictorian for Spring 2026",
+    title: "AQUA Member Named Valedictorian for Fall 2025",
     description:
       "Soon was selected as valedictorian of the graduating class in recognition of their outstanding academic achievement. Congratulations on this exceptional accomplishment!!",
     students: ["soon"],
@@ -90,7 +90,7 @@ export const studentActivities: StudentActivity[] = [
   },
   {
     date: "2026-09-22",
-    title: "AQUA Member Named Valedictorian for Fall 2026",
+    title: "AQUA Member Named Valedictorian for Spring 2026",
     description:
       "Tomshen was selected as valedictorian of the graduating class in recognition of their outstanding academic achievement. Congratulations on this exceptional accomplishment!!",
     students: ["tomshen"],
