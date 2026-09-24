@@ -704,7 +704,7 @@ export const members: TMember[] = [
     role: ["B.A. 2020", "Alumni"],
     imagePath: "/images/members/parton.jpg",
     description:
-      "I was a member of AQUA from 2017 to 2020, where I worked on system software for quantum computers (compilers and quantum circuit optimization). I received my bachelor's degree from Keio University and am currently a PhD student at Sokendai/NII/OIST.",
+      "I was a member of AQUA from 2017 to 2020, where I worked on system software for quantum computers (compilers and quantum circuit optimization). I received my bachelor's degree from Keio University and my PhD from Sokendai/NII/OIST.",
     links: [
       { name: "Github", url: "https://github.com/parton-quark" },
       {
