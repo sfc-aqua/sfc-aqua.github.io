@@ -81,7 +81,7 @@ export const studentActivities: StudentActivity[] = [
   },
   {
     date: "2026-03-23",
-    title: "AQUA Member Named Valedictorian for Spring 2026",
+    title: "AQUA Member Named Valedictorian for Fall 2025",
     description:
       "Soon was selected as valedictorian of the graduating class in recognition of their outstanding academic achievement. Congratulations on this exceptional accomplishment!!",
     students: ["soon"],
@@ -90,7 +90,7 @@ export const studentActivities: StudentActivity[] = [
   },
   {
     date: "2026-09-22",
-    title: "AQUA Member Named Valedictorian for Fall 2026",
+    title: "AQUA Member Named Valedictorian for Spring 2026",
     description:
       "Tomshen was selected as valedictorian of the graduating class in recognition of their outstanding academic achievement. Congratulations on this exceptional accomplishment!!",
     students: ["tomshen"],
@@ -107,6 +107,22 @@ export const studentActivities: StudentActivity[] = [
     photo: {
       src: "/images/student-activities/QCE26/sam_QCE26_presentation.jpg",
       alt: "Paper presentation at IEEE Quantum Week 2026",
+    },
+  },
+  {
+    date: "2026-07-28",
+    title: "Second place at SEA (ASEAN) quantum hackathon",
+    description: "Minh placed second at the SEA (ASEAN) Quantum Hackathon.",
+    students: ["Minh"],
+    links: [
+      {
+        label: "facebook post",
+        url: "https://www.facebook.com/share/p/1CBUZG48Mh/?mibextid=wwXIfr",
+      },
+    ],
+    photo: {
+      src: "/images/student-activities/minh_asean_quantum_hackathon.jpg",
+      alt: "Second place at SEA (ASEAN) quantum hackathon",
     },
   },
 ]
