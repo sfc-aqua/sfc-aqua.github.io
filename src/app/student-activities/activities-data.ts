@@ -109,4 +109,20 @@ export const studentActivities: StudentActivity[] = [
       alt: "Paper presentation at IEEE Quantum Week 2026",
     },
   },
+  {
+    date: "2026-07-28",
+    title: "Second place at SEA (ASEAN) quantum hackathon",
+    description: "Minh placed second at the SEA (ASEAN) Quantum Hackathon.",
+    students: ["Minh"],
+    links: [
+      {
+        label: "facebook post",
+        url: "https://www.facebook.com/share/p/1CBUZG48Mh/?mibextid=wwXIfr",
+      },
+    ],
+    photo: {
+      src: "/images/student-activities/minh_asean_quantum_hackathon.jpg",
+      alt: "Second place at SEA (ASEAN) quantum hackathon",
+    },
+  },
 ]
